@@ -81,4 +81,58 @@ On the circumplex:
 
 **Next experiment:** Extract orthogonal V and A directions from GoEmotions (Sun et al. method). Inject pure valence vs pure arousal separately. Confirm whether V-space selectively carries valence.
 
-*The channel works for valence. Arousal may need a different channel. The geometry tells us which emotions we can inject and which we can't.*
+## Arousal Profile: It's the norm (2026-06-03)
+
+Profiled 10 high-arousal vs 10 low-arousal texts through the 1.5B. Finding:
+
+**High arousal = 4.3% larger hidden state norms, consistently across ALL layers (L1-L25).**
+
+No layer specificity. No noise. The tube gets LOUDER without changing direction.
+
+### The circumplex in transformer geometry
+
+| Dimension | Channel | Where | Injection method |
+|---|---|---|---|
+| Valence | V-space direction | v_proj output | Manifold constructor |
+| Arousal | Hidden state norm | Residual stream | Norm scaling (multiply by ~1.04) |
+| Position | K-space | k_proj output | RoPE (don't touch) |
+
+### Why angry failed (resolved)
+
+Anger = low valence + high arousal. V-space injection moved valence negative but didn't scale the norm. The model produced low-valence-low-arousal content (sad/calm). To inject anger: compose V direction (negative valence) + norm scaling (1.04x arousal).
+
+### Proposed two-channel injection
+
+```
+injected = V_direction(valence_angle) + norm_scale(arousal_level)
+```
+
+Where `valence_angle` is the circumplex angle and `arousal_level` is the norm multiplier. The full circumplex is injectable through two orthogonal channels that map onto different tensor spaces.
+
+## Powered Sweep Results (720 trials, Starship MPS, 2026-06-03)
+
+8 emotions × 6 construction methods × 3 blend levels × 5 prompts. LLM judge scored valence + arousal.
+
+### Key findings
+
+1. **Contrastive construction is superior.** Subtracting the opposite emotion isolates the pure emotion direction. Sentence method captures mainly valence; contrastive captures the full circumplex.
+
+2. **All tested emotions shift correctly with contrastive method:** happy (+0.125 valence), angry (-0.125 to -0.175 valence), sad (-0.250 valence + arousal drops to 0.150), calm (arousal drops to 0.320), content (+0.190 valence).
+
+3. **V-space carries the FULL circumplex via contrastive construction**, not just valence. The arousal profiler's 4.3% norm difference is an additional arousal pathway — magnitude on top of directional encoding.
+
+### Corrected model
+
+| Construction | V-space carries | Norm carries |
+|---|---|---|
+| Sentence | Valence only | Arousal (4.3%) |
+| Contrastive | Valence + arousal | Arousal (additive) |
+
+The contrastive method works because subtracting the opposite emotion removes shared content and preserves the full emotion vector including arousal. Sentence construction captures only the model's valence association with the word.
+
+### Caveats
+- Small N on some cells (sad contrastive baseline N=1)
+- 1.5B model only — needs larger model confirmation
+- LLM judge (DeepSeek 16B) is noisy — should validate with human eval or Claude
+
+*The circumplex is real in the geometry. Contrastive construction is the key to injecting it fully.*
