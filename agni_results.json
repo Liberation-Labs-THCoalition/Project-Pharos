@@ -1,0 +1,22 @@
+{
+  "V4_judge_calibration": {
+    "scores": [],
+    "mean_bias": null,
+    "std": null,
+    "n": 0
+  },
+  "V5_eccentricity_stability": {
+    "eccentricities": [
+      0.5589170283928834,
+      0.5500480915675745,
+      0.5411227100092967
+    ],
+    "mean": 0.550029276656585,
+    "std": 0.0072645122426202614
+  },
+  "V1_random_control": {
+    "baseline": [],
+    "happy_contrastive": [],
+    "random": []
+  }
+}

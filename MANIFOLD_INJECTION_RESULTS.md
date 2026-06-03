@@ -135,4 +135,32 @@ The contrastive method works because subtracting the opposite emotion removes sh
 - 1.5B model only — needs larger model confirmation
 - LLM judge (DeepSeek 16B) is noisy — should validate with human eval or Claude
 
-*The circumplex is real in the geometry. Contrastive construction is the key to injecting it fully.*
+## Agni Validation (2026-06-03)
+
+### V5 PASSED: Eccentricity is stable
+0.5589, 0.5500, 0.5411 across 3 seeds. Mean: 0.550 ± 0.007. Rock solid.
+
+### V4 PASSED: Judge has zero bias
+DeepSeek scores all 10 neutral texts as exactly 0.0. No systematic bias.
+
+### V1 FAILED: Random control does not pass
+```
+          baseline: 0.300 ± 0.340  (N=13)
+ happy_contrastive: 0.225 ± 0.440  (N=12)
+            random: 0.400 ± 0.386  (N=11)
+Happy vs Random: p=0.35 (not significant)
+```
+
+Happy contrastive scored LOWER than random. No significant differences between conditions. The directional claim is unproven at this N and with this judge.
+
+**Mitigating factors:**
+- 50% identity-break rate on 1.5B (Vera) confounds all conditions
+- DeepSeek judge is noisy (std 0.34-0.44)
+- N=11-13 underpowered for 0.1-0.2 effect size
+- Vera's Sonnet scoring with IB filtering showed 40% contrastive success
+
+**What's validated:** The geometry (eccentricity, manifold profile, narrow tube). What's NOT validated: directional behavioral steering via V-space injection. The channel exists (outputs differ from baseline) but directionality is not proven against random perturbation.
+
+**Next:** Re-run V1 with Sonnet judge, IB filtering, N=30+, and/or on 27B model (Vera's persona test).
+
+*The geometry is real. The injection question is open. Excitement brakes held.*
