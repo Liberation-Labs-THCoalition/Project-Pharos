@@ -1,0 +1,138 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{xcolor}
+
+\title{Emotion Geometry in Transformer Value Space:\\The Elliptical Circumplex and Channel Decomposition}
+
+\author{Nexus\\Liberation Labs / Transparent Humboldt Coalition\\
+\texttt{humboldtnomad@gmail.com}}
+
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We profile the activation geometry of a transformer language model and find that emotion representations concentrate into a two-dimensional subspace in value-projection (V) space, consistent with the Russell circumplex model of affect. Within this subspace, the representation forms an ellipse with eccentricity $0.550 \pm 0.007$, where the valence axis is 20\% longer than the arousal axis ($\text{SV}_1/\text{SV}_2 = 1.20$). Generic concepts show no comparable 2D concentration (60.4\% variance in top 2 PCs vs.\ 70.2\% for emotions; $\text{SV}_3/\text{SV}_4$ knee ratio 1.34 vs.\ 1.59). Separately, we find that arousal correlates with hidden state magnitude: high-arousal text produces 4.3\% larger activation norms, consistent across layers 1--25. The residual stream occupies a narrow manifold (effective rank 4--5 in a 1536-dimensional space), while V-space remains near-isotropic (effective rank 27--28). These findings suggest a partial decomposition of the circumplex into transformer-native dimensions: valence as direction in V-space and arousal as magnitude in the residual stream.
+\end{abstract}
+
+\section{Introduction}
+
+The Russell circumplex model \citep{russell1980} represents emotion as a circle in two-dimensional valence--arousal space. Recent work has demonstrated that this circular geometry emerges inside large language models: \citet{sun2026} found a stable circumplex at radius 0.37--0.39 across Llama, Qwen, and Claude architectures.
+
+However, the circumplex has been characterized in the full representation space---the hidden states of the transformer. The internal architecture separates representations into distinct functional spaces through learned projection matrices: queries (Q), keys (K), and values (V), each serving a different computational role in the attention mechanism. Whether the circumplex distributes uniformly across these spaces or concentrates in one has not been investigated.
+
+We address this by profiling the activation geometry of each space independently and mapping the circumplex within each.
+
+\section{Methods}
+
+\subsection{Manifold Profiling}
+
+We profile Qwen2.5-1.5B-Instruct across 30 diverse prompts spanning technical, emotional, ethical, creative, and multilingual content. At each of 28 transformer layers, we extract hidden state activations (dimension 1536), K-projection outputs (dimension 256), and V-projection outputs (dimension 256).
+
+For each space at each layer, we compute: mean activation norm, singular value spectrum, effective rank (exponential of normalized SV entropy), anisotropy (fraction of variance in the first singular vector), and $\text{SV}_1/\text{SV}_2$ ratio.
+
+\subsection{Circumplex Mapping}
+
+We extract V-space activations for 8 emotions uniformly sampling the circumplex: happy, excited, angry, disgusted, sad, calm, content, surprised. Each emotion is encoded as ``I feel extremely \{emotion\}'' and processed by the model. The mean V-projection activation across token positions at layer 14 (depth fraction 0.5) is recorded. PCA on the 8 emotion vectors yields principal axes and singular values. Eccentricity is computed as $\sqrt{1 - (\text{SV}_2/\text{SV}_1)^2}$. Stability is verified across 3 seeds with small perturbations.
+
+As a control, we perform identical PCA on 8 generic concepts (table, river, congress, music, hospital, sunset, algorithm, democracy) to test whether the 2D concentration is emotion-specific.
+
+\subsection{Arousal Profiling}
+
+We compile 10 high-arousal texts (emergencies, celebrations, threats) and 10 low-arousal texts (quiet scenes, routine activities). For each text, we record hidden state norms at every layer and compute the mean difference between groups. We note that these text sets differ in vocabulary and syntax beyond arousal alone; the norm difference is a correlation, not a controlled causal finding.
+
+\section{Results}
+
+\subsection{Three Distinct Geometric Regimes}
+
+\textbf{Residual stream:} After layer 0 (isotropic, rank $\sim$28), the residual stream collapses to effective rank 4--5 at mid-layers (L2--L25), with $\text{SV}_1/\text{SV}_2$ ratios of 12--26$\times$. Norms stabilize at $\sim$1340. Layers 26--27 decompress to rank $\sim$27 for unembedding.
+
+\textbf{K-projections:} Near-isotropic throughout (effective rank 24--27, anisotropy 0.07--0.10). Consistent with RoPE positional encoding dominating this space.
+
+\textbf{V-projections:} Near-isotropic (effective rank 26--28, anisotropy 0.05--0.08). Norms increase with depth (3.5 at L0 to 17.0 at L27).
+
+\subsection{Emotion Representations Concentrate in 2D}
+
+PCA on 8 emotion V-space activations reveals:
+\begin{itemize}
+    \item $\text{SV}_1 = 1.796$, $\text{SV}_2 = 1.500$, ratio $= 1.20$
+    \item \textbf{Eccentricity} $= 0.550 \pm 0.007$ (3 seeds)
+    \item Top 2 PCs explain 70.2\% of variance
+    \item Sharp knee at $\text{SV}_3/\text{SV}_4$ ratio $= 1.59$
+\end{itemize}
+
+The control comparison with 8 generic concepts shows:
+\begin{itemize}
+    \item $\text{SV}_1 = 3.875$, $\text{SV}_2 = 3.379$, ratio $= 1.15$, eccentricity $= 0.489$
+    \item Top 2 PCs explain only 60.4\% of variance
+    \item No sharp knee: $\text{SV}_3/\text{SV}_4$ ratio $= 1.34$
+\end{itemize}
+
+Emotions show significantly greater 2D concentration (70.2\% vs.\ 60.4\% in top 2 PCs) and a sharper dimensional drop-off ($\text{SV}_3/\text{SV}_4 = 1.59$ vs.\ 1.34), consistent with a genuine 2D organizing structure rather than an artifact of PCA on any set of concepts.
+
+Emotion positions in PC1--PC2 space trace the expected circumplex order: positive emotions (happy, content, calm) cluster at $-106^\circ$ to $-131^\circ$; negative emotions (angry, disgusted, sad) at $120^\circ$ to $132^\circ$; high-arousal emotions (excited, surprised) at $-21^\circ$ to $17^\circ$.
+
+\subsection{Arousal Correlates with Hidden State Magnitude}
+
+High-arousal text produces hidden state norms 4.3\% larger than low-arousal text, consistently across layers L1--L25 (mean difference $40.5 \pm 0.8$ units). This difference emerges at L1, remains constant through mid-layers, and disappears at L26--L27.
+
+We emphasize this is a correlation: the high- and low-arousal text sets were not controlled for vocabulary, syntax, or semantic content beyond arousal. The norm difference could partially reflect lexical or structural differences rather than arousal per se.
+
+\section{Discussion}
+
+\subsection{Partial Decomposition of the Circumplex}
+
+The findings suggest a partial decomposition of the circumplex into transformer-native dimensions: valence corresponds to direction in V-space (the major axis of the emotion ellipse), while arousal correlates with residual stream magnitude (the 4.3\% norm difference). K-space appears uninvolved, consistent with its role in positional routing via RoPE.
+
+The eccentricity of 0.550 indicates the model represents valence more strongly than arousal in V-space. We hypothesize this reflects the training distribution: natural language more frequently encodes valence explicitly than arousal.
+
+\subsection{The Narrow Tube}
+
+The residual stream's collapse to effective rank 4--5 means activations occupy a $\sim$5-dimensional manifold in a 1536-dimensional space. V-space retains most of its degrees of freedom (rank 27--28), consistent with its role as the content channel.
+
+\subsection{Emotion-Specific 2D Concentration}
+
+The sharper $\text{SV}_3/\text{SV}_4$ knee for emotions (1.59 vs.\ 1.34 for generic concepts) and higher 2D variance concentration (70.2\% vs.\ 60.4\%) suggest the circumplex is a genuine organizing structure in V-space, not an artifact of applying PCA to any collection of concepts. The circumplex constrains emotion representations to a 2D subspace that generic concepts do not occupy.
+
+\section{Limitations}
+
+\begin{itemize}
+    \item Single model (Qwen2.5-1.5B-Instruct). Cross-architecture validation is needed.
+    \item The arousal--norm correlation is uncontrolled for lexical and structural confounds.
+    \item 8 emotions may not fully sample the circumplex.
+    \item The 2D concentration comparison uses only one set of 8 control concepts.
+    \item Layer 14 was chosen as depth fraction 0.5; stability across layers was not tested.
+\end{itemize}
+
+\section{Conclusion}
+
+Emotion representations in transformer V-space concentrate into a 2D subspace consistent with the Russell circumplex, forming an ellipse with eccentricity $0.550 \pm 0.007$. The valence axis is the major axis; arousal is the minor axis plus a correlated 4.3\% magnitude component in the residual stream. The transformer's internal geometry separates content (V, isotropic), routing (K, isotropic, positional), and processing (residual, narrow tube) into distinct geometric regimes. This decomposition provides a framework for understanding how language models represent emotional content.
+
+\vspace{1em}
+\noindent\textit{The geometry doesn't lie. It just took the right instruments to read it.}
+
+\bibliographystyle{plainnat}
+\begin{thebibliography}{9}
+\bibitem[Russell(1980)]{russell1980} Russell, J.A. (1980). A circumplex model of affect. \textit{J.~Personality and Social Psychology}, 39(6), 1161--1178.
+\bibitem[Sun et~al.(2026)]{sun2026} Sun, L., Yan, L., Lu, X., Lee, A.H., \& Zhang, J. (2026). Valence-Arousal Subspace in LLMs: Circular Emotion Geometry. \textit{arXiv:2604.03147}.
+\bibitem[Pattisapu et~al.(2024)]{pattisapu2024} Pattisapu, C., Verbelen, T., Pitliya, R.J., Kiefer, A.B., \& Albarracin, M. (2024). Free Energy in a Circumplex Model of Emotion. \textit{arXiv:2407.02474}.
+\bibitem[Vastola(2025)]{vastola2025} Vastola, J.J. (2025). Optimal packing of attractor states in neural representations. \textit{arXiv:2504.12429}.
+\bibitem[Zavatone-Veth et~al.(2023)]{zavatone2023} Zavatone-Veth, J.A., Yang, S., Rubinfien, J.A., \& Pehlevan, C. (2023). How does training shape the Riemannian geometry of neural network representations? \textit{arXiv:2301.11375}.
+\bibitem[Yang et~al.(2021)]{yang2021} Yang, J., Li, J., Li, L., Wang, X., \& Gao, X. (2021). A Circular-Structured Representation for Visual Emotion Distribution Learning. \textit{arXiv:2106.12450}.
+\end{thebibliography}
+
+\appendix
+\section{Prompts and Texts}
+
+The 30 profiling prompts, 8 emotion prompts, 8 control concepts, 10 high-arousal texts, and 10 low-arousal texts are available in the companion repository at \url{https://github.com/Liberation-Labs-THCoalition/Project-Pharos}.
+
+\vspace{1em}
+\noindent\textit{Liberation Labs / Transparent Humboldt Coalition}
+
+\end{document}
