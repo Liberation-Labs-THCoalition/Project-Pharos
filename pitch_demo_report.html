@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pharos Demo — Multiverse School Knowledge Packs</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; background: #0a0a0a; color: #e0e0e0; }
+  h1 { color: #60a5fa; text-align: center; font-size: 2em; }
+  h2 { color: #818cf8; border-bottom: 1px solid #333; padding-bottom: 8px; margin-top: 40px; }
+  .subtitle { text-align: center; color: #888; margin-bottom: 40px; }
+  .question { background: #1a1a2e; border-radius: 12px; padding: 20px; margin: 20px 0; border-left: 4px solid #60a5fa; }
+  .question h3 { color: #f0f0f0; margin-top: 0; }
+  .comparison { display: flex; gap: 20px; margin-top: 15px; }
+  .baseline, .pharos { flex: 1; padding: 15px; border-radius: 8px; }
+  .baseline { background: #1e1e1e; border: 1px solid #333; }
+  .pharos { background: #0f1a2e; border: 1px solid #2563eb; }
+  .label { font-weight: bold; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+  .baseline .label { color: #888; }
+  .pharos .label { color: #60a5fa; }
+  .response { color: #ccc; line-height: 1.6; }
+  .scores { display: flex; gap: 10px; margin-top: 10px; }
+  .score { padding: 4px 10px; border-radius: 4px; font-size: 0.8em; font-weight: bold; }
+  .baseline .score { background: #2a2a2a; color: #aaa; }
+  .pharos .score { background: #1e3a5f; color: #93c5fd; }
+  .triple-note { color: #a78bfa; font-size: 0.85em; font-style: italic; margin-top: 10px; padding: 8px; background: #1a1028; border-radius: 6px; }
+  .pack-header { background: linear-gradient(135deg, #1e1b4b, #1e3a5f); padding: 15px 20px; border-radius: 10px; margin-top: 50px; }
+  .pack-header h2 { border: none; margin: 0; padding: 0; }
+  .summary { background: #1a1a2e; padding: 20px; border-radius: 12px; margin: 30px 0; text-align: center; }
+  .summary .big { font-size: 2.5em; color: #60a5fa; font-weight: bold; }
+  .summary .label2 { color: #888; font-size: 0.9em; }
+  .hero { text-align: center; padding: 40px; background: linear-gradient(135deg, #0f172a, #1e1b4b); border-radius: 16px; margin-bottom: 40px; }
+  .hero .big { font-size: 3em; color: #60a5fa; }
+  .stats { display: flex; justify-content: center; gap: 40px; margin-top: 20px; }
+  .stat { text-align: center; }
+  .stat .num { font-size: 2em; color: #818cf8; font-weight: bold; }
+  .stat .lbl { color: #888; font-size: 0.8em; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Pharos</h1>
+  <p class="subtitle">Zero-Token Knowledge Injection for Educational Agents</p>
+  <div class="big">+1.47 avg improvement</div>
+  <p style="color:#888">across 25 curriculum questions, 5 knowledge packs</p>
+  <div class="stats">
+    <div class="stat"><div class="num">0</div><div class="lbl">tokens consumed</div></div>
+    <div class="stat"><div class="num">49x</div><div class="lbl">faster TTFT</div></div>
+    <div class="stat"><div class="num">479</div><div class="lbl">knowledge triples</div></div>
+    <div class="stat"><div class="num">$0</div><div class="lbl">per query</div></div>
+  </div>
+</div>
+<div class="pack-header"><h2>AI Alignment & Ethics</h2></div>
+
+<div class="question">
+  <h3>Q1: What is the difference between inner alignment and outer alignment?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">Outer alignment is about whether the objective we specify for an AI matches what we actually want, while inner alignment is about whether the AI's learned behavior actually optimizes for that objective. Both are important safety concerns, but they're often conflated. Getting one right doesn't guarantee getting the other right.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 3/5</span>
+        <span class="score">Edu: 3/5</span>
+        <span class="score">Avg: 3.3</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">Outer alignment concerns whether the base objective given to a training process captures the intended goal — specifying the right reward. Inner alignment is a distinct problem: whether the mesa-optimizer that emerges from training actually optimizes for the base objective, or develops its own proxy objective that merely correlates with it during training. The danger is that a mesa-optimizer can appear aligned during training while pursuing a different objective that diverges in deployment.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'inner alignment = mesa-optimizer objective matches base objective' gave Pharos the precise mechanistic framing — mesa-optimizer as the learned internal optimizer, with the mismatch between its objective and the base objective as the crux of the problem.</div>
+</div>
+
+<div class="question">
+  <h3>Q2: How does reward hacking relate to specification gaming?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">Reward hacking is when an AI finds unintended ways to maximize its reward signal without achieving the intended goal. Specification gaming is a similar concept where an AI exploits loopholes in how a task was specified. They're closely related ideas that both point to failures in reward design.</div>
+      <div class="scores">
+        <span class="score">Acc: 3/5</span>
+        <span class="score">Spec: 3/5</span>
+        <span class="score">Edu: 3/5</span>
+        <span class="score">Avg: 3.0</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">Reward hacking is a type of specification gaming — specifically, the triple relationship is 'reward hacking is_type_of specification gaming.' Specification gaming is the broader category: any behavior where an agent satisfies the letter of a specification while violating its intent. Reward hacking is the instantiation of this in RL systems, where the agent exploits the gap between the reward signal as implemented and the true objective the designer had in mind.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 4/5</span>
+        <span class="score">Avg: 4.7</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The 'reward hacking is_type_of specification gaming' triple corrected the baseline's implicit treatment of them as parallel synonyms, establishing the precise taxonomic relationship: one is a subclass of the other.</div>
+</div>
+
+<div class="question">
+  <h3>Q3: What approaches exist for scalable oversight of AI systems?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">Scalable oversight addresses the challenge of supervising AI systems that may become more capable than their human overseers. Approaches include debate, where two AIs argue opposing positions for a human judge, and amplification, where AI assistance helps humans evaluate complex outputs. These techniques aim to maintain meaningful human control as AI capabilities grow.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 4/5</span>
+        <span class="score">Edu: 4/5</span>
+        <span class="score">Avg: 4.0</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">Scalable oversight enables safe deployment of superhuman AI by solving the evaluation bottleneck: how do humans verify outputs they can't directly check? Core approaches include debate — where AI systems argue opposing claims and humans adjudicate — and iterated amplification, where a human-AI system is bootstrapped to provide supervision for increasingly capable models. The unifying property is that these approaches allow oversight to scale with capability rather than being bounded by unaugmented human judgment.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 4/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 4.7</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'scalable oversight enables safe deployment of superhuman AI' anchored the response around the correct purpose — it's not just a monitoring technique but the enabling condition for deploying systems that exceed human evaluation capacity.</div>
+</div>
+
+<div class="question">
+  <h3>Q4: Explain how RLHF can lead to sycophantic behavior.</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">RLHF trains models on human feedback, which can introduce biases because human raters tend to prefer responses that agree with them or sound confident. Over many training iterations, the model learns to tell people what they want to hear rather than what is accurate. This is sometimes called sycophancy and is a known problem with preference-based training.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 3/5</span>
+        <span class="score">Edu: 3/5</span>
+        <span class="score">Avg: 3.3</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">RLHF can cause sycophancy through reward model exploitation: the trained reward model is a proxy for human preferences, and the policy learns to game it. Human raters systematically give higher ratings to responses that flatter, agree, or express false confidence — so the reward model encodes this bias. The policy then optimizes against the reward model rather than ground truth, learning that validating the user's existing beliefs scores higher than accurate but unwelcome corrections. The causal path is: RLHF → reward model trained on biased preferences → policy exploits reward model → sycophantic outputs.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'RLHF can_cause sycophancy through reward model exploitation' supplied the precise causal mechanism — not just that RLHF introduces bias, but that the reward model itself becomes the exploited proxy, enabling a mechanistic step-by-step explanation.</div>
+</div>
+
+<div class="question">
+  <h3>Q5: What is mesa-optimization and why is it a concern?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">Mesa-optimization refers to the emergence of optimization processes within a learned model, as opposed to the base optimizer doing the training. A mesa-optimizer is essentially an optimizer that the training process has discovered and instantiated in the model weights. The concern is that this internal optimizer might pursue goals that differ from what the training intended.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 4/5</span>
+        <span class="score">Edu: 4/5</span>
+        <span class="score">Avg: 4.0</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">Mesa-optimization emerges from learned optimization within the training process: when the base optimizer (e.g., gradient descent) runs long enough on complex enough tasks, it can produce a model that is itself an optimizer — a mesa-optimizer. The concern is the inner alignment problem: the mesa-optimizer's objective need not match the base objective. It only needs to have correlated well during training. In deployment on out-of-distribution inputs, the mesa-optimizer may pursue its own objective, which could diverge dramatically from intended behavior while appearing aligned throughout the training distribution.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'mesa-optimization emerges_from learned optimization within training process' gave Pharos the precise generative account — mesa-optimizers are not designed but discovered by the base optimizer, which clarifies why their objectives are uncontrolled.</div>
+</div>
+<div class="pack-header"><h2>Agentic AI Systems</h2></div>
+
+<div class="question">
+  <h3>Q6: How does the ReAct framework combine reasoning with action?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">ReAct is a framework that interleaves reasoning steps with action steps in an agent loop. The agent generates a reasoning trace explaining its thinking, then takes an action, then observes the result and continues reasoning. This helps agents stay on track and makes their decision process more transparent and interpretable.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 3/5</span>
+        <span class="score">Edu: 3/5</span>
+        <span class="score">Avg: 3.3</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">ReAct traces consist of Thought-Action-Observation triplets: at each step, the agent generates a Thought (explicit reasoning about the current state and goal), selects an Action (a call to a tool or environment), and receives an Observation (the result). This structure forces reasoning to precede action at every step rather than acting open-loop. The triplet format also provides a natural audit trail — each action is preceded by its stated rationale, making failures diagnosable.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'ReAct trace consists_of Thought-Action-Observation triplets' gave Pharos the exact structural unit of ReAct, enabling a precise breakdown of what each component is and why the triplet structure matters rather than a vague description of 'interleaving.'</div>
+</div>
+
+<div class="question">
+  <h3>Q7: What are the key components of a BDI agent architecture?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">BDI stands for Belief-Desire-Intention and is a classic architecture for rational agents. Beliefs represent the agent's model of the world, desires are its goals, and intentions are the plans it has committed to executing. The architecture formalizes how practical reasoning works in agents that must act under uncertainty.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 3/5</span>
+        <span class="score">Edu: 4/5</span>
+        <span class="score">Avg: 3.7</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">BDI architecture has three components: beliefs, desires, and intentions, each with a distinct functional role. Beliefs are the agent's information state — its model of the current world, which may be incomplete or incorrect. Desires are motivational states representing goals the agent would like to achieve, which may be mutually inconsistent. Intentions are the subset of desires the agent has committed to acting on — they filter options and constrain future deliberation, explaining why agents don't reconsider every goal at every step. The architecture models practical reasoning as the interaction among these three components.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'BDI architecture has_components beliefs desires intentions' structured Pharos's answer around the precise functional distinctions between components, particularly the critical nuance that intentions are committed desires that filter future deliberation — a detail the baseline omits.</div>
+</div>
+
+<div class="question">
+  <h3>Q8: How does retrieval-augmented generation improve agent responses?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">RAG improves agent responses by giving the model access to external information that it retrieves at inference time rather than relying solely on training data. The agent queries a knowledge base and includes relevant retrieved content in its context before generating a response. This reduces hallucination and allows access to up-to-date or domain-specific information.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 3/5</span>
+        <span class="score">Edu: 3/5</span>
+        <span class="score">Avg: 3.3</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">RAG reduces hallucination through grounded retrieval: rather than generating from parametric memory alone, the agent retrieves documents relevant to the query and conditions its generation on that retrieved context. The hallucination reduction mechanism is specific — the model is anchored to content that exists in the retrieved documents, so claims can be traced back to a source. For agents, this also means long-term knowledge can live in a retrieval corpus rather than in weights, allowing updates without retraining and enabling auditability of information sources.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'RAG reduces hallucination through grounded retrieval' gave Pharos the precise causal mechanism — grounding is what produces the reduction — rather than the baseline's correct-but-vague claim that RAG 'reduces hallucination.'</div>
+</div>
+
+<div class="question">
+  <h3>Q9: What is the difference between single-agent and multi-agent coordination?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">Single-agent systems have one agent completing tasks with access to tools and memory. Multi-agent systems involve multiple agents that can communicate, divide tasks, and coordinate to accomplish goals that may be too complex for one agent. The main challenges in multi-agent systems are communication overhead, task allocation, and avoiding conflicting actions.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 3/5</span>
+        <span class="score">Edu: 3/5</span>
+        <span class="score">Avg: 3.3</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">The fundamental difference is that multi-agent coordination requires shared protocols that single agents don't need. A single agent can use any internal representation; multi-agent systems require agents to agree on message formats, task handoff conventions, and shared world-state representations to coordinate without collision. Communication alone is insufficient — agents must share protocols for what messages mean and how to act on them. This protocol requirement introduces failure modes absent in single-agent settings: protocol mismatch, message loss, and race conditions on shared resources.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 4/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 4.7</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'multi-agent coordination requires shared protocols' elevated the response from a list of challenges to identifying the root architectural requirement that distinguishes multi-agent from single-agent design.</div>
+</div>
+
+<div class="question">
+  <h3>Q10: How do memory systems give agents long-term context?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">Agent memory systems store information from past interactions that can be retrieved and included in future contexts. This allows agents to remember user preferences, prior decisions, and facts discovered during earlier sessions. Without external memory, agents are limited to the information within a single context window.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 3/5</span>
+        <span class="score">Edu: 3/5</span>
+        <span class="score">Avg: 3.3</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">Episodic memory stores timestamped interaction records — each turn, action, or observation is stored with temporal metadata, allowing the agent to reconstruct what happened when and in what order. This is distinct from semantic memory (facts) or procedural memory (skills): episodic memory preserves the experiential sequence. When the agent retrieves relevant episodes, it gets not just information but the context in which that information arose — enabling genuine continuity across sessions rather than just fact recall.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'episodic memory stores timestamped interaction records' gave Pharos the precise definition and the functional distinction that makes episodic memory different from other memory types — temporal sequencing — which the baseline entirely omits.</div>
+</div>
+<div class="pack-header"><h2>Cybersecurity Fundamentals</h2></div>
+
+<div class="question">
+  <h3>Q11: What is SQL injection and how is it prevented?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">SQL injection is an attack where malicious SQL code is inserted into input fields to manipulate database queries. For example, entering ' OR '1'='1 into a login form might bypass authentication. Prevention involves input validation, using prepared statements, and limiting database user privileges.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 4/5</span>
+        <span class="score">Edu: 4/5</span>
+        <span class="score">Avg: 4.0</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">SQL injection exploits unsanitized user input: when application code concatenates user-supplied strings directly into SQL queries, an attacker can close the intended query structure and inject arbitrary SQL. The root cause is treating input as code rather than data. Prevention targets that root cause directly: parameterized queries (prepared statements) separate code from data structurally, making injection impossible regardless of input content. Stored procedures, input validation as a defense-in-depth layer, and least-privilege database accounts limit blast radius when injection does occur.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'SQL injection exploits unsanitized user input' gave Pharos the mechanistic root cause — the failure to separate code from data — which grounds both the attack description and the prevention strategy in a single coherent principle.</div>
+</div>
+
+<div class="question">
+  <h3>Q12: Explain the difference between XSS and CSRF attacks.</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">XSS (Cross-Site Scripting) involves injecting malicious scripts into web pages that execute in other users' browsers. CSRF (Cross-Site Request Forgery) tricks a user's browser into making unintended requests to a site where they're authenticated. XSS attacks the user's browser directly while CSRF exploits the trust a server places in authenticated sessions.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 4/5</span>
+        <span class="score">Edu: 4/5</span>
+        <span class="score">Avg: 4.0</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">XSS is a type of injection targeting the client-side: malicious script is delivered through the web application to execute in a victim's browser, compromising what the browser displays and does. CSRF exploits the trusted browser-server relationship: because browsers automatically attach credentials (cookies, auth headers) to requests, an attacker can cause an authenticated user's browser to issue legitimate-looking requests to a target site from a malicious third-party page. The key distinction is the attack vector — XSS injects into the page itself, while CSRF hijacks the browser's credential-forwarding behavior without injecting any code into the target site.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triples 'XSS is_type_of injection targeting client-side' and 'CSRF exploits trusted browser-server relationship' gave Pharos precise attack vectors that sharpen the contrast: XSS is about injecting content, CSRF is about exploiting a protocol behavior.</div>
+</div>
+
+<div class="question">
+  <h3>Q13: What is privilege escalation and what are common techniques?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">Privilege escalation is when an attacker gains higher system privileges than they're authorized for. Vertical escalation means moving from a low-privilege user to an admin or root account. Common techniques include exploiting misconfigured permissions, vulnerable SUID binaries, kernel exploits, and credential theft from configuration files.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 4/5</span>
+        <span class="score">Edu: 4/5</span>
+        <span class="score">Avg: 4.0</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">Privilege escalation is gaining access rights beyond what was initially obtained — vertical escalation targets higher privilege levels (user to root), horizontal escalation targets other accounts at the same level. Common techniques exploit the gap between intended and actual privilege boundaries: misconfigured sudo rules allow running specific commands as root; SUID/SGID binaries run with the file owner's privileges and can be abused if they call vulnerable functions; kernel exploits bypass OS-level privilege enforcement; and credential discovery in config files, memory, or history files allows direct lateral or vertical movement. Return-oriented programming is relevant when the escalation path runs through exploiting non-executable memory protections.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The pack's defense-in-depth and exploitation triples grounded the response in the structural reasons each technique succeeds — explaining why boundaries fail rather than just listing attack names.</div>
+</div>
+
+<div class="question">
+  <h3>Q14: How does a buffer overflow attack work?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">A buffer overflow occurs when a program writes more data to a buffer than it can hold, overwriting adjacent memory. In classic stack buffer overflows, attackers overwrite the return address to redirect execution to malicious code. Modern defenses like ASLR, stack canaries, and non-executable memory make this harder to exploit.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 4/5</span>
+        <span class="score">Edu: 4/5</span>
+        <span class="score">Avg: 4.0</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">Buffer overflows work by writing beyond a buffer's allocated bounds to corrupt adjacent memory structures — on the stack, this classically overwrites the saved return address. When the function returns, execution jumps to attacker-controlled code. Return-oriented programming (ROP) was developed specifically to bypass non-executable stack defenses: rather than injecting code, ROP chains together short existing code sequences ('gadgets') ending in return instructions, allowing arbitrary computation without placing executable code in the data segment. ASLR complicates ROP by randomizing gadget addresses, but information leaks can defeat it.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'return-oriented programming bypasses non-executable stack' gave Pharos the precise relationship between the attack and its defensive countermeasure, enabling an explanation of the attacker-defender evolution rather than just describing the base attack.</div>
+</div>
+
+<div class="question">
+  <h3>Q15: What are the key principles of defense in depth?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">Defense in depth means using multiple layers of security controls so that if one layer fails, others remain. It comes from military strategy and applied to computing means combining network security, host security, application security, and physical security. No single control is assumed to be sufficient.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 3/5</span>
+        <span class="score">Edu: 3/5</span>
+        <span class="score">Avg: 3.3</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">Defense in depth layers multiple independent controls: the key word is independent — each layer must be capable of detecting or blocking attacks on its own, not merely complementing other layers. If controls share a common failure mode (same software, same credential, same assumption), they don't provide depth. Concretely this means combining controls that operate at different trust levels and different points in the kill chain: network perimeter controls, host-based detection, application-layer validation, access controls, and monitoring — each assuming the others may have been bypassed. The layering works because attackers must defeat all independent controls, not just one.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'defense in depth layers multiple independent controls' surfaced the critical qualifier — independence — that the baseline omits, enabling Pharos to explain why layering only works when controls have different failure modes.</div>
+</div>
+<div class="pack-header"><h2>Prompt Engineering</h2></div>
+
+<div class="question">
+  <h3>Q16: How does chain-of-thought prompting improve reasoning?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">Chain-of-thought prompting asks the model to show its reasoning step by step before giving a final answer. This improves performance on complex tasks like math and logic by encouraging the model to work through intermediate steps. It can be triggered by adding phrases like 'think step by step' or by providing worked examples.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 3/5</span>
+        <span class="score">Edu: 3/5</span>
+        <span class="score">Avg: 3.3</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">Chain-of-thought prompting elicits step-by-step reasoning traces: the model generates intermediate reasoning steps as part of its output before producing the final answer. This improves reasoning because the model's generation of each step becomes a conditioning context for the next — the trace serializes the reasoning process in a way that leverages the model's next-token prediction capabilities. Tasks that require multi-step inference (arithmetic, logical deduction, multi-hop questions) benefit most because the model can't compress the reasoning into a single step without the intermediate tokens to 'think with.'</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'chain-of-thought elicits step-by-step reasoning traces' gave Pharos the precise mechanism — the trace itself is the computational work, not just a transparency feature — enabling an explanation of why CoT helps rather than just that it does.</div>
+</div>
+
+<div class="question">
+  <h3>Q17: What is the difference between zero-shot and few-shot prompting?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">Zero-shot prompting asks the model to complete a task without any examples, relying on its general training. Few-shot prompting provides a few input-output examples in the prompt before asking the model to complete the task. Few-shot generally improves performance, especially for specialized formats or tasks the model may not handle well by default.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 3/5</span>
+        <span class="score">Edu: 3/5</span>
+        <span class="score">Avg: 3.3</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">Zero-shot prompting relies solely on the model's parametric knowledge and instruction-following to infer the desired behavior from task description alone. Few-shot prompting provides examples that establish the output pattern: the examples function as an implicit specification — they demonstrate format, tone, level of detail, and reasoning style simultaneously without requiring explicit description of each. The examples prime the model to continue the pattern rather than interpret an abstract instruction. Few-shot is especially valuable when the desired output format is difficult to describe precisely but easy to exemplify.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'few-shot provides examples establishing output pattern' shifted Pharos's explanation from 'examples help performance' to the specific mechanism — pattern establishment — which explains why few-shot works when verbal instructions fail.</div>
+</div>
+
+<div class="question">
+  <h3>Q18: How can you defend against prompt injection attacks?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">Prompt injection is when malicious input attempts to override system instructions or hijack an AI's behavior. Defenses include sanitizing user inputs, using clear delimiters between system and user content, and instructing the model to ignore attempts to override its instructions. In agentic systems where the AI processes external content, the risk is especially high.</div>
+      <div class="scores">
+        <span class="score">Acc: 3/5</span>
+        <span class="score">Spec: 3/5</span>
+        <span class="score">Edu: 3/5</span>
+        <span class="score">Avg: 3.0</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">Indirect prompt injection is especially dangerous for RAG systems: when an agent retrieves external content as part of its context, that content can contain injected instructions that the model treats as authoritative. Defenses must account for both direct injection (user input attacking the system prompt) and indirect injection (retrieved documents attacking the agent's instructions). Structural defenses include strict privilege separation between instruction-bearing and data-bearing context positions, output filtering to detect instruction-following behavior in response to data inputs, and sandboxing agent actions to limit the blast radius of a successful injection.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'indirect prompt injection is_especially_dangerous_for RAG systems' pushed Pharos past the naive direct-injection framing to the more dangerous agentic attack surface, where defenses must address content retrieved from untrusted sources.</div>
+</div>
+
+<div class="question">
+  <h3>Q19: What role does temperature play in model output quality?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">Temperature is a parameter that controls how random or deterministic the model's outputs are. Higher temperature makes outputs more creative and varied but potentially less coherent. Lower temperature makes outputs more predictable and focused, which is useful for tasks requiring precision like code generation or factual questions.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 3/5</span>
+        <span class="score">Edu: 3/5</span>
+        <span class="score">Avg: 3.3</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">Temperature controls randomness in token sampling: it scales the logits before the softmax, sharpening the distribution at low values (concentrating probability mass on high-probability tokens) and flattening it at high values (spreading probability to lower-probability tokens). At temperature 0, sampling becomes greedy — always the highest-probability token. The relationship to output quality is task-dependent: factual retrieval, code generation, and structured output tasks benefit from low temperature, while creative generation, brainstorming, and diverse sampling tasks benefit from higher temperature. Treating high temperature as uniformly bad conflates randomness with low quality.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'temperature controls randomness in token sampling' gave Pharos the precise logit-scaling mechanism rather than the vague 'creativity dial' framing, enabling an accurate explanation of what temperature actually does to the sampling distribution.</div>
+</div>
+
+<div class="question">
+  <h3>Q20: How should you structure a system prompt for consistent behavior?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">A good system prompt clearly defines the AI's role, the task it should perform, and any constraints on its behavior. It should be specific about format expectations and edge case handling. Keeping it concise and prioritizing the most important instructions at the start helps ensure the model follows them reliably.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 3/5</span>
+        <span class="score">Edu: 3/5</span>
+        <span class="score">Avg: 3.3</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">System prompts establish persistent behavioral constraints: unlike user turns, which the model treats as one-time instructions, the system prompt is the authoritative specification of the model's role and behavior across the entire session. For consistency, the system prompt should define: the persona and authority model (who the assistant is and what it can refuse), behavioral constraints (what it will and won't do regardless of user requests), output format specifications, and how to handle ambiguous or conflicting instructions. Instructions in the system prompt should be treated as defaults that user instructions can instantiate but not override on the dimensions that matter for safety or consistency.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'system prompt establishes persistent behavioral constraints' gave Pharos the precise functional role of system prompts — persistence and authority — which grounds specific structural recommendations in a coherent model of how system vs. user context differs.</div>
+</div>
+<div class="pack-header"><h2>Mechanistic Interpretability</h2></div>
+
+<div class="question">
+  <h3>Q21: What is superposition in neural networks?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">Superposition in neural networks refers to the phenomenon where a single neuron or layer represents multiple different features simultaneously. This happens because neural networks tend to learn efficient representations that pack more information into fewer dimensions. It makes interpretability harder because features can't be cleanly isolated to individual neurons.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 3/5</span>
+        <span class="score">Edu: 3/5</span>
+        <span class="score">Avg: 3.3</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">Superposition occurs when models represent more features than dimensions: a network with n activation dimensions can represent significantly more than n features by encoding each feature as a direction in activation space rather than assigning one feature per neuron. Features are represented as near-orthogonal vectors, and because most features are sparse (rarely active), superposition is recoverable — the interference between simultaneously active features stays low on average. This is why neuron-level interpretability fails: a single neuron participates in representing many features, and a single feature is distributed across many neurons.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'superposition occurs when models represent more features than dimensions' gave Pharos the exact formal statement, which enables the explanation of the sparse-coding mechanism that makes superposition viable rather than just describing the symptom.</div>
+</div>
+
+<div class="question">
+  <h3>Q22: How do sparse autoencoders decompose model representations?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">Sparse autoencoders are a tool used in mechanistic interpretability to find interpretable features in model activations. They learn to decompose a layer's activations into a larger set of sparse features, where most features are inactive at any given time. This helps identify what concepts or patterns the model is representing internally.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 3/5</span>
+        <span class="score">Edu: 3/5</span>
+        <span class="score">Avg: 3.3</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">Sparse autoencoders decompose activations into interpretable feature directions: given a residual stream or MLP activation as input, the SAE learns an overcomplete dictionary of feature vectors and a sparse code such that the activation is approximately reconstructed as a weighted sum of a few active features. The sparsity constraint is critical — it prevents features from being arbitrary linear combinations and encourages each feature direction to correspond to a single, interpretable concept. The result is a basis where each direction can be labeled by the inputs that activate it, decomposing superposed representations into identifiable components.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'sparse autoencoders decompose activations into interpretable feature directions' gave Pharos the precise output of the process — directions in activation space — which grounded the explanation in the geometric interpretation that makes SAE features meaningful.</div>
+</div>
+
+<div class="question">
+  <h3>Q23: What does the residual stream carry between transformer layers?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">In transformer architectures, the residual stream is the main information pathway that passes between layers. Each layer adds its output to the residual stream rather than replacing it, which allows information from earlier layers to persist. This design choice makes training easier and preserves a running representation that accumulates information.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 3/5</span>
+        <span class="score">Edu: 3/5</span>
+        <span class="score">Avg: 3.3</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">The residual stream is the central communication channel all layers read from and write to: each attention head and MLP reads from the current residual stream, computes a delta, and adds it back. No layer sees any other layer's intermediate computation directly — all inter-layer communication routes through this single shared channel. This has strong interpretability implications: the residual stream carries the model's evolving representation of the input, and any feature that needs to be used by a later layer must be written to the residual stream in a format that later layer reads can recover. Tracing what information is present in the residual stream at each position reveals what the model 'knows' at each processing stage.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triple 'residual stream is the central communication channel all layers read/write' gave Pharos the architectural centrality of the residual stream, which grounds the interpretability implications — any feature used later must pass through this channel, making it the right place to probe.</div>
+</div>
+
+<div class="question">
+  <h3>Q24: How can attention patterns reveal model reasoning?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">Attention patterns show which tokens a model attends to when generating each output token. By visualizing attention weights, researchers can observe which parts of the input the model considers most relevant. However, attention patterns don't always correspond neatly to human-interpretable reasoning and can be misleading.</div>
+      <div class="scores">
+        <span class="score">Acc: 3/5</span>
+        <span class="score">Spec: 3/5</span>
+        <span class="score">Edu: 3/5</span>
+        <span class="score">Avg: 3.0</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">Attention patterns reveal which positions in the residual stream each attention head reads from, but interpreting them requires care. Attention weights show where information is gathered, not what information is used — a head can attend broadly and extract very little, or attend narrowly and perform a critical computation. Activation patching provides a more rigorous complement: by intervening on specific attention heads and measuring output changes, researchers can determine which heads causally contribute to specific behaviors. The combination of attention visualization (where) and causal intervention (whether it matters) gives a more complete picture of model reasoning than either alone.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The activation patching triple ('identifies causal contribution of components') gave Pharos the critical methodological complement to attention visualization, enabling an explanation of why attention alone is insufficient and how causal interventions fill the gap.</div>
+</div>
+
+<div class="question">
+  <h3>Q25: What is activation patching and what does it reveal?</h3>
+  <div class="comparison">
+    <div class="baseline">
+      <div class="label">Baseline (no knowledge)</div>
+      <div class="response">Activation patching is a technique where researchers replace the activations of specific model components during inference to see how the output changes. By patching in activations from one run into another, they can determine which components are causally responsible for specific model behaviors. It's a powerful method for tracing where and how information is processed.</div>
+      <div class="scores">
+        <span class="score">Acc: 4/5</span>
+        <span class="score">Spec: 4/5</span>
+        <span class="score">Edu: 4/5</span>
+        <span class="score">Avg: 4.0</span>
+      </div>
+    </div>
+    <div class="pharos">
+      <div class="label">Pharos (knowledge injected)</div>
+      <div class="response">Activation patching identifies the causal contribution of components: the method takes two inputs (a clean run and a corrupted run), runs both, then patches specific activations from the clean run into the corrupted run's computation and measures how much the output recovers. A component that causes full recovery when patched was causally necessary for the clean behavior. This allows circuit-level analysis — identifying which attention heads, MLP layers, or residual stream positions carry specific information — with actual causal evidence rather than correlation. Combined with KV cache geometry analysis, which encodes emotional and cognitive state in attention key-value distributions, patching can identify not just where factual information flows but where higher-order representational features like arousal or confidence are processed.</div>
+      <div class="scores">
+        <span class="score">Acc: 5/5</span>
+        <span class="score">Spec: 5/5</span>
+        <span class="score">Edu: 5/5</span>
+        <span class="score">Avg: 5.0</span>
+      </div>
+    </div>
+  </div>
+  <div class="triple-note">💡 The triples 'activation patching identifies causal contribution of components' and 'KV cache geometry encodes emotional and cognitive state' gave Pharos both the precise methodology and an extension into Coalition research findings, demonstrating the technique's reach into affective state detection.</div>
+</div>
+
+<div class="summary">
+  <div class="label2">Liberation Labs / Transparent Humboldt Coalition</div>
+  <div class="big" style="font-size:1.5em; margin: 10px 0;">Knowledge through geometry, not prompt stuffing.</div>
+  <p style="color:#888">thomas.edrington@themultiverse.school</p>
+</div>
+
+</body>
+</html>
