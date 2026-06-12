@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  pharos:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    container_name: pharos-api
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - pharos-cache:/app/cache
+      - ../packs:/app/packs:ro
+    environment:
+      - MODEL_NAME=${MODEL_NAME:-Qwen/Qwen2.5-1.5B}
+      - PACKS_DIR=/app/packs
+      - CACHE_DIR=/app/cache
+      - MAX_LOADED_PACKS=10
+      - LOG_LEVEL=info
+    deploy:
+      resources:
+        limits:
+          memory: 8G
+
+  # Optional: model server (if not using external Ollama)
+  # Uncomment for self-contained deployment
+  # ollama:
+  #   image: ollama/ollama
+  #   container_name: pharos-ollama
+  #   ports:
+  #     - "11434:11434"
+  #   volumes:
+  #     - ollama-data:/root/.ollama
+
+volumes:
+  pharos-cache:
+  # ollama-data:
