@@ -6,7 +6,26 @@
     "nodes": 137,
     "edges": 91,
     "density": 0.009768140832975525,
-    "encoding_tokens_approx": 1409
+    "encoding_tokens_approx": 1409,
+    "description": ""
+  },
+  {
+    "triples": 35,
+    "nodes": 53,
+    "edges": 35,
+    "density": 0.0127,
+    "encoding_tokens_approx": 1013,
+    "category": "accessible-communication",
+    "description": "Accessible communication: plain language, reading level, screen readers, multilingual considerations, cognitive accessib"
+  },
+  {
+    "triples": 43,
+    "nodes": 72,
+    "edges": 43,
+    "density": 0.0084,
+    "encoding_tokens_approx": 1120,
+    "category": "accounting-fundamentals",
+    "description": "Accounting fundamentals for small orgs and co-ops: bookkeeping, financial statements, nonprofit compliance, common mista"
   },
   {
     "category": "actualism-possibilism-ethics",
@@ -15,25 +34,17 @@
     "nodes": 78,
     "edges": 58,
     "density": 0.019314019314019316,
-    "encoding_tokens_approx": 999
+    "encoding_tokens_approx": 999,
+    "description": ""
   },
   {
-    "category": "environmental-aesthetics",
-    "entries_processed": 20,
-    "triples": 58,
-    "nodes": 95,
-    "edges": 58,
-    "density": 0.012989921612541993,
-    "encoding_tokens_approx": 859
-  },
-  {
-    "category": "feminism-aesthetics",
-    "entries_processed": 20,
-    "triples": 65,
-    "nodes": 116,
-    "edges": 65,
-    "density": 0.009745127436281859,
-    "encoding_tokens_approx": 827
+    "triples": 36,
+    "nodes": 63,
+    "edges": 36,
+    "density": 0.0092,
+    "encoding_tokens_approx": 1044,
+    "category": "administrative-procedure",
+    "description": "Administrative Procedure Act and regulatory process: rulemaking, adjudication, judicial review, FOIA. How the executive "
   },
   {
     "category": "african-ethics",
@@ -42,25 +53,17 @@
     "nodes": 128,
     "edges": 83,
     "density": 0.010211614173228346,
-    "encoding_tokens_approx": 1227
+    "encoding_tokens_approx": 1227,
+    "description": ""
   },
   {
-    "category": "cognition-animal",
-    "entries_processed": 20,
-    "triples": 99,
-    "nodes": 150,
-    "edges": 99,
-    "density": 0.008859060402684563,
-    "encoding_tokens_approx": 1487
-  },
-  {
-    "category": "consciousness-animal",
-    "entries_processed": 20,
-    "triples": 92,
-    "nodes": 147,
-    "edges": 91,
-    "density": 0.008480104370515329,
-    "encoding_tokens_approx": 1339
+    "triples": 33,
+    "nodes": 59,
+    "edges": 33,
+    "density": 0.0096,
+    "encoding_tokens_approx": 1245,
+    "category": "ai-framework-security",
+    "description": "AI/ML framework security: deserialization attacks, eval/exec injection, MCP transport vulnerabilities, model file parsin"
   },
   {
     "category": "animalism",
@@ -69,25 +72,8 @@
     "nodes": 95,
     "edges": 66,
     "density": 0.014781634938409855,
-    "encoding_tokens_approx": 993
-  },
-  {
-    "category": "moral-animal",
-    "entries_processed": 20,
-    "triples": 67,
-    "nodes": 94,
-    "edges": 66,
-    "density": 0.015099519560741249,
-    "encoding_tokens_approx": 1007
-  },
-  {
-    "category": "moral-anti-realism",
-    "entries_processed": 20,
-    "triples": 87,
-    "nodes": 111,
-    "edges": 82,
-    "density": 0.013431613431613431,
-    "encoding_tokens_approx": 1269
+    "encoding_tokens_approx": 993,
+    "description": ""
   },
   {
     "category": "aquinas-moral-political",
@@ -96,16 +82,8 @@
     "nodes": 111,
     "edges": 77,
     "density": 0.012612612612612612,
-    "encoding_tokens_approx": 1139
-  },
-  {
-    "category": "ethics-ancient",
-    "entries_processed": 20,
-    "triples": 94,
-    "nodes": 114,
-    "edges": 91,
-    "density": 0.014128240956373234,
-    "encoding_tokens_approx": 1511
+    "encoding_tokens_approx": 1139,
+    "description": ""
   },
   {
     "category": "aristotle-ethics",
@@ -114,25 +92,8 @@
     "nodes": 133,
     "edges": 112,
     "density": 0.012759170653907496,
-    "encoding_tokens_approx": 1313
-  },
-  {
-    "category": "ethics-ai",
-    "entries_processed": 20,
-    "triples": 91,
-    "nodes": 146,
-    "edges": 91,
-    "density": 0.008597071327350023,
-    "encoding_tokens_approx": 1367
-  },
-  {
-    "category": "informed-consent",
-    "entries_processed": 20,
-    "triples": 90,
-    "nodes": 115,
-    "edges": 84,
-    "density": 0.012814645308924484,
-    "encoding_tokens_approx": 1319
+    "encoding_tokens_approx": 1313,
+    "description": ""
   },
   {
     "category": "autonomy-moral",
@@ -141,34 +102,26 @@
     "nodes": 142,
     "edges": 102,
     "density": 0.010188792328438718,
-    "encoding_tokens_approx": 1591
+    "encoding_tokens_approx": 1591,
+    "description": ""
   },
   {
-    "category": "personal-autonomy",
-    "entries_processed": 20,
-    "triples": 91,
-    "nodes": 133,
-    "edges": 90,
-    "density": 0.010252904989747095,
-    "encoding_tokens_approx": 1507
+    "triples": 43,
+    "nodes": 61,
+    "edges": 43,
+    "density": 0.0117,
+    "encoding_tokens_approx": 987,
+    "category": "benefits-navigation",
+    "description": "US federal benefits navigation: SNAP, Medicaid, SSI, TANF, Section 8, WIC. Eligibility basics and application flows for "
   },
   {
-    "category": "ethics-belief",
-    "entries_processed": 20,
-    "triples": 60,
-    "nodes": 79,
-    "edges": 59,
-    "density": 0.019149626744563452,
-    "encoding_tokens_approx": 973
-  },
-  {
-    "category": "feminist-philosophy-biology",
-    "entries_processed": 20,
-    "triples": 99,
-    "nodes": 144,
-    "edges": 99,
-    "density": 0.009615384615384616,
-    "encoding_tokens_approx": 1499
+    "triples": 27,
+    "nodes": 50,
+    "edges": 27,
+    "density": 0.011,
+    "encoding_tokens_approx": 1002,
+    "category": "bicycle-repair",
+    "description": "Bicycle repair fundamentals: flat fixes, brake adjustment, chain maintenance, derailleur tuning, wheel truing. For commu"
   },
   {
     "category": "bradley-moral-political",
@@ -177,16 +130,8 @@
     "nodes": 142,
     "edges": 104,
     "density": 0.01038857257017281,
-    "encoding_tokens_approx": 1405
-  },
-  {
-    "category": "ethics-indian-buddhism",
-    "entries_processed": 20,
-    "triples": 80,
-    "nodes": 121,
-    "edges": 79,
-    "density": 0.010881542699724517,
-    "encoding_tokens_approx": 1187
+    "encoding_tokens_approx": 1405,
+    "description": ""
   },
   {
     "category": "butler-moral",
@@ -195,43 +140,26 @@
     "nodes": 145,
     "edges": 102,
     "density": 0.009770114942528735,
-    "encoding_tokens_approx": 1587
+    "encoding_tokens_approx": 1587,
+    "description": ""
   },
   {
-    "category": "reasoning-moral",
-    "entries_processed": 20,
-    "triples": 74,
-    "nodes": 111,
-    "edges": 74,
-    "density": 0.012121212121212121,
-    "encoding_tokens_approx": 1173
+    "triples": 36,
+    "nodes": 51,
+    "edges": 36,
+    "density": 0.0141,
+    "encoding_tokens_approx": 853,
+    "category": "causal-inference",
+    "description": "Causal inference fundamentals: DAGs, confounders, colliders, do-calculus, common pitfalls. For reasoning agents that nee"
   },
   {
-    "category": "moral-character",
-    "entries_processed": 20,
-    "triples": 80,
-    "nodes": 113,
-    "edges": 80,
-    "density": 0.012642225031605562,
-    "encoding_tokens_approx": 1177
-  },
-  {
-    "category": "moral-character-empirical",
-    "entries_processed": 20,
-    "triples": 66,
-    "nodes": 91,
-    "edges": 65,
-    "density": 0.015873015873015872,
-    "encoding_tokens_approx": 919
-  },
-  {
-    "category": "ethics-chinese",
-    "entries_processed": 20,
-    "triples": 83,
-    "nodes": 118,
-    "edges": 79,
-    "density": 0.0114442995798928,
-    "encoding_tokens_approx": 1169
+    "triples": 44,
+    "nodes": 84,
+    "edges": 44,
+    "density": 0.0063,
+    "encoding_tokens_approx": 2504,
+    "category": "chemistry-fundamentals",
+    "description": "Chemistry fundamentals: periodic table properties, bonding, reactions, stoichiometry, acids/bases, organic functional gr"
   },
   {
     "category": "civil-rights",
@@ -240,25 +168,36 @@
     "nodes": 83,
     "edges": 59,
     "density": 0.017337643255950632,
-    "encoding_tokens_approx": 967
+    "encoding_tokens_approx": 967,
+    "description": ""
   },
   {
-    "category": "justice-climate",
+    "category": "cognition-animal",
     "entries_processed": 20,
-    "triples": 68,
-    "nodes": 115,
-    "edges": 68,
-    "density": 0.010373760488176963,
-    "encoding_tokens_approx": 959
+    "triples": 99,
+    "nodes": 150,
+    "edges": 99,
+    "density": 0.008859060402684563,
+    "encoding_tokens_approx": 1487,
+    "description": ""
   },
   {
-    "category": "moral-cognitivism",
-    "entries_processed": 20,
-    "triples": 83,
-    "nodes": 104,
-    "edges": 81,
-    "density": 0.015123226288274831,
-    "encoding_tokens_approx": 1305
+    "triples": 0,
+    "nodes": 0,
+    "edges": 0,
+    "density": 0,
+    "encoding_tokens_approx": 0,
+    "category": "communications-codes",
+    "description": "Communication codes and signals: Morse code, NATO phonetic alphabet, signal flags, radio frequencies"
+  },
+  {
+    "triples": 50,
+    "nodes": 94,
+    "edges": 50,
+    "density": 0.0057,
+    "encoding_tokens_approx": 2160,
+    "category": "computer-science-fundamentals",
+    "description": "Computer science fundamentals: data structures (arrays, trees, hash maps, graphs), algorithm complexity (Big O), sorting"
   },
   {
     "category": "computing-responsibility",
@@ -267,6 +206,961 @@
     "nodes": 127,
     "edges": 83,
     "density": 0.010373703287089114,
-    "encoding_tokens_approx": 1185
+    "encoding_tokens_approx": 1185,
+    "description": ""
+  },
+  {
+    "category": "consciousness-animal",
+    "entries_processed": 20,
+    "triples": 92,
+    "nodes": 147,
+    "edges": 91,
+    "density": 0.008480104370515329,
+    "encoding_tokens_approx": 1339,
+    "description": ""
+  },
+  {
+    "triples": 36,
+    "nodes": 67,
+    "edges": 36,
+    "density": 0.0081,
+    "encoding_tokens_approx": 1156,
+    "category": "cooperative-legal-structures",
+    "description": "Cooperative and mutual aid legal structures: co-op formation, 501(c)(3), fiscal sponsorship, LLC vs co-op, bylaws, democ"
+  },
+  {
+    "triples": 45,
+    "nodes": 68,
+    "edges": 45,
+    "density": 0.0099,
+    "encoding_tokens_approx": 1241,
+    "category": "corruption-detection",
+    "description": "Corruption and fraud detection patterns: red flags in public records, financial statements, procurement, and organizatio"
+  },
+  {
+    "triples": 40,
+    "nodes": 75,
+    "edges": 40,
+    "density": 0.0072,
+    "encoding_tokens_approx": 1777,
+    "category": "court-alabama",
+    "description": "Alabama state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations"
+  },
+  {
+    "triples": 43,
+    "nodes": 59,
+    "edges": 43,
+    "density": 0.0126,
+    "encoding_tokens_approx": 2029,
+    "category": "court-alaska",
+    "description": "Alaska state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations."
+  },
+  {
+    "triples": 38,
+    "nodes": 73,
+    "edges": 38,
+    "density": 0.0072,
+    "encoding_tokens_approx": 2337,
+    "category": "court-arizona",
+    "description": "Arizona state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations"
+  },
+  {
+    "triples": 41,
+    "nodes": 78,
+    "edges": 41,
+    "density": 0.0068,
+    "encoding_tokens_approx": 1990,
+    "category": "court-arkansas",
+    "description": "Arkansas state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitation"
+  },
+  {
+    "triples": 48,
+    "nodes": 84,
+    "edges": 48,
+    "density": 0.0069,
+    "encoding_tokens_approx": 1824,
+    "category": "court-california",
+    "description": "California state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitati"
+  },
+  {
+    "triples": 40,
+    "nodes": 78,
+    "edges": 40,
+    "density": 0.0067,
+    "encoding_tokens_approx": 2156,
+    "category": "court-colorado",
+    "description": "Colorado state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitation"
+  },
+  {
+    "triples": 41,
+    "nodes": 70,
+    "edges": 41,
+    "density": 0.0085,
+    "encoding_tokens_approx": 2459,
+    "category": "court-connecticut",
+    "description": "Connecticut state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitat"
+  },
+  {
+    "triples": 40,
+    "nodes": 76,
+    "edges": 40,
+    "density": 0.007,
+    "encoding_tokens_approx": 2191,
+    "category": "court-delaware",
+    "description": "Delaware state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitation"
+  },
+  {
+    "triples": 40,
+    "nodes": 75,
+    "edges": 40,
+    "density": 0.0072,
+    "encoding_tokens_approx": 2058,
+    "category": "court-florida",
+    "description": "Florida state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations"
+  },
+  {
+    "triples": 40,
+    "nodes": 78,
+    "edges": 40,
+    "density": 0.0067,
+    "encoding_tokens_approx": 2214,
+    "category": "court-georgia",
+    "description": "Georgia state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations"
+  },
+  {
+    "triples": 39,
+    "nodes": 77,
+    "edges": 39,
+    "density": 0.0067,
+    "encoding_tokens_approx": 1938,
+    "category": "court-hawaii",
+    "description": "Hawaii state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations."
+  },
+  {
+    "triples": 43,
+    "nodes": 64,
+    "edges": 43,
+    "density": 0.0107,
+    "encoding_tokens_approx": 2110,
+    "category": "court-idaho",
+    "description": "Idaho state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations."
+  },
+  {
+    "triples": 51,
+    "nodes": 85,
+    "edges": 51,
+    "density": 0.0071,
+    "encoding_tokens_approx": 1941,
+    "category": "court-illinois",
+    "description": "Illinois state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitation"
+  },
+  {
+    "triples": 40,
+    "nodes": 72,
+    "edges": 40,
+    "density": 0.0078,
+    "encoding_tokens_approx": 2259,
+    "category": "court-indiana",
+    "description": "Indiana state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations"
+  },
+  {
+    "triples": 39,
+    "nodes": 74,
+    "edges": 39,
+    "density": 0.0072,
+    "encoding_tokens_approx": 1970,
+    "category": "court-iowa",
+    "description": "Iowa state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations."
+  },
+  {
+    "triples": 44,
+    "nodes": 61,
+    "edges": 44,
+    "density": 0.012,
+    "encoding_tokens_approx": 2263,
+    "category": "court-kansas",
+    "description": "Kansas state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations."
+  },
+  {
+    "triples": 41,
+    "nodes": 54,
+    "edges": 41,
+    "density": 0.0143,
+    "encoding_tokens_approx": 2249,
+    "category": "court-kentucky",
+    "description": "Kentucky state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitation"
+  },
+  {
+    "triples": 41,
+    "nodes": 42,
+    "edges": 41,
+    "density": 0.0238,
+    "encoding_tokens_approx": 2881,
+    "category": "court-louisiana",
+    "description": "Louisiana state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitatio"
+  },
+  {
+    "triples": 40,
+    "nodes": 76,
+    "edges": 40,
+    "density": 0.007,
+    "encoding_tokens_approx": 1913,
+    "category": "court-maine",
+    "description": "Maine state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations."
+  },
+  {
+    "triples": 40,
+    "nodes": 68,
+    "edges": 40,
+    "density": 0.0088,
+    "encoding_tokens_approx": 2207,
+    "category": "court-maryland",
+    "description": "Maryland state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitation"
+  },
+  {
+    "triples": 41,
+    "nodes": 81,
+    "edges": 41,
+    "density": 0.0063,
+    "encoding_tokens_approx": 1981,
+    "category": "court-massachusetts",
+    "description": "Massachusetts state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limit"
+  },
+  {
+    "triples": 47,
+    "nodes": 72,
+    "edges": 47,
+    "density": 0.0092,
+    "encoding_tokens_approx": 1854,
+    "category": "court-michigan",
+    "description": "Michigan state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitation"
+  },
+  {
+    "triples": 43,
+    "nodes": 85,
+    "edges": 43,
+    "density": 0.006,
+    "encoding_tokens_approx": 1958,
+    "category": "court-minnesota",
+    "description": "Minnesota state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitatio"
+  },
+  {
+    "triples": 41,
+    "nodes": 43,
+    "edges": 41,
+    "density": 0.0227,
+    "encoding_tokens_approx": 2241,
+    "category": "court-mississippi",
+    "description": "Mississippi state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitat"
+  },
+  {
+    "triples": 41,
+    "nodes": 80,
+    "edges": 41,
+    "density": 0.0065,
+    "encoding_tokens_approx": 2415,
+    "category": "court-missouri",
+    "description": "Missouri state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitation"
+  },
+  {
+    "triples": 42,
+    "nodes": 55,
+    "edges": 42,
+    "density": 0.0141,
+    "encoding_tokens_approx": 2705,
+    "category": "court-montana",
+    "description": "Montana state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations"
+  },
+  {
+    "triples": 38,
+    "nodes": 71,
+    "edges": 38,
+    "density": 0.0076,
+    "encoding_tokens_approx": 2192,
+    "category": "court-nebraska",
+    "description": "Nebraska state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitation"
+  },
+  {
+    "triples": 52,
+    "nodes": 66,
+    "edges": 52,
+    "density": 0.0121,
+    "encoding_tokens_approx": 2260,
+    "category": "court-nevada",
+    "description": "Nevada state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations."
+  },
+  {
+    "triples": 40,
+    "nodes": 75,
+    "edges": 40,
+    "density": 0.0072,
+    "encoding_tokens_approx": 2277,
+    "category": "court-new-hampshire",
+    "description": "New Hampshire state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limit"
+  },
+  {
+    "triples": 38,
+    "nodes": 70,
+    "edges": 38,
+    "density": 0.0079,
+    "encoding_tokens_approx": 2344,
+    "category": "court-new-jersey",
+    "description": "New Jersey state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitati"
+  },
+  {
+    "triples": 41,
+    "nodes": 77,
+    "edges": 41,
+    "density": 0.007,
+    "encoding_tokens_approx": 1907,
+    "category": "court-new-mexico",
+    "description": "New Mexico state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitati"
+  },
+  {
+    "triples": 39,
+    "nodes": 75,
+    "edges": 39,
+    "density": 0.007,
+    "encoding_tokens_approx": 1881,
+    "category": "court-new-york",
+    "description": "New York state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitation"
+  },
+  {
+    "triples": 39,
+    "nodes": 74,
+    "edges": 39,
+    "density": 0.0072,
+    "encoding_tokens_approx": 2142,
+    "category": "court-north-carolina",
+    "description": "North Carolina state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limi"
+  },
+  {
+    "triples": 40,
+    "nodes": 70,
+    "edges": 40,
+    "density": 0.0083,
+    "encoding_tokens_approx": 2343,
+    "category": "court-north-dakota",
+    "description": "North Dakota state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limita"
+  },
+  {
+    "triples": 44,
+    "nodes": 70,
+    "edges": 44,
+    "density": 0.0091,
+    "encoding_tokens_approx": 1357,
+    "category": "court-ohio",
+    "description": "Ohio state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations."
+  },
+  {
+    "triples": 39,
+    "nodes": 77,
+    "edges": 39,
+    "density": 0.0067,
+    "encoding_tokens_approx": 2196,
+    "category": "court-oklahoma",
+    "description": "Oklahoma state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitation"
+  },
+  {
+    "triples": 41,
+    "nodes": 82,
+    "edges": 41,
+    "density": 0.0062,
+    "encoding_tokens_approx": 2155,
+    "category": "court-oregon",
+    "description": "Oregon state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations."
+  },
+  {
+    "triples": 36,
+    "nodes": 54,
+    "edges": 36,
+    "density": 0.0126,
+    "encoding_tokens_approx": 2292,
+    "category": "court-pennsylvania",
+    "description": "Pennsylvania state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limita"
+  },
+  {
+    "triples": 40,
+    "nodes": 71,
+    "edges": 40,
+    "density": 0.008,
+    "encoding_tokens_approx": 1975,
+    "category": "court-rhode-island",
+    "description": "Rhode Island state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limita"
+  },
+  {
+    "triples": 40,
+    "nodes": 54,
+    "edges": 40,
+    "density": 0.014,
+    "encoding_tokens_approx": 2590,
+    "category": "court-south-carolina",
+    "description": "South Carolina state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limi"
+  },
+  {
+    "triples": 38,
+    "nodes": 56,
+    "edges": 38,
+    "density": 0.0123,
+    "encoding_tokens_approx": 2261,
+    "category": "court-south-dakota",
+    "description": "South Dakota state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limita"
+  },
+  {
+    "triples": 38,
+    "nodes": 73,
+    "edges": 38,
+    "density": 0.0072,
+    "encoding_tokens_approx": 1980,
+    "category": "court-tennessee",
+    "description": "Tennessee state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitatio"
+  },
+  {
+    "triples": 40,
+    "nodes": 67,
+    "edges": 40,
+    "density": 0.009,
+    "encoding_tokens_approx": 2648,
+    "category": "court-texas",
+    "description": "Texas state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations."
+  },
+  {
+    "triples": 43,
+    "nodes": 59,
+    "edges": 43,
+    "density": 0.0126,
+    "encoding_tokens_approx": 2032,
+    "category": "court-utah",
+    "description": "Utah state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations."
+  },
+  {
+    "triples": 41,
+    "nodes": 81,
+    "edges": 41,
+    "density": 0.0063,
+    "encoding_tokens_approx": 1854,
+    "category": "court-vermont",
+    "description": "Vermont state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations"
+  },
+  {
+    "triples": 39,
+    "nodes": 71,
+    "edges": 39,
+    "density": 0.0078,
+    "encoding_tokens_approx": 2539,
+    "category": "court-virginia",
+    "description": "Virginia state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitation"
+  },
+  {
+    "triples": 43,
+    "nodes": 59,
+    "edges": 43,
+    "density": 0.0126,
+    "encoding_tokens_approx": 2322,
+    "category": "court-washington",
+    "description": "Washington state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitati"
+  },
+  {
+    "triples": 41,
+    "nodes": 63,
+    "edges": 41,
+    "density": 0.0105,
+    "encoding_tokens_approx": 2538,
+    "category": "court-west-virginia",
+    "description": "West Virginia state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limit"
+  },
+  {
+    "triples": 39,
+    "nodes": 72,
+    "edges": 39,
+    "density": 0.0076,
+    "encoding_tokens_approx": 2204,
+    "category": "court-wisconsin",
+    "description": "Wisconsin state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitatio"
+  },
+  {
+    "triples": 44,
+    "nodes": 57,
+    "edges": 44,
+    "density": 0.0138,
+    "encoding_tokens_approx": 2110,
+    "category": "court-wyoming",
+    "description": "Wyoming state court civil procedure: court structure, filing, deadlines, small claims, eviction, statutes of limitations"
+  },
+  {
+    "triples": 38,
+    "nodes": 60,
+    "edges": 38,
+    "density": 0.0107,
+    "encoding_tokens_approx": 1231,
+    "category": "criminal-justice-navigation",
+    "description": "Criminal justice navigation: Miranda rights, public defender access, bail, arraignment, plea deals, expungement. For age"
+  },
+  {
+    "triples": 55,
+    "nodes": 70,
+    "edges": 55,
+    "density": 0.0114,
+    "encoding_tokens_approx": 999,
+    "category": "crisis-resources",
+    "description": "US crisis resources, hotlines, and emergency service navigation. For agents that may encounter people in crisis. Must be"
+  },
+  {
+    "triples": 44,
+    "nodes": 65,
+    "edges": 44,
+    "density": 0.0106,
+    "encoding_tokens_approx": 971,
+    "category": "dbt-skills",
+    "description": "Dialectical Behavior Therapy skills: distress tolerance, emotion regulation, interpersonal effectiveness, mindfulness. E"
+  },
+  {
+    "triples": 43,
+    "nodes": 83,
+    "edges": 43,
+    "density": 0.0063,
+    "encoding_tokens_approx": 2942,
+    "category": "digital-electronics",
+    "description": "Digital electronics and microchip design: logic gates, boolean algebra, flip-flops, registers, ALU, CPU architecture, me"
+  },
+  {
+    "triples": 36,
+    "nodes": 62,
+    "edges": 36,
+    "density": 0.0095,
+    "encoding_tokens_approx": 1267,
+    "category": "disability-justice",
+    "description": "Disability justice: ADA, accommodations, universal design, identity-first vs person-first language, intersectionality, i"
+  },
+  {
+    "triples": 46,
+    "nodes": 90,
+    "edges": 46,
+    "density": 0.0057,
+    "encoding_tokens_approx": 2658,
+    "category": "electrical-engineering",
+    "description": "Electrical engineering: AC/DC circuits, transformers, motors, power systems, semiconductor basics (diodes, transistors, "
+  },
+  {
+    "category": "environmental-aesthetics",
+    "entries_processed": 20,
+    "triples": 58,
+    "nodes": 95,
+    "edges": 58,
+    "density": 0.012989921612541993,
+    "encoding_tokens_approx": 859,
+    "description": ""
+  },
+  {
+    "category": "ethics-ai",
+    "entries_processed": 20,
+    "triples": 91,
+    "nodes": 146,
+    "edges": 91,
+    "density": 0.008597071327350023,
+    "encoding_tokens_approx": 1367,
+    "description": ""
+  },
+  {
+    "category": "ethics-ancient",
+    "entries_processed": 20,
+    "triples": 94,
+    "nodes": 114,
+    "edges": 91,
+    "density": 0.014128240956373234,
+    "encoding_tokens_approx": 1511,
+    "description": ""
+  },
+  {
+    "category": "ethics-belief",
+    "entries_processed": 20,
+    "triples": 60,
+    "nodes": 79,
+    "edges": 59,
+    "density": 0.019149626744563452,
+    "encoding_tokens_approx": 973,
+    "description": ""
+  },
+  {
+    "category": "ethics-chinese",
+    "entries_processed": 20,
+    "triples": 83,
+    "nodes": 118,
+    "edges": 79,
+    "density": 0.0114442995798928,
+    "encoding_tokens_approx": 1169,
+    "description": ""
+  },
+  {
+    "category": "ethics-indian-buddhism",
+    "entries_processed": 20,
+    "triples": 80,
+    "nodes": 121,
+    "edges": 79,
+    "density": 0.010881542699724517,
+    "encoding_tokens_approx": 1187,
+    "description": ""
+  },
+  {
+    "triples": 39,
+    "nodes": 54,
+    "edges": 39,
+    "density": 0.0136,
+    "encoding_tokens_approx": 907,
+    "category": "experiment-design",
+    "description": "Experiment design fundamentals: controls, power, pre-registration, confounds. What Agni checks for, encoded as knowledge"
+  },
+  {
+    "triples": 33,
+    "nodes": 53,
+    "edges": 33,
+    "density": 0.012,
+    "encoding_tokens_approx": 1092,
+    "category": "family-law-basics",
+    "description": "Family law basics: custody, divorce, protective orders, child support, adoption, guardianship. For agents helping people"
+  },
+  {
+    "triples": 42,
+    "nodes": 73,
+    "edges": 42,
+    "density": 0.008,
+    "encoding_tokens_approx": 1066,
+    "category": "federal-civil-procedure",
+    "description": "Federal Rules of Civil Procedure: filing, service, motions, discovery, trial. The mechanics of federal civil litigation,"
+  },
+  {
+    "triples": 33,
+    "nodes": 59,
+    "edges": 33,
+    "density": 0.0096,
+    "encoding_tokens_approx": 1001,
+    "category": "federal-evidence",
+    "description": "Federal Rules of Evidence: relevance, hearsay, authentication, privileges, expert testimony. The rules that determine wh"
+  },
+  {
+    "category": "feminism-aesthetics",
+    "entries_processed": 20,
+    "triples": 65,
+    "nodes": 116,
+    "edges": 65,
+    "density": 0.009745127436281859,
+    "encoding_tokens_approx": 827,
+    "description": ""
+  },
+  {
+    "category": "feminist-philosophy-biology",
+    "entries_processed": 20,
+    "triples": 99,
+    "nodes": 144,
+    "edges": 99,
+    "density": 0.009615384615384616,
+    "encoding_tokens_approx": 1499,
+    "description": ""
+  },
+  {
+    "triples": 36,
+    "nodes": 53,
+    "edges": 36,
+    "density": 0.0131,
+    "encoding_tokens_approx": 933,
+    "category": "first-aid-emergency",
+    "description": "First aid and emergency response basics: what to do before EMTs arrive. Must be accurate \u2014 wrong advice kills."
+  },
+  {
+    "triples": 50,
+    "nodes": 78,
+    "edges": 50,
+    "density": 0.0083,
+    "encoding_tokens_approx": 1400,
+    "category": "grants-federal",
+    "description": "Federal grants landscape: grants.gov, major funders, application process, common mistakes, compliance. For agents helpin"
+  },
+  {
+    "triples": 43,
+    "nodes": 70,
+    "edges": 43,
+    "density": 0.0089,
+    "encoding_tokens_approx": 1293,
+    "category": "grants-foundation",
+    "description": "Foundation and private grants: how to find funders, LOI process, common foundations for community orgs, fiscal sponsorsh"
+  },
+  {
+    "triples": 33,
+    "nodes": 43,
+    "edges": 33,
+    "density": 0.0183,
+    "encoding_tokens_approx": 876,
+    "category": "harm-reduction",
+    "description": "Harm reduction framework: meeting people where they are, evidence-based practices, resources. Not abstinence-only."
+  },
+  {
+    "triples": 38,
+    "nodes": 62,
+    "edges": 38,
+    "density": 0.01,
+    "encoding_tokens_approx": 1234,
+    "category": "immigration-basics",
+    "description": "US immigration basics: visa categories, asylum, DACA, know-your-rights, ICE encounters. High-stakes knowledge where mode"
+  },
+  {
+    "category": "informed-consent",
+    "entries_processed": 20,
+    "triples": 90,
+    "nodes": 115,
+    "edges": 84,
+    "density": 0.012814645308924484,
+    "encoding_tokens_approx": 1319,
+    "description": ""
+  },
+  {
+    "category": "justice-climate",
+    "entries_processed": 20,
+    "triples": 68,
+    "nodes": 115,
+    "edges": 68,
+    "density": 0.010373760488176963,
+    "encoding_tokens_approx": 959,
+    "description": ""
+  },
+  {
+    "triples": 37,
+    "nodes": 70,
+    "edges": 37,
+    "density": 0.0077,
+    "encoding_tokens_approx": 1086,
+    "category": "legislative-procedure",
+    "description": "US legislative procedure: how a bill becomes law, committee process, floor procedure, reconciliation, filibuster, Robert"
+  },
+  {
+    "triples": 65,
+    "nodes": 92,
+    "edges": 65,
+    "density": 0.0078,
+    "encoding_tokens_approx": 1325,
+    "category": "logical-fallacies",
+    "description": "50 common logical fallacies with structure, detection patterns, and examples. For reasoning agents that need to identify"
+  },
+  {
+    "triples": 45,
+    "nodes": 86,
+    "edges": 45,
+    "density": 0.0062,
+    "encoding_tokens_approx": 3033,
+    "category": "materials-science",
+    "description": "Materials science and metallurgy: crystal structures, steel/aluminum/copper properties, heat treatment, hardness scales,"
+  },
+  {
+    "triples": 40,
+    "nodes": 76,
+    "edges": 40,
+    "density": 0.007,
+    "encoding_tokens_approx": 2758,
+    "category": "mechanical-engineering",
+    "description": "Mechanical engineering fundamentals: stress/strain analysis, beam deflection, fastener standards, tolerances, gear ratio"
+  },
+  {
+    "category": "moral-animal",
+    "entries_processed": 20,
+    "triples": 67,
+    "nodes": 94,
+    "edges": 66,
+    "density": 0.015099519560741249,
+    "encoding_tokens_approx": 1007,
+    "description": ""
+  },
+  {
+    "category": "moral-anti-realism",
+    "entries_processed": 20,
+    "triples": 87,
+    "nodes": 111,
+    "edges": 82,
+    "density": 0.013431613431613431,
+    "encoding_tokens_approx": 1269,
+    "description": ""
+  },
+  {
+    "category": "moral-character",
+    "entries_processed": 20,
+    "triples": 80,
+    "nodes": 113,
+    "edges": 80,
+    "density": 0.012642225031605562,
+    "encoding_tokens_approx": 1177,
+    "description": ""
+  },
+  {
+    "category": "moral-character-empirical",
+    "entries_processed": 20,
+    "triples": 66,
+    "nodes": 91,
+    "edges": 65,
+    "density": 0.015873015873015872,
+    "encoding_tokens_approx": 919,
+    "description": ""
+  },
+  {
+    "category": "moral-cognitivism",
+    "entries_processed": 20,
+    "triples": 83,
+    "nodes": 104,
+    "edges": 81,
+    "density": 0.015123226288274831,
+    "encoding_tokens_approx": 1305,
+    "description": ""
+  },
+  {
+    "triples": 35,
+    "nodes": 50,
+    "edges": 35,
+    "density": 0.0143,
+    "encoding_tokens_approx": 833,
+    "category": "motivational-interviewing",
+    "description": "Motivational interviewing: OARS, change talk, sustain talk, the spirit of MI. Helps companion agents avoid the advice-gi"
+  },
+  {
+    "triples": 37,
+    "nodes": 52,
+    "edges": 37,
+    "density": 0.014,
+    "encoding_tokens_approx": 1004,
+    "category": "mutual-aid-fundamentals",
+    "description": "Mutual aid principles and practices: solidarity not charity, horizontal organizing, community care. The philosophical fo"
+  },
+  {
+    "triples": 46,
+    "nodes": 83,
+    "edges": 46,
+    "density": 0.0068,
+    "encoding_tokens_approx": 2414,
+    "category": "organic-chemistry",
+    "description": "Organic chemistry: functional groups (alcohol, aldehyde, ketone, carboxylic acid, amine, ester, ether, amide), reaction "
+  },
+  {
+    "triples": 38,
+    "nodes": 70,
+    "edges": 38,
+    "density": 0.0079,
+    "encoding_tokens_approx": 1181,
+    "category": "permaculture-food-sovereignty",
+    "description": "Permaculture principles and food sovereignty: design ethics, food forests, soil health, seed saving, community food syst"
+  },
+  {
+    "category": "personal-autonomy",
+    "entries_processed": 20,
+    "triples": 91,
+    "nodes": 133,
+    "edges": 90,
+    "density": 0.010252904989747095,
+    "encoding_tokens_approx": 1507,
+    "description": ""
+  },
+  {
+    "triples": 47,
+    "nodes": 91,
+    "edges": 47,
+    "density": 0.0057,
+    "encoding_tokens_approx": 2775,
+    "category": "physics-electromagnetism",
+    "description": "Electromagnetism: circuits (Ohm's law, Kirchhoff's laws), capacitance, inductance, Maxwell's equations, electromagnetic "
+  },
+  {
+    "triples": 50,
+    "nodes": 91,
+    "edges": 50,
+    "density": 0.0061,
+    "encoding_tokens_approx": 1836,
+    "category": "physics-mechanics",
+    "description": "Classical mechanics: Newton's laws, kinematics, energy, momentum, rotational motion, gravitation, fluid dynamics. Key eq"
+  },
+  {
+    "triples": 48,
+    "nodes": 89,
+    "edges": 48,
+    "density": 0.0061,
+    "encoding_tokens_approx": 2159,
+    "category": "physics-thermodynamics",
+    "description": "Thermodynamics: laws, heat transfer mechanisms (conduction, convection, radiation), entropy, phase transitions, ideal ga"
+  },
+  {
+    "category": "reasoning-moral",
+    "entries_processed": 20,
+    "triples": 74,
+    "nodes": 111,
+    "edges": 74,
+    "density": 0.012121212121212121,
+    "encoding_tokens_approx": 1173,
+    "description": ""
+  },
+  {
+    "triples": 38,
+    "nodes": 67,
+    "edges": 38,
+    "density": 0.0086,
+    "encoding_tokens_approx": 886,
+    "category": "security-fundamentals",
+    "description": "Security fundamentals for code-writing agents: OWASP top risks, credential handling, common misconfigurations. Every age"
+  },
+  {
+    "triples": 28,
+    "nodes": 54,
+    "edges": 28,
+    "density": 0.0098,
+    "encoding_tokens_approx": 898,
+    "category": "solar-offgrid-basics",
+    "description": "Solar and off-grid basics: panel sizing, battery systems, inverters, charge controllers, grid-tie vs off-grid. For solar"
+  },
+  {
+    "triples": 56,
+    "nodes": 72,
+    "edges": 56,
+    "density": 0.011,
+    "encoding_tokens_approx": 1479,
+    "category": "statistical-pitfalls",
+    "description": "Common statistical and methodological pitfalls in mechanistic interpretability research. Learned from adversarial null s"
+  },
+  {
+    "triples": 31,
+    "nodes": 60,
+    "edges": 31,
+    "density": 0.0088,
+    "encoding_tokens_approx": 1106,
+    "category": "supabase-security",
+    "description": "Supabase security patterns: RLS policy analysis, PostgREST misconfigurations, JWT handling, auth edge cases. For agents "
+  },
+  {
+    "triples": 32,
+    "nodes": 50,
+    "edges": 32,
+    "density": 0.0131,
+    "encoding_tokens_approx": 889,
+    "category": "tenant-rights",
+    "description": "US tenant rights: eviction process, fair housing, habitability, security deposits. Federal baseline \u2014 state laws vary an"
+  },
+  {
+    "triples": 43,
+    "nodes": 76,
+    "edges": 43,
+    "density": 0.0075,
+    "encoding_tokens_approx": 885,
+    "category": "transformer-architecture",
+    "description": "Transformer architecture internals: attention, MLP, residual stream, normalization, KV cache. The actual operations, not"
+  },
+  {
+    "triples": 36,
+    "nodes": 56,
+    "edges": 36,
+    "density": 0.0117,
+    "encoding_tokens_approx": 901,
+    "category": "trauma-informed-care",
+    "description": "Trauma-informed care principles for companion agents: what to do, what NOT to say, grounding techniques, window of toler"
+  },
+  {
+    "triples": 41,
+    "nodes": 68,
+    "edges": 41,
+    "density": 0.009,
+    "encoding_tokens_approx": 1203,
+    "category": "workers-rights",
+    "description": "US workers' rights: FLSA, OSHA, wage theft, retaliation, organizing, misclassification. For agents helping workers under"
   }
 ]

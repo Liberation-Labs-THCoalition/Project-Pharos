@@ -1,0 +1,14 @@
+[Unit]
+Description=Pharos Pack Server — queryable knowledge packs
+After=network.target
+
+[Service]
+Type=simple
+User=admin
+WorkingDirectory=/home/admin/lab/projects/pharos
+ExecStart=/usr/bin/python3 /home/admin/lab/projects/pharos/pack_server.py --port 8300
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
