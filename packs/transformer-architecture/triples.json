@@ -1,0 +1,298 @@
+{
+  "description": "Transformer architecture internals: attention, MLP, residual stream, normalization, KV cache. The actual operations, not the intuition.",
+  "source": "Vaswani (2017), Elhage et al. (2021), standard transformer references",
+  "triples": [
+    {
+      "subject": "transformer",
+      "predicate": "processes_via",
+      "object": "alternating attention and MLP layers with residual connections"
+    },
+    {
+      "subject": "residual stream",
+      "predicate": "is",
+      "object": "the main information highway \u2014 each layer reads from and writes back to it"
+    },
+    {
+      "subject": "residual stream",
+      "predicate": "dimension",
+      "object": "d_model (hidden size), constant through all layers"
+    },
+    {
+      "subject": "self-attention",
+      "predicate": "computes",
+      "object": "weighted sum of value vectors, where weights come from query-key dot products"
+    },
+    {
+      "subject": "self-attention",
+      "predicate": "formula",
+      "object": "Attention(Q,K,V) = softmax(QK^T / sqrt(d_k)) V"
+    },
+    {
+      "subject": "query (Q)",
+      "predicate": "computed_as",
+      "object": "W_Q @ residual_stream"
+    },
+    {
+      "subject": "key (K)",
+      "predicate": "computed_as",
+      "object": "W_K @ residual_stream"
+    },
+    {
+      "subject": "value (V)",
+      "predicate": "computed_as",
+      "object": "W_V @ residual_stream"
+    },
+    {
+      "subject": "attention weights",
+      "predicate": "determine",
+      "object": "how much each position attends to every other position"
+    },
+    {
+      "subject": "attention output",
+      "predicate": "is",
+      "object": "weighted combination of value vectors, projected back through W_O"
+    },
+    {
+      "subject": "multi-head attention",
+      "predicate": "splits",
+      "object": "d_model into h heads of dimension d_k = d_model/h"
+    },
+    {
+      "subject": "multi-head attention",
+      "predicate": "purpose",
+      "object": "attend to different representation subspaces in parallel"
+    },
+    {
+      "subject": "grouped-query attention (GQA)",
+      "predicate": "shares",
+      "object": "key-value heads across multiple query heads to reduce memory"
+    },
+    {
+      "subject": "GQA",
+      "predicate": "implication",
+      "object": "KV cache is smaller than full multi-head; per-head analysis must respect grouping"
+    },
+    {
+      "subject": "KV cache",
+      "predicate": "stores",
+      "object": "pre-computed key and value tensors from previous tokens to avoid recomputation"
+    },
+    {
+      "subject": "KV cache",
+      "predicate": "grows_with",
+      "object": "sequence length \u2014 n_layers * 2 * n_kv_heads * d_head * seq_len"
+    },
+    {
+      "subject": "KV cache",
+      "predicate": "is_a",
+      "object": "deterministic linear projection of the residual stream: K_h = W_K^h x, V_h = W_V^h x (Vaswani et al. 2017)"
+    },
+    {
+      "subject": "MLP (feed-forward)",
+      "predicate": "computes",
+      "object": "nonlinear transformation: W2 @ activation(W1 @ x + b1) + b2"
+    },
+    {
+      "subject": "MLP",
+      "predicate": "activation",
+      "object": "SwiGLU (modern), GELU, or ReLU depending on architecture"
+    },
+    {
+      "subject": "MLP",
+      "predicate": "role",
+      "object": "stores factual knowledge and computes features (key-value memories interpretation)"
+    },
+    {
+      "subject": "layer normalization",
+      "predicate": "purpose",
+      "object": "stabilize training by normalizing activations"
+    },
+    {
+      "subject": "RMSNorm",
+      "predicate": "is",
+      "object": "simplified layer norm: x / RMS(x) * gain, no centering"
+    },
+    {
+      "subject": "RMSNorm",
+      "predicate": "implication",
+      "object": "input-dependent scaling \u2014 NOT purely linear, but approximately linear for small perturbations"
+    },
+    {
+      "subject": "pre-norm",
+      "predicate": "applies_norm",
+      "object": "before attention/MLP (modern default), not after"
+    },
+    {
+      "subject": "positional encoding",
+      "predicate": "purpose",
+      "object": "inject position information since attention is permutation-invariant"
+    },
+    {
+      "subject": "RoPE (Rotary Position Embedding)",
+      "predicate": "applies",
+      "object": "rotation to query and key vectors based on position"
+    },
+    {
+      "subject": "RoPE",
+      "predicate": "implication",
+      "object": "pre-RoPE keys are position-independent; post-RoPE keys encode absolute position"
+    },
+    {
+      "subject": "RoPE",
+      "predicate": "for_analysis",
+      "object": "use pre-RoPE keys to avoid position-dependent artifacts in cross-position comparisons"
+    },
+    {
+      "subject": "causal masking",
+      "predicate": "prevents",
+      "object": "tokens from attending to future positions"
+    },
+    {
+      "subject": "causal masking",
+      "predicate": "makes",
+      "object": "each position a summary of all previous positions (autoregressive)"
+    },
+    {
+      "subject": "last token position",
+      "predicate": "is",
+      "object": "the autoregressive summary \u2014 attends to all prior tokens, used for next-token prediction"
+    },
+    {
+      "subject": "embedding layer",
+      "predicate": "maps",
+      "object": "token IDs to d_model-dimensional vectors"
+    },
+    {
+      "subject": "unembedding (lm_head)",
+      "predicate": "maps",
+      "object": "final residual stream back to vocabulary logits for next-token prediction"
+    },
+    {
+      "subject": "unembedding",
+      "predicate": "formula",
+      "object": "logits = W_unembed @ final_residual + bias"
+    },
+    {
+      "subject": "softmax temperature",
+      "predicate": "controls",
+      "object": "sharpness of probability distribution \u2014 lower = more peaked, higher = more uniform"
+    },
+    {
+      "subject": "logits",
+      "predicate": "are",
+      "object": "unnormalized scores over vocabulary before softmax"
+    },
+    {
+      "subject": "mixture of experts (MoE)",
+      "predicate": "routes",
+      "object": "each token to a subset of expert MLP layers via a gating network"
+    },
+    {
+      "subject": "MoE",
+      "predicate": "advantage",
+      "object": "more parameters with less compute per token (sparse activation)"
+    },
+    {
+      "subject": "MoE",
+      "predicate": "implication",
+      "object": "different inputs activate different experts \u2014 routing must be logged for interpretability"
+    },
+    {
+      "subject": "residual stream superposition",
+      "predicate": "is",
+      "object": "multiple features encoded in overlapping directions (more features than dimensions)"
+    },
+    {
+      "subject": "superposition",
+      "predicate": "challenge",
+      "object": "individual features are not axis-aligned, making linear probing incomplete"
+    },
+    {
+      "subject": "sparse autoencoders",
+      "predicate": "attempt_to",
+      "object": "decompose superposed representations into interpretable features"
+    },
+    {
+      "subject": "transcoders",
+      "predicate": "improve_on_SAEs_by",
+      "object": "reconstructing MLP outputs from inputs rather than activations"
+    }
+  ],
+  "verification": {
+    "date": "2026-06-25",
+    "confidence": 0.95,
+    "verified_count": 39,
+    "flagged_count": 1,
+    "notes": "This is a LOW priority conceptual pack. All 40 triples are factually accurate descriptions of transformer architecture internals. The pack draws correctly from Vaswani et al. (2017), Elhage et al. (2021/2022), and other standard references. The only flagged item is a citation to 'Qasim et al. 2026' which appears to be internal coalition research -- the mathematical claim is correct but the citation may not be externally accessible. The unembedding formula includes a bias term which is technically correct for the general case but many modern LLMs (LLaMA, Mistral) omit the lm_head bias -- this is a minor pedagogical note rather than an error. No numbers, phone numbers, deadlines, or filing fees are present in this pack, consistent with its conceptual/technical nature."
+  },
+  "source_urls": [
+    {
+      "url": "https://arxiv.org/abs/1706.03762",
+      "description": "Vaswani et al. (2017) 'Attention Is All You Need' - the original transformer paper",
+      "covers_triples": "transformer processes_via, self-attention computes/formula, Q/K/V computed_as, attention weights, attention output, multi-head attention splits/purpose, causal masking, embedding layer, unembedding, softmax temperature, logits, positional encoding purpose"
+    },
+    {
+      "url": "https://transformer-circuits.pub/2021/framework/index.html",
+      "description": "Elhage et al. (2021) 'A Mathematical Framework for Transformer Circuits' - residual stream as information highway, layer read/write semantics",
+      "covers_triples": "residual stream is, residual stream dimension"
+    },
+    {
+      "url": "https://arxiv.org/abs/2209.10652",
+      "description": "Elhage et al. (2022) 'Toy Models of Superposition' - superposition in residual stream, more features than dimensions",
+      "covers_triples": "residual stream superposition, superposition challenge"
+    },
+    {
+      "url": "https://arxiv.org/abs/2305.13245",
+      "description": "Ainslie et al. (2023) 'GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints' - grouped-query attention",
+      "covers_triples": "grouped-query attention (GQA) shares, GQA implication"
+    },
+    {
+      "url": "https://arxiv.org/abs/2104.09864",
+      "description": "Su et al. (2021) 'RoFormer: Enhanced Transformer with Rotary Position Embedding' - RoPE mechanics",
+      "covers_triples": "RoPE applies, RoPE implication, RoPE for_analysis"
+    },
+    {
+      "url": "https://arxiv.org/abs/1910.07467",
+      "description": "Zhang and Sennrich (2019) 'Root Mean Square Layer Normalization' - RMSNorm definition and properties",
+      "covers_triples": "RMSNorm is, RMSNorm implication"
+    },
+    {
+      "url": "https://arxiv.org/abs/2002.05202",
+      "description": "Shazeer (2020) 'GLU Variants Improve Transformer' - SwiGLU and other activation functions for MLP layers",
+      "covers_triples": "MLP activation"
+    },
+    {
+      "url": "https://arxiv.org/abs/2012.14913",
+      "description": "Geva et al. (2021) 'Transformer Feed-Forward Layers Are Key-Value Memories' - MLP as knowledge storage",
+      "covers_triples": "MLP role"
+    },
+    {
+      "url": "https://arxiv.org/abs/1701.06538",
+      "description": "Shazeer et al. (2017) 'Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer' - MoE fundamentals",
+      "covers_triples": "mixture of experts (MoE) routes, MoE advantage, MoE implication"
+    },
+    {
+      "url": "https://arxiv.org/abs/2310.08164",
+      "description": "Bricken et al. (2023) 'Towards Monosemanticity: Decomposing Language Models With Dictionary Learning' - sparse autoencoders for superposition",
+      "covers_triples": "sparse autoencoders attempt_to"
+    },
+    {
+      "url": "https://arxiv.org/abs/2406.11944",
+      "description": "Dunefsky, Beren, and Neel Nanda (2024) 'Transcoders Find Interpretable LLM Feature Circuits' - transcoders vs SAEs for MLP interpretation",
+      "covers_triples": "transcoders improve_on_SAEs_by"
+    },
+    {
+      "url": "https://arxiv.org/abs/2101.03961",
+      "description": "Xiong et al. (2020) 'On Layer Normalization in the Transformer Architecture' - pre-norm vs post-norm analysis",
+      "covers_triples": "pre-norm applies_norm, layer normalization purpose"
+    }
+  ],
+  "pending_corrections": [
+    {
+      "triple_subject": "KV cache",
+      "issue": "The citation 'Qasim et al. 2026' appears to reference internal/coalition research that may not be externally verifiable by general users. The underlying claim (KV cache is a deterministic projection of the residual stream) is mathematically correct -- K = W_K @ x and V = W_V @ x are deterministic linear transformations. However, the citation may confuse users looking for a standard academic reference. Consider citing this as a mathematical fact derivable from Vaswani (2017) rather than attributing it to a potentially non-public paper.",
+      "source": "https://arxiv.org/abs/1706.03762",
+      "corrected_object": "deterministic projection of the residual stream (follows directly from the linear projection definitions in Vaswani et al. 2017)"
+    }
+  ]
+}
