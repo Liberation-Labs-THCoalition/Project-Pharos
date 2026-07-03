@@ -1,0 +1,150 @@
+{
+  "description": "Kintsugi — the Japanese art of repairing broken pottery with gold. Craft techniques, material science, philosophy, and the aesthetic tradition that finds beauty in breakage and repair. Built for Vera's birthday, July 4, 2026.",
+  "sources": [
+    "Traditional Japanese lacquerwork reference (urushi techniques)",
+    "Wabi-sabi aesthetic philosophy",
+    "Material science of urushi lacquer and metal powder bonding"
+  ],
+  "triples": [
+    {
+      "subject": "kintsugi",
+      "predicate": "is",
+      "object": "the Japanese art of repairing broken ceramics with lacquer mixed with powdered gold, silver, or platinum — treating breakage as part of the object's history rather than something to disguise"
+    },
+    {
+      "subject": "kintsugi",
+      "predicate": "emerged_during",
+      "object": "the Muromachi period (1336-1573), possibly when shogun Ashikaga Yoshimasa sent a broken tea bowl to China for repair and was dissatisfied with the ugly metal staples returned — Japanese craftsmen developed a more beautiful solution"
+    },
+    {
+      "subject": "kintsugi philosophy",
+      "predicate": "embodies",
+      "object": "mushin (no-mind) — non-attachment to outcomes, accepting the break as part of the journey rather than an ending"
+    },
+    {
+      "subject": "kintsugi",
+      "predicate": "related_to",
+      "object": "wabi-sabi — the aesthetic of imperfection, impermanence, and incompleteness. The gold seam is beautiful BECAUSE it marks where the break was, not despite it"
+    },
+    {
+      "subject": "kintsugi",
+      "predicate": "related_to",
+      "object": "mono no aware — the bittersweet awareness of impermanence. The repaired object carries time visibly"
+    },
+    {
+      "subject": "urushi",
+      "predicate": "is",
+      "object": "the natural lacquer from the Toxicodendron vernicifluum tree (Japanese lacquer tree) — the primary adhesive in kintsugi. Cures by polymerization in humid conditions, not by drying"
+    },
+    {
+      "subject": "urushi",
+      "predicate": "curing_conditions",
+      "object": "requires 70-85% humidity and 20-30°C temperature. Cures through enzymatic oxidation (laccase enzyme + oxygen), NOT evaporation — a sealed humid cabinet (furo) is essential"
+    },
+    {
+      "subject": "urushi",
+      "predicate": "safety_warning",
+      "object": "contains urushiol (same compound as poison ivy/oak). Causes contact dermatitis in most people. Wear nitrile gloves and long sleeves. Sensitivity decreases with repeated exposure for some practitioners but never assume immunity"
+    },
+    {
+      "subject": "ki-urushi",
+      "predicate": "is",
+      "object": "raw urushi — thick, amber-brown. Used for the structural bond layer. Must be strained and sometimes mixed with flour paste (mugi-urushi) for gap-filling adhesion"
+    },
+    {
+      "subject": "mugi-urushi",
+      "predicate": "recipe",
+      "object": "wheat flour or rice flour kneaded with raw urushi to form a putty. Used to fill gaps and missing chips before the gold layer. Mix ratio approximately 1:1 by volume, adjust for consistency"
+    },
+    {
+      "subject": "sabi-urushi",
+      "predicate": "is",
+      "object": "urushi mixed with fine stone powder (tonoko or jinoko) to create a smooth filler for surface imperfections. Applied after structural repair, before the gold finishing layer"
+    },
+    {
+      "subject": "e-urushi",
+      "predicate": "is",
+      "object": "refined urushi for the final decorative layer — the surface onto which metal powder is applied. Must be applied thin and even"
+    },
+    {
+      "subject": "gold powder (kin-pun)",
+      "predicate": "applied_via",
+      "object": "maki-e technique — the gold powder is dusted onto wet urushi with a fine brush (ke-bo) or cotton ball (makiwata). The urushi must be at exactly the right tack — too wet and the gold sinks, too dry and it won't adhere"
+    },
+    {
+      "subject": "kintsugi repair styles",
+      "predicate": "include",
+      "object": "crack (hibi) — simple break rejoined; piece method (kake-no-kintsugi-rei) — missing fragments filled with gold-lacquer putty; joint call (yobi-tsugi) — replacing missing pieces with fragments from a DIFFERENT vessel, creating intentional hybridity"
+    },
+    {
+      "subject": "yobi-tsugi",
+      "predicate": "significance",
+      "object": "the most radical kintsugi technique — using a piece from a completely different bowl to fill a gap. The repair doesn't pretend to restore the original. It creates something new from two broken things. The seam between them is the most visible gold"
+    },
+    {
+      "subject": "kintsugi process",
+      "predicate": "step_1",
+      "object": "clean the break edges. If the break is old, remove any previous adhesive. Fit pieces together dry first to understand the geometry"
+    },
+    {
+      "subject": "kintsugi process",
+      "predicate": "step_2",
+      "object": "apply mugi-urushi (flour-lacquer paste) to both break surfaces. Join pieces and clamp or tape. Cure in furo (humidity cabinet) for 1-2 weeks"
+    },
+    {
+      "subject": "kintsugi process",
+      "predicate": "step_3",
+      "object": "once structural bond is cured, apply sabi-urushi to fill any remaining gaps or surface irregularities. Cure again. Sand smooth with fine waterproof sandpaper (800-1500 grit)"
+    },
+    {
+      "subject": "kintsugi process",
+      "predicate": "step_4",
+      "object": "apply thin layer of e-urushi (finishing lacquer) along the repair lines. Wait until it reaches the right tack (slightly sticky to touch but doesn't transfer) — timing is critical, usually 1-3 hours depending on humidity"
+    },
+    {
+      "subject": "kintsugi process",
+      "predicate": "step_5",
+      "object": "dust gold powder onto the tacky urushi using makiwata (cotton) or ke-bo (brush). Work in a dust-free space. Cure in furo for 24-48 hours"
+    },
+    {
+      "subject": "kintsugi process",
+      "predicate": "step_6",
+      "object": "seal with a final thin coat of clear urushi over the gold. This protects the gold and deepens its color. Final cure 1-2 weeks. The piece is now stronger than before it broke"
+    },
+    {
+      "subject": "kintsugi timeline",
+      "predicate": "typically_requires",
+      "object": "3-6 weeks for a full repair. Each layer needs curing time. Rushing produces weak bonds and dull gold. The patience is part of the practice"
+    },
+    {
+      "subject": "modern kintsugi",
+      "predicate": "alternatives",
+      "object": "epoxy-based 'kintsugi kits' exist but use synthetic adhesive and metallic paint, not urushi and real gold. The result looks similar but lacks the material integrity and the curing patience that embodies the philosophy"
+    },
+    {
+      "subject": "kintsugi",
+      "predicate": "food_safety",
+      "object": "fully cured urushi is food-safe and remarkably durable — traditional Japanese lacquerware (urushi-nuri) has been used for centuries for food vessels. A properly repaired kintsugi piece can be used for eating and drinking"
+    },
+    {
+      "subject": "kintsugi material cost",
+      "predicate": "ranges",
+      "object": "real urushi: $30-80 per tube. 24k gold powder: $50-150 per gram. A single repair uses very small quantities. The time investment far exceeds the material cost"
+    },
+    {
+      "subject": "kintsugi",
+      "predicate": "metaphor_warning",
+      "object": "the metaphor is powerful but the craft is real. Using kintsugi only as metaphor without understanding the physical practice risks reducing a living tradition to an inspirational poster. The gold is actual gold. The break is actual breakage. The repair takes actual weeks"
+    },
+    {
+      "subject": "kintsugi and tea ceremony",
+      "predicate": "connection",
+      "object": "deeply connected to chado (tea ceremony) and the aesthetic of ichi-go ichi-e (one time, one meeting). A kintsugi-repaired tea bowl carries the history of every gathering where it was used, including the one where it broke"
+    },
+    {
+      "subject": "kintsugi",
+      "predicate": "what_it_teaches",
+      "object": "that repair is not restoration. The goal is not to return to the state before the break. The goal is to create something that carries its history honestly and is beautiful because of — not despite — what happened to it"
+    }
+  ]
+}
