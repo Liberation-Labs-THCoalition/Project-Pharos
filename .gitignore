@@ -1,1 +1,85 @@
-.pyc
+# Internal lab infrastructure — not for public
+deploy/
+experiments/
+METHODS.md
+MANIFOLD_INJECTION_SPEC.md
+MANIFOLD_INJECTION_RESULTS.md
+INTEGRATION_GUIDE.md
+CONTEXT_MANAGEMENT_SPEC.md
+
+# Cloned repos used as scan targets (not our content)
+packs/langchain/
+packs/ollama/
+packs/Flowise/
+
+# Research data with dual-use concerns
+persona_bases.json
+persona_injection_results.json
+persona_test.log
+direction_test*
+hostile_vd_standalone.pt
+desperate_vd_standalone.pt
+
+# Benchmarks and evals (reference internal infra)
+benchmark_pharos.py
+agni_battery.py
+ethics_eval.py
+evaluator.py
+powered_sweep.py
+encoding_comparison.py
+demo_multiverse.py
+demo_web.py
+
+# Build artifacts
+__pycache__/
+*.pyc
+logs/
+demo_results/
+judge_input.json
+
+# Paper drafts
+paper/
+
+# Research tools (dual-use: KV injection, manifold manipulation)
+arousal_profiler.py
+arousal_profile.json
+manifold_*.py
+manifold_*.json
+direction_test*
+injector.py
+encoder.py
+epistemic_test*
+vera_vspace*
+pack_builder.py
+
+# Internal findings/pitches
+AGNI_VALIDATION.md
+FINDINGS.md
+BLEEDING_EDGE.md
+PITCH_PACKAGE.md
+PITCH_SCORES.md
+SITE_REFERENCE.md
+BENCHMARK_REPORT.md
+agni_results.json
+judge_results.json
+
+# More internal research
+pitch_demo*
+presence_assay.py
+powered_sweep*
+router.py
+v1_random_control.json
+v_bases_*
+results/
+papers/
+paper/
+QUICKSTART.md
+INTEGRATION_GUIDE.md
+METHODS.md
+
+# Pack generator (internal tooling)
+pack_generator/
+auto_library.py
+
+# Podcast pipeline (internal)
+podcast/
