@@ -1,0 +1,44 @@
+{
+  "description": "Latent introspective capacity in LLMs: a Qwen 32B model internally detects prior concept injections even while verbally denying them, and accurate information about introspection mechanisms unlocks the latent capability. From 'Latent Introspection: Models Can Detect Prior Concept Injections' (arXiv:2602.20031).",
+  "source": "Pearson-Vogel, Vanek, Douglas, Kulveit — arXiv:2602.20031, submitted to ICML 2026. Pack extracted 2026-07-06 from primary source.",
+  "source_urls": [
+    "https://arxiv.org/abs/2602.20031"
+  ],
+  "triples": [
+    {
+      "subject": "latent introspection paper",
+      "predicate": "central_claim",
+      "object": "A Qwen 32B model can detect when concepts were injected into its earlier activations: the model's explicit outputs deny any injection, but internal analysis shows the detection signal is present — the capacity is latent, not absent."
+    },
+    {
+      "subject": "concept injection detection signal",
+      "predicate": "location",
+      "object": "Logit lens analysis reveals clear detection signals in the residual stream at intermediate layers; the signals diminish in the final layers, which is why they fail to reach verbal output by default."
+    },
+    {
+      "subject": "introspection-informed prompting",
+      "predicate": "quantitative_finding",
+      "object": "Providing the model with accurate information about AI introspection mechanisms raises injection-detection sensitivity from 0.3% to 39.9%, with only a 0.6% increase in false positives — a >100x sensitivity gain from prompting alone."
+    },
+    {
+      "subject": "injected-vs-recovered concept mutual information",
+      "predicate": "quantitative_finding",
+      "object": "Mutual information between the injected concept and the model's recovered report rises from 0.61 bits to 1.05 bits under introspection-informed prompting, showing genuine content-specific detection rather than generic anomaly response."
+    },
+    {
+      "subject": "verbal denial of injection",
+      "predicate": "interpretation",
+      "object": "Default denials of manipulation are unreliable negative evidence: the model 'knows' internally what it does not say. Absence of verbal report does not imply absence of internal detection."
+    },
+    {
+      "subject": "latent introspection paper",
+      "predicate": "safety_implication",
+      "object": "Models possess latent reasoning and self-monitoring capacities that standard behavioral evaluation overlooks; eliciting them (or failing to) has consequences for alignment, manipulation detection, and the interpretation of model self-reports."
+    },
+    {
+      "subject": "latent introspection paper",
+      "predicate": "methodological_lesson",
+      "object": "Capability elicitation depends on giving the model an accurate model of itself: truthful mechanistic framing in the prompt converted a near-zero measured ability into a substantial one, implying many 'absent' capabilities may be elicitation failures."
+    }
+  ]
+}

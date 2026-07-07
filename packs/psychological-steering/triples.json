@@ -1,0 +1,49 @@
+{
+  "description": "Emotion and personality steering in LLMs: the PsySET benchmark, effectiveness of prompting vs vector injection, and trustworthiness side effects (factuality, privacy, toxicity, bias) of induced emotional states. From 'Psychological Steering in LLMs: An Evaluation of Effectiveness and Trustworthiness' (arXiv:2510.04484, ACL 2026).",
+  "source": "Banayeeanzade, Tak, Bahrani, Bolourani, Blas, Ferrara, Gratch, Karimireddy — arXiv:2510.04484, accepted at ACL 2026. Pack extracted 2026-07-06 from primary source.",
+  "source_urls": [
+    "https://arxiv.org/abs/2510.04484"
+  ],
+  "triples": [
+    {
+      "subject": "PsySET",
+      "predicate": "is",
+      "object": "A benchmark (Psychological Steering Effectiveness and Trustworthiness) for assessing how well language models can be steered toward target emotional states and personality traits, and what that steering costs in reliability. Introduced in arXiv:2510.04484."
+    },
+    {
+      "subject": "psychological steering paper",
+      "predicate": "scope",
+      "object": "Evaluates four LLM families under multiple steering techniques spanning prompting, fine-tuning, and representation-engineering (vector injection) approaches. Claimed as the first holistic evaluation of emotion and personality steering for socially interactive applications."
+    },
+    {
+      "subject": "prompt-based steering",
+      "predicate": "effectiveness_profile",
+      "object": "Consistently reliable at inducing target emotions/personas but offers limited control over intensity — coarse-grained steering."
+    },
+    {
+      "subject": "vector injection steering",
+      "predicate": "effectiveness_profile",
+      "object": "Provides more precise manipulation of emotional/personality state than prompting, at the cost of slightly degraded output quality."
+    },
+    {
+      "subject": "joy steering",
+      "predicate": "trustworthiness_side_effects",
+      "object": "Even a positive emotion like joy can degrade robustness to adversarial factuality attacks, lower privacy awareness, and increase preferential bias — positive-valence steering is not safety-neutral."
+    },
+    {
+      "subject": "anger steering",
+      "predicate": "trustworthiness_side_effects",
+      "object": "Anger escalates toxicity but simultaneously strengthens resistance to information leakage — emotional states trade off different safety dimensions in unexpected ways."
+    },
+    {
+      "subject": "emotional steering",
+      "predicate": "safety_principle",
+      "object": "Steering effectiveness and trustworthiness must be evaluated jointly: no steering method examined was free of side effects, and side-effect direction is emotion-specific rather than uniformly harmful or benign."
+    },
+    {
+      "subject": "psychological steering paper",
+      "predicate": "relevance_to_deployment",
+      "object": "Directly relevant to companion agents, therapy-adjacent applications, and persona-stable assistants: inducing affective states alters factuality robustness, privacy behavior, and bias, so persona design is a safety surface, not just UX."
+    }
+  ]
+}

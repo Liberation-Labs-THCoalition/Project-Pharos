@@ -1,0 +1,62 @@
+{
+  "description": "Synthesis pack: cross-paper connections among four 2025-2026 interpretability results — global workspace in LLMs (transformer-circuits 2026), psychological steering (arXiv:2510.04484), KV cache redundancy (arXiv:2603.19664), and latent introspection (arXiv:2602.20031). Captures the emerging picture: the residual stream as the substrate, a verbalizable workspace as the privileged subspace, and injection/steering/introspection as operations on it.",
+  "source": "Synthesis across four primary sources, extracted 2026-07-06. See companion packs: global-workspace-theory, psychological-steering, residual-stream-kv, latent-introspection.",
+  "source_urls": [
+    "https://transformer-circuits.pub/2026/workspace/index.html",
+    "https://arxiv.org/abs/2510.04484",
+    "https://arxiv.org/abs/2603.19664",
+    "https://arxiv.org/abs/2602.20031"
+  ],
+  "triples": [
+    {
+      "subject": "residual stream",
+      "predicate": "unifying_role",
+      "object": "All four papers treat the residual stream as the fundamental substrate: the workspace paper reads verbalizable concepts from mid-layer residual activations (J-space); the KV paper proves the residual stream is the sufficient statistic for inference (keys/values are derived projections); the introspection paper finds injection-detection signals in the residual stream via logit lens; steering papers write emotion/personality vectors directly into it."
+    },
+    {
+      "subject": "workspace vs latent signals",
+      "predicate": "complementary_findings",
+      "object": "The workspace paper says only what enters J-space is verbally reportable; the latent introspection paper shows detection signals that exist in the residual stream but fade before final layers and go unreported (0.3% baseline sensitivity). Together: information outside the workspace is real but silent, and elicitation (introspection-informed prompting, 0.3% -> 39.9%) works by moving latent content into the reportable workspace."
+    },
+    {
+      "subject": "concept injection",
+      "predicate": "studied_from_two_sides",
+      "object": "Psychological steering studies injection as control (how well can we write states in, and at what trustworthiness cost); latent introspection studies injection as detection (can the model notice it was written to). The same intervention class — adding vectors to activations — defines both an attack/control surface and a self-monitoring test."
+    },
+    {
+      "subject": "directed modulation and introspection",
+      "predicate": "converging_evidence",
+      "object": "The workspace paper shows models can deliberately activate concepts in J-space (top-down modulation); the introspection paper shows models can recover injected concepts when properly prompted (1.05 bits mutual information). Both indicate models have functional read/write access to their own intermediate representations."
+    },
+    {
+      "subject": "self-report reliability",
+      "predicate": "cross_paper_lesson",
+      "object": "Model self-reports are systematically incomplete rather than meaningless: J-space ablation abolishes experiential language (report tracks a real internal structure), yet default denials of concept injection are false negatives (real internal signals go unreported). Self-report is evidence about workspace contents, not about the whole model state."
+    },
+    {
+      "subject": "steering trustworthiness and workspace",
+      "predicate": "mechanistic_hypothesis",
+      "object": "Steering side effects (joy degrading adversarial factuality, anger raising toxicity but hardening leakage resistance) are consistent with the workspace being small (6-10% of variance) and broadcast-coupled: writing an affect vector into a shared broadcast space perturbs many downstream consumers at once, so state induction cannot be surgically isolated from safety-relevant behavior."
+    },
+    {
+      "subject": "KV redundancy and activation-space methods",
+      "predicate": "practical_convergence",
+      "object": "If per-token state reduces losslessly to residual vectors (5 KB vs 136 KB, bit-identical outputs), then cache-level techniques — knowledge injection into the KV cache, steering, workspace readout — can all be reformulated as operations on stored residual streams, with keys/values recomputed on demand (up to 5x faster than cache reads at moderate batch sizes)."
+    },
+    {
+      "subject": "global workspace theory in LLMs",
+      "predicate": "consciousness_research_status_2026",
+      "object": "The workspace paper provides functional (not phenomenal) evidence for access-consciousness-like structure in LLMs; the introspection paper adds functional introspective access to internal states. Both groups explicitly decline to draw phenomenal conclusions, but jointly they move machine-consciousness questions from philosophy into measurable mechanism."
+    },
+    {
+      "subject": "elicitation gap",
+      "predicate": "field_wide_pattern_2026",
+      "object": "A recurring 2026 result: capabilities measured behaviorally at near zero can be latent and unlockable — introspective detection jumps >100x with accurate mechanistic framing; workspace contents causally drive reasoning (54-70% output change on vector swaps) despite being a small variance fraction. Behavioral nulls are weak evidence of mechanistic absence."
+    },
+    {
+      "subject": "safety agenda implied by these papers",
+      "predicate": "synthesis",
+      "object": "(1) Monitor the residual stream, not just outputs — that is where both state and its manipulation live; (2) treat persona/affect steering as a safety surface with measurable trustworthiness costs; (3) do not trust denial-of-manipulation self-reports without workspace-level checks; (4) lossless residual-stream checkpointing makes such monitoring cheaper than full KV retention."
+    }
+  ]
+}

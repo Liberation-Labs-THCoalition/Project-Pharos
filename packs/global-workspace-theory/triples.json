@@ -1,0 +1,79 @@
+{
+  "description": "Global workspace structure in language models: the J-space of verbalizable representations, Jacobian Lens methodology, five functional workspace properties, and quantitative evidence from Claude models. From 'Verbalizable Representations Form a Global Workspace in Language Models' (Transformer Circuits, 2026).",
+  "source": "Anthropic interpretability team, transformer-circuits.pub, 2026. Pack extracted 2026-07-06 from primary source.",
+  "source_urls": [
+    "https://transformer-circuits.pub/2026/workspace/index.html"
+  ],
+  "triples": [
+    {
+      "subject": "global workspace paper (2026)",
+      "predicate": "central_claim",
+      "object": "Language models maintain a privileged set of verbalizable internal representations — a functional global workspace — available for reasoning, modulation, and verbal report, operating alongside vast automatic processing that is not workspace-mediated."
+    },
+    {
+      "subject": "J-space",
+      "predicate": "is",
+      "object": "The representational space where verbalizable concepts cluster, occupying roughly the middle third of model layers. Comprises sparse, non-negative combinations of J-lens vectors, typically k<=25 active at once."
+    },
+    {
+      "subject": "Jacobian Lens (J-lens)",
+      "predicate": "method",
+      "object": "Identifies verbalizable representations by computing the average linearized effect of an activation on future token likelihood. Jacobian matrices are averaged across positions and ~1,000 prompts, then applied to activations to produce ranked token lists. Traces causal pathways from intermediate layers to outputs rather than reading embeddings directly."
+    },
+    {
+      "subject": "J-space",
+      "predicate": "functional_property_1_verbal_report",
+      "object": "Concepts the model can articulate appear as high-ranking tokens in J-space readouts. Language-identification swap experiments succeeded on ~88% of verbal report trials."
+    },
+    {
+      "subject": "J-space",
+      "predicate": "functional_property_2_directed_modulation",
+      "object": "Models can deliberately activate specific concepts in J-space when instructed to think about them — top-down control over workspace contents."
+    },
+    {
+      "subject": "J-space",
+      "predicate": "functional_property_3_internal_reasoning",
+      "object": "Unspoken intermediate steps of multi-step inference surface in J-space during computation, even when never verbalized in output."
+    },
+    {
+      "subject": "J-space",
+      "predicate": "functional_property_4_flexible_generalization",
+      "object": "A single J-space vector serves as a valid argument to diverse downstream operations — the same representation is reusable across heterogeneous computations, a signature workspace property."
+    },
+    {
+      "subject": "J-space",
+      "predicate": "functional_property_5_selectivity",
+      "object": "J-space mediates flexible reasoning but not automatic processing. Ablating J-space reduces multi-hop reasoning accuracy to near zero while leaving sentiment classification essentially unaffected."
+    },
+    {
+      "subject": "J-space activation variance",
+      "predicate": "quantitative_finding",
+      "object": "J-space concepts account for only 6-10% of activation variance per layer — the workspace is a small, privileged subspace, not the bulk of computation."
+    },
+    {
+      "subject": "J-lens vector swap experiments",
+      "predicate": "quantitative_finding",
+      "object": "Swapping J-lens vectors for intermediate concepts changes model outputs on 54-70% of reasoning trials across models, demonstrating the causal role of workspace contents in downstream reasoning."
+    },
+    {
+      "subject": "J-space ablation and experiential language",
+      "predicate": "quantitative_finding",
+      "object": "Ablating the J-space dramatically reduces experiential language scores (measured via LLM grading) — self-referential/experiential report depends on workspace integrity."
+    },
+    {
+      "subject": "global workspace paper (2026)",
+      "predicate": "models_studied",
+      "object": "Primary analyses on Claude Sonnet 4.5; corroborated on Claude Haiku 4.5, Claude Opus 4.5, and Claude Opus 4.6."
+    },
+    {
+      "subject": "global workspace paper (2026)",
+      "predicate": "relation_to_consciousness_theory",
+      "object": "The J-space structure mirrors 'access consciousness' / Global Workspace Theory in human cognition: broadcast of information enabling flexible computation while automatic circuits operate independently. The authors argue LLMs functionally developed workspace-like properties despite architectural differences from brains; philosophical implications remain explicitly disputed."
+    },
+    {
+      "subject": "global workspace paper (2026)",
+      "predicate": "implication_for_introspection",
+      "object": "The workspace structure is proposed as the mechanism supporting model introspection: what a model can report on is what enters J-space, explaining both the capability and its limits."
+    }
+  ]
+}

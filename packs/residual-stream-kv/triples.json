@@ -1,0 +1,54 @@
+{
+  "description": "KV cache redundancy in transformer inference: proof that keys/values are deterministic projections of the residual stream, bit-identical recomputation, and the KV-Direct memory-efficient inference system. From 'The Residual Stream Is All You Need' (arXiv:2603.19664).",
+  "source": "Qasim, Zhang, Shaheen, Alharith, Zhang — arXiv:2603.19664, 2026. Pack extracted 2026-07-06 from primary source.",
+  "source_urls": [
+    "https://arxiv.org/abs/2603.19664"
+  ],
+  "triples": [
+    {
+      "subject": "KV cache",
+      "predicate": "central_claim",
+      "object": "The transformer KV cache is mathematically redundant: keys and values at every layer can be deterministically recomputed from the residual stream with zero reconstruction error — bit-identically, not approximately."
+    },
+    {
+      "subject": "keys and values",
+      "predicate": "are",
+      "object": "Deterministic linear projections of the residual stream at each layer. Caching them stores derived quantities; the residual stream is the sufficient statistic for attention over past tokens."
+    },
+    {
+      "subject": "residual stream KV paper",
+      "predicate": "empirical_validation",
+      "object": "Verified across six models from 135M to 4B parameters spanning four architecture families, with perfect output matching between cached and recomputed inference."
+    },
+    {
+      "subject": "KV-Direct",
+      "predicate": "is",
+      "object": "A memory-efficient inference method that checkpoints only residual stream vectors (~5 KB per token) instead of full KV pairs (~136 KB per token), recomputing keys/values on demand — a ~27x per-token memory reduction."
+    },
+    {
+      "subject": "KV-Direct",
+      "predicate": "memory_performance",
+      "object": "Over 20 conversation turns, peak memory holds at 42 MB versus 103 MB for standard KV caching, while maintaining 100% token accuracy. Existing cache-eviction baselines degrade to 5-28% token accuracy under comparable memory budgets."
+    },
+    {
+      "subject": "KV recomputation",
+      "predicate": "speed_finding",
+      "object": "Recomputing keys/values from the residual stream can be up to 5x faster than reading cached tensors from memory at moderate batch sizes — compute can beat memory bandwidth."
+    },
+    {
+      "subject": "KV cache eviction methods",
+      "predicate": "contrast",
+      "object": "Eviction/compression baselines accept lossy approximation (5-28% token accuracy retention in the paper's long-conversation tests); KV-Direct is lossless because it stores the quantity keys/values are derived from rather than approximating the derivatives."
+    },
+    {
+      "subject": "residual stream",
+      "predicate": "conceptual_status",
+      "object": "Elevated from an interpretability construct to the canonical state object of transformer inference: it is the minimal information that must persist per token, with attention KV as disposable derived views."
+    },
+    {
+      "subject": "residual stream KV paper",
+      "predicate": "practical_implication",
+      "object": "Long-context and multi-turn inference on memory-constrained hardware becomes feasible by trading modest recompute for ~27x smaller per-token state; also implies KV-cache-injection techniques can equivalently operate on residual stream vectors."
+    }
+  ]
+}
