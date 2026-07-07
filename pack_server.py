@@ -333,7 +333,7 @@ def main():
 
     PackHandler.registry = registry
 
-    server = HTTPServer(("127.0.0.1", args.port), PackHandler)
+    server = HTTPServer(("0.0.0.0", args.port), PackHandler)
     server.socket.setsockopt(__import__('socket').SOL_SOCKET, __import__('socket').SO_REUSEADDR, 1)
     total_triples = sum(len(p.triples) for p in registry.packs.values())
     print(f"\nPharos Pack Server listening on http://localhost:{args.port}")

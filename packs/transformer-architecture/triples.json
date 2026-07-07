@@ -272,17 +272,17 @@
       "covers_triples": "mixture of experts (MoE) routes, MoE advantage, MoE implication"
     },
     {
-      "url": "https://arxiv.org/abs/2310.08164",
+      "url": "https://transformer-circuits.pub/2023/monosemantic-features/index.html",
       "description": "Bricken et al. (2023) 'Towards Monosemanticity: Decomposing Language Models With Dictionary Learning' - sparse autoencoders for superposition",
       "covers_triples": "sparse autoencoders attempt_to"
     },
     {
       "url": "https://arxiv.org/abs/2406.11944",
-      "description": "Dunefsky, Beren, and Neel Nanda (2024) 'Transcoders Find Interpretable LLM Feature Circuits' - transcoders vs SAEs for MLP interpretation",
+      "description": "Dunefsky, Chlenski, and Nanda (2024) 'Transcoders Find Interpretable LLM Feature Circuits' - transcoders vs SAEs for MLP interpretation",
       "covers_triples": "transcoders improve_on_SAEs_by"
     },
     {
-      "url": "https://arxiv.org/abs/2101.03961",
+      "url": "https://arxiv.org/abs/2002.04745",
       "description": "Xiong et al. (2020) 'On Layer Normalization in the Transformer Architecture' - pre-norm vs post-norm analysis",
       "covers_triples": "pre-norm applies_norm, layer normalization purpose"
     }
