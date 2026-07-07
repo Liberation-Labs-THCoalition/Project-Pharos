@@ -1,0 +1,143 @@
+{
+  "description": "Medical debt navigation: hospital charity care under IRS 501(r), itemized bill audits, No Surprises Act protections, post-2023 credit reporting changes, and negotiation strategies with specific thresholds and timelines.",
+  "sources": [
+    "IRS 26 CFR 1.501(r) final regulations (2014)",
+    "No Surprises Act, Consolidated Appropriations Act 2021, effective Jan 1 2022",
+    "CFPB medical debt credit reporting rule (2024, effective 2025)",
+    "HHS Hospital Price Transparency Rule, effective Jan 1 2021",
+    "CMS financial assistance guidance, MLN Matters",
+    "NCUA/CFPB debt collection rules, Reg F effective Nov 2021"
+  ],
+  "triples": [
+    {
+      "subject": "IRS 501(r)",
+      "predicate": "requires",
+      "object": "nonprofit hospitals to have a Financial Assistance Policy (FAP), limit charges to FAP-eligible patients, and make reasonable efforts to determine FAP eligibility before collection"
+    },
+    {
+      "subject": "Financial Assistance Policy (FAP)",
+      "predicate": "must_cover",
+      "object": "eligibility criteria, basis for calculating amounts charged, method for applying, and plain-language summary — hospitals must post FAP on website and make available in ERs"
+    },
+    {
+      "subject": "FAP income threshold",
+      "predicate": "common_range",
+      "object": "most hospitals set free care at 200–250% FPL and discounted care up to 350–400% FPL; thresholds vary by hospital — always ask for the hospital's specific FAP"
+    },
+    {
+      "subject": "501(r) collections restriction",
+      "predicate": "prohibits",
+      "object": "extraordinary collection actions (ECAs) — lawsuits, liens, wage garnishment, credit bureau reporting — until at least 120 days after first bill and after making reasonable FAP determination effort"
+    },
+    {
+      "subject": "FAP application",
+      "predicate": "patient_right",
+      "object": "patient may apply for FAP up to 240 days after first post-discharge billing statement; hospital must suspend ECAs while application is pending"
+    },
+    {
+      "subject": "itemized bill",
+      "predicate": "patient_right",
+      "object": "you have the right to request a complete itemized bill; hospitals must provide it; common errors include duplicate charges, upcoding, unbundling, and charges for services not rendered"
+    },
+    {
+      "subject": "itemized bill audit",
+      "predicate": "common_errors_to_check",
+      "object": "duplicate line items, wrong diagnosis code (affects pricing), charges for canceled procedures, observation vs. inpatient misclassification, medications billed at retail not contract rate"
+    },
+    {
+      "subject": "hospital price transparency",
+      "predicate": "requires",
+      "object": "hospitals to publish machine-readable file of all standard charges and a consumer-friendly display of 300 shoppable services — use to benchmark your bill against posted rates"
+    },
+    {
+      "subject": "No Surprises Act",
+      "predicate": "protects_against",
+      "object": "surprise bills from out-of-network providers at in-network facilities (ERs, air ambulance, and non-emergency care where you had no choice of provider)"
+    },
+    {
+      "subject": "No Surprises Act",
+      "predicate": "limits_patient_cost_to",
+      "object": "in-network cost-sharing amount; patient cannot be billed more than in-network deductible/copay/coinsurance for covered surprise bill services"
+    },
+    {
+      "subject": "No Surprises Act",
+      "predicate": "dispute_process",
+      "object": "if billed incorrectly, submit complaint to CMS at cms.gov/nosurprises; 60-day window from receipt of bill to initiate dispute; insurer must respond within 30 days"
+    },
+    {
+      "subject": "No Surprises Act",
+      "predicate": "does_not_cover",
+      "object": "ground ambulance (excluded from federal law as of 2025), out-of-network providers you chose knowingly and signed consent for, or services at out-of-network facilities you chose"
+    },
+    {
+      "subject": "medical debt credit reporting (post-2023)",
+      "predicate": "CFPB_rule_2024",
+      "object": "CFPB finalized rule in January 2025 removing medical debt from credit reports entirely; if in effect, medical debt cannot appear on consumer credit reports"
+    },
+    {
+      "subject": "medical debt credit reporting (post-2023)",
+      "predicate": "Equifax_TransUnion_Experian_change",
+      "object": "as of July 2022, all three major bureaus removed paid medical debt and medical debts under $500; as of March 2023, removed medical debt under 1 year old"
+    },
+    {
+      "subject": "medical debt credit reporting (post-2023)",
+      "predicate": "collection_reporting_timeline",
+      "object": "debt collector cannot report medical debt to credit bureaus until at least 1 year from date of first delinquency (up from 6 months for medical debt under CFPB guidance)"
+    },
+    {
+      "subject": "medical debt negotiation",
+      "predicate": "first_step",
+      "object": "apply for FAP before negotiating — charity care can eliminate or dramatically reduce the bill; skip this and you may negotiate against a number that should be $0"
+    },
+    {
+      "subject": "medical debt negotiation",
+      "predicate": "reference_point",
+      "object": "ask for Medicare rate as a benchmark — hospitals typically receive 20–40% of billed charges from Medicare; this is a reasonable negotiation floor for uninsured patients"
+    },
+    {
+      "subject": "medical debt negotiation",
+      "predicate": "lump_sum_discount",
+      "object": "hospitals often accept 40–60% of billed charges as lump-sum settlement; document any settlement agreement in writing before paying"
+    },
+    {
+      "subject": "medical debt negotiation",
+      "predicate": "payment_plans",
+      "object": "501(r) hospitals must offer payment plans to FAP-eligible patients; many hospitals have interest-free plans up to 24 months — ask specifically, it is rarely volunteered"
+    },
+    {
+      "subject": "medical billing advocate",
+      "predicate": "is",
+      "object": "professional who reviews and disputes medical bills; typically paid on contingency (percentage of savings); find through Alliance of Claims Assistance Professionals (claims.org)"
+    },
+    {
+      "subject": "state charity care laws",
+      "predicate": "note",
+      "object": "some states (CA, IL, NJ, NY, TX) have charity care laws that go beyond 501(r) and cover for-profit hospitals or set higher income thresholds — check state health department"
+    },
+    {
+      "subject": "California AB 1320 (2022)",
+      "predicate": "requires",
+      "object": "hospitals to screen patients for charity care eligibility before reporting debt to collection or credit bureaus; extends charity care to 400% FPL minimum"
+    },
+    {
+      "subject": "medical debt lawsuit defense",
+      "predicate": "key_defense",
+      "object": "challenge whether hospital complied with 501(r) before filing suit — failure to make reasonable FAP eligibility effort is a violation that can void the collection action"
+    },
+    {
+      "subject": "medical debt lawsuit defense",
+      "predicate": "statute_of_limitations",
+      "object": "varies by state: typically 3–6 years for written contracts (medical bills); after SOL expires, debt is time-barred — collector cannot sue, but debt still technically exists"
+    },
+    {
+      "subject": "CMS complaint",
+      "predicate": "submit_at",
+      "object": "1-800-MEDICARE or cms.gov for Medicare billing issues; use cms.gov/nosurprises for No Surprises Act violations; state insurance commissioner for insurance billing disputes"
+    },
+    {
+      "subject": "emergency care",
+      "predicate": "EMTALA_right",
+      "object": "under EMTALA, hospitals with ERs must screen and stabilize any patient regardless of ability to pay — you cannot be turned away from an ER; billing comes after stabilization"
+    }
+  ]
+}

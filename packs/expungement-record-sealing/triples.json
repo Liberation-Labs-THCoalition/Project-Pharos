@@ -1,0 +1,180 @@
+{
+  "description": "State-by-state expungement and record sealing eligibility: waiting periods, Clean Slate automation, petition requirements, and disqualifying offenses for CA, TX, NY, FL, PA, IL, OH, MI, GA, NC.",
+  "sources": [
+    "Clean Slate Initiative state tracker (cleanslateworks.org), verified 2025",
+    "National Inventory of Collateral Consequences of Conviction (NICCC), ABA",
+    "State legislative codes: CA Penal Code 1203.4, TX Code Crim Proc Ch. 55, NY CPL Article 160, FL Stat. 943.0585, PA 18 Pa.C.S. 9122, 730 ILCS 5/5-5.5, Ohio RC 2953.32, MCL 780.621, OCGA 35-3-37, NC GS 15A-145"
+  ],
+  "triples": [
+    {
+      "subject": "expungement",
+      "predicate": "means",
+      "object": "court order sealing or destroying criminal record; legal effect varies by state — some allow denial of arrest, others only seal from public view"
+    },
+    {
+      "subject": "Clean Slate states",
+      "predicate": "provide",
+      "object": "automatic expungement without petition; as of 2025: PA, MI, MN, CO, CT, DE, MD, NJ, NM, OK, UT, VA — no lawyer required"
+    },
+    {
+      "subject": "California (CA)",
+      "predicate": "expungement_law",
+      "object": "Penal Code 1203.4 allows dismissal of conviction after completing probation; does not seal record but can deny on most private employment applications"
+    },
+    {
+      "subject": "California (CA)",
+      "predicate": "waiting_period",
+      "object": "no waiting period after probation completion; automatic relief under AB 1076 (2023) for eligible felonies and misdemeanors — courts must act without petition"
+    },
+    {
+      "subject": "California (CA)",
+      "predicate": "disqualifying_offenses",
+      "object": "serious felonies (PC 1192.7), violent felonies (PC 667.5b), sex offenses requiring registration, and child molestation are ineligible"
+    },
+    {
+      "subject": "California (CA)",
+      "predicate": "certificates",
+      "object": "Certificate of Rehabilitation available after 7–10 years for felonies; provides evidence of rehabilitation for licensing boards"
+    },
+    {
+      "subject": "Texas (TX)",
+      "predicate": "expungement_law",
+      "object": "Expunction under CCP Ch. 55 destroys records; available for arrests not leading to conviction, deferred adjudication for some Class A/B misdemeanors, and acquittals"
+    },
+    {
+      "subject": "Texas (TX)",
+      "predicate": "order_of_nondisclosure",
+      "object": "seals record from public but not from law enforcement; available for deferred adjudication probation after waiting period"
+    },
+    {
+      "subject": "Texas (TX)",
+      "predicate": "waiting_period_nondisclosure",
+      "object": "misdemeanors: 2 years after deferred adjudication discharge; felonies: 5 years after discharge — some felonies ineligible entirely"
+    },
+    {
+      "subject": "Texas (TX)",
+      "predicate": "disqualifying_offenses",
+      "object": "family violence, stalking, trafficking, sexual offenses, murder, and most felonies involving firearms are ineligible for nondisclosure"
+    },
+    {
+      "subject": "New York (NY)",
+      "predicate": "expungement_law",
+      "object": "CPL 160.59 allows sealing (not destruction) of up to 2 convictions (max 1 felony) after 10-year wait from sentence completion"
+    },
+    {
+      "subject": "New York (NY)",
+      "predicate": "waiting_period",
+      "object": "10 years from sentence OR release from incarceration, whichever is later"
+    },
+    {
+      "subject": "New York (NY)",
+      "predicate": "marijuana_expungement",
+      "object": "MRTA (2021) automatically expunges convictions for marijuana possession up to 3 oz; no petition needed"
+    },
+    {
+      "subject": "New York (NY)",
+      "predicate": "disqualifying_offenses",
+      "object": "sex offenses, violent felonies under CPL 70.02, and Class A felonies are ineligible for sealing"
+    },
+    {
+      "subject": "Florida (FL)",
+      "predicate": "expungement_law",
+      "object": "FL Stat. 943.0585 seals or expunges; sealing for first-time offenders who completed diversion; expungement after 10 years of sealing — one expungement per lifetime"
+    },
+    {
+      "subject": "Florida (FL)",
+      "predicate": "waiting_period",
+      "object": "10 years sealed before expungement; must obtain Certificate of Eligibility from FDLE before petitioning court"
+    },
+    {
+      "subject": "Florida (FL)",
+      "predicate": "disqualifying_offenses",
+      "object": "very broad list: domestic violence, sexual offenses, child abuse, DUI with injury, robbery, carjacking, stalking, and others are ineligible for sealing or expungement"
+    },
+    {
+      "subject": "Pennsylvania (PA)",
+      "predicate": "clean_slate_law",
+      "object": "Clean Slate Act (2018, expanded 2020) provides automatic sealing after 10 years for misdemeanors with sentences under 2 years and non-conviction records"
+    },
+    {
+      "subject": "Pennsylvania (PA)",
+      "predicate": "petition_expungement",
+      "object": "full expungement by petition for: summary offenses after 5 years, ARD completion, acquittals, charges nolle prossed, and age 70+ with 10 clean years"
+    },
+    {
+      "subject": "Pennsylvania (PA)",
+      "predicate": "disqualifying_offenses",
+      "object": "felonies, M1 misdemeanors (unless older than 7 years with clean record), sex offenses, and offenses with sentences over 2 years not eligible for automatic sealing"
+    },
+    {
+      "subject": "Illinois (IL)",
+      "predicate": "expungement_law",
+      "object": "730 ILCS 5/5-5.5 allows expungement of arrests without conviction and some juvenile records; sealing available for broader set of adult convictions"
+    },
+    {
+      "subject": "Illinois (IL)",
+      "predicate": "waiting_period",
+      "object": "misdemeanors: 3 years from sentence completion; most felonies: 5 years; Class 2–4 felonies eligible for sealing after 5 years under recent amendments"
+    },
+    {
+      "subject": "Illinois (IL)",
+      "predicate": "cannabis_expungement",
+      "object": "Cannabis Regulation Act (2019) provides automatic expungement for convictions of 30g or less possession — no action needed by individual"
+    },
+    {
+      "subject": "Ohio (OH)",
+      "predicate": "expungement_law",
+      "object": "RC 2953.32 allows sealing of record; 2023 S.B. 288 greatly expanded eligibility — most misdemeanors and many felonies now eligible after waiting period"
+    },
+    {
+      "subject": "Ohio (OH)",
+      "predicate": "waiting_period",
+      "object": "misdemeanors: 1 year; F4/F5 felonies: 3 years; F3 felonies: 5 years; F1/F2 felonies: 7 years from final discharge"
+    },
+    {
+      "subject": "Michigan (MI)",
+      "predicate": "clean_slate_law",
+      "object": "Clean Slate Act (2021) provides automatic expungement after 7 years for misdemeanors (after 10 years for felonies) — applies to most offenses automatically"
+    },
+    {
+      "subject": "Michigan (MI)",
+      "predicate": "petition_option",
+      "object": "petition available immediately for some offenses; up to 3 felonies and unlimited misdemeanors can be set aside by petition under MCL 780.621"
+    },
+    {
+      "subject": "Georgia (GA)",
+      "predicate": "expungement_law",
+      "object": "OCGA 35-3-37 allows restriction (sealing) of records for: non-conviction arrests, charges dismissed before indictment, and some first-offender completions"
+    },
+    {
+      "subject": "Georgia (GA)",
+      "predicate": "limitation",
+      "object": "GA does not expunge convictions generally; First Offender Act (OCGA 42-8-60) avoids a conviction entirely if completed — must be applied at sentencing, not retroactively"
+    },
+    {
+      "subject": "North Carolina (NC)",
+      "predicate": "expungement_law",
+      "object": "GS 15A-145 series allows expungement for non-convictions, some first-offense misdemeanors and felonies, and older convictions; 2017 Second Chance Act expanded eligibility"
+    },
+    {
+      "subject": "North Carolina (NC)",
+      "predicate": "waiting_period",
+      "object": "non-violent misdemeanors: 5 years; non-violent Class H/I felonies: 10 years from sentence completion; some offenses have no waiting period if not convicted"
+    },
+    {
+      "subject": "petition-based expungement",
+      "predicate": "general_process",
+      "object": "file petition in sentencing court → serve DA → attend hearing (sometimes waived) → judge reviews and signs order → clerk notifies arresting agencies and state repository"
+    },
+    {
+      "subject": "certificates of rehabilitation",
+      "predicate": "available_in",
+      "object": "CA, IL, NM, and a few other states; not an expungement but signals rehabilitation to licensing boards; some states allow judicial certificates for employment purposes"
+    },
+    {
+      "subject": "federal convictions",
+      "predicate": "expungement_availability",
+      "object": "no general federal expungement statute for adult convictions; limited expungement available for some juvenile federal offenses and certain drug offenses under 18 USC 3607"
+    }
+  ]
+}

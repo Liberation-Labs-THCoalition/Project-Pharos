@@ -1,0 +1,143 @@
+{
+  "description": "First 90 days after incarceration: ID recovery without ID, Medicaid reactivation, SNAP eligibility by state, voting rights restoration, parole/probation basics, and employment resources.",
+  "sources": [
+    "SSA Program Operations Manual System (POMS), SI 00501.420",
+    "USDA SNAP eligibility: 7 CFR 273.11, food and nutrition service policy",
+    "National Reentry Resource Center, BJA",
+    "National Conference of State Legislatures voting rights tracker (2025)",
+    "HHS guidance on Medicaid suspension vs. termination (CMCS Info Bulletin 2014)",
+    "EEOC guidance on criminal record background checks (2012, updated 2024)"
+  ],
+  "triples": [
+    {
+      "subject": "ID without ID problem",
+      "predicate": "common_solution",
+      "object": "obtain birth certificate first using any documents you have (incarceration records accepted by most vital records offices); then use birth certificate plus incarceration release papers to get state ID"
+    },
+    {
+      "subject": "birth certificate",
+      "predicate": "obtain_with",
+      "object": "VitalChek.com (online, $10–$40); or contact state vital records office; many DOCs assist before release — ask unit case manager at least 60 days out"
+    },
+    {
+      "subject": "Social Security card",
+      "predicate": "replace_after_ID",
+      "object": "free from SSA (ssa.gov/number-card); need identity document (state ID or passport) and proof of citizenship; can apply online in most states if SSN is already on file"
+    },
+    {
+      "subject": "state ID fee waivers",
+      "predicate": "availability",
+      "object": "most states offer free or reduced-fee IDs for recently released individuals; ask DMV specifically — some require proof of release within 30–180 days; DC, NY, IL, CA have robust waiver programs"
+    },
+    {
+      "subject": "Medicaid suspension vs. termination",
+      "predicate": "federal_rule",
+      "object": "federal law requires states to suspend (not terminate) Medicaid during incarceration for most individuals; suspended Medicaid reactivates faster on release than a new application"
+    },
+    {
+      "subject": "Medicaid reactivation",
+      "predicate": "timeline",
+      "object": "if suspended: coverage can resume within 1–7 days of release if state systems work correctly; if terminated: reapplication required — processing up to 45 days (expedited if homeless)"
+    },
+    {
+      "subject": "Medicaid reactivation",
+      "predicate": "action_required",
+      "object": "contact state Medicaid office on day of release with ID and release paperwork; many correctional facilities can start paperwork pre-release — check with case manager"
+    },
+    {
+      "subject": "ACA Medicaid expansion",
+      "predicate": "reentry_impact",
+      "object": "in the 40 expansion states: returning citizens without dependent children who were previously ineligible may qualify for first time; income cutoff approximately $21,000/year (2025)"
+    },
+    {
+      "subject": "SNAP eligibility with felony drug conviction",
+      "predicate": "federal_lifetime_ban",
+      "object": "1996 welfare law created lifetime SNAP ban for drug felony convictions; BUT most states have opted out partially or fully — check your state"
+    },
+    {
+      "subject": "SNAP drug felony ban opt-outs",
+      "predicate": "states_with_no_ban",
+      "object": "CA, CO, CT, IL, MD, MA, ME, MI, MN, NY, OH, OR, PA, RI, VT, WA, WI, and others have fully eliminated the ban; check current USDA FNS state options table"
+    },
+    {
+      "subject": "SNAP drug felony ban opt-outs",
+      "predicate": "states_with_partial_ban",
+      "object": "TX, FL, GA, NC, and others allow SNAP if enrolled in drug treatment program or after waiting period; some require compliance with probation/parole"
+    },
+    {
+      "subject": "SNAP application timeline",
+      "predicate": "standard",
+      "object": "30-day processing; 7-day expedited if income under $150/month and liquid assets under $100, or shelter costs exceed income — request expedited explicitly at application"
+    },
+    {
+      "subject": "voting rights restoration",
+      "predicate": "varies_by_state",
+      "object": "rights restore automatically on release in ME, VT (never lose them — can vote from prison), plus 21 other states; others require probation/parole completion or waiting period"
+    },
+    {
+      "subject": "voting rights restoration",
+      "predicate": "on_release_from_prison_states",
+      "object": "CA, CO, CT, HI, IL, MD, MA, MI, NV, NH, NJ, NY (2021 law), OR, RI, WA restore voting rights automatically upon release from incarceration"
+    },
+    {
+      "subject": "voting rights restoration",
+      "predicate": "after_probation_parole_states",
+      "object": "FL (Amendment 4, 2018, but requires completion of full sentence including fines/fees), TX, GA, PA, OH, NC restore after completing all supervision"
+    },
+    {
+      "subject": "voting rights restoration",
+      "predicate": "longest_wait_states",
+      "object": "IA and a few others require governor pardon or formal petition process; TN and VA have varying requirements — check with state board of elections for current rules"
+    },
+    {
+      "subject": "parole compliance basics",
+      "predicate": "standard_conditions",
+      "object": "report to PO within 24–72 hours of release (varies by state), notify of address/employment changes, no new arrests, no weapons, no leaving jurisdiction without permission"
+    },
+    {
+      "subject": "parole violation",
+      "predicate": "graduated_response",
+      "object": "technical violations (missed meeting, failed drug test) often result in sanctions rather than reincarceration under Second Chance Act guidance — you have right to hearing before revocation"
+    },
+    {
+      "subject": "probation fees",
+      "predicate": "note",
+      "object": "many states charge supervision fees ($30–$100/month); inability to pay is not automatic violation if you're making good-faith effort — document inability; some states have suspended fees"
+    },
+    {
+      "subject": "employment with criminal record",
+      "predicate": "EEOC_guidance",
+      "object": "employers cannot categorically exclude all people with criminal records — must consider nature of offense, time elapsed, and job relevance (Green factors); blanket bans may violate Title VII"
+    },
+    {
+      "subject": "ban-the-box laws",
+      "predicate": "coverage",
+      "object": "37 states and 150+ cities/counties have ban-the-box laws delaying criminal history question until later in hiring; federal contractors covered by Executive Order 13672 equivalent policies"
+    },
+    {
+      "subject": "federal bonding program",
+      "predicate": "provides",
+      "object": "free fidelity bonds ($5,000 coverage, 6 months) to employers hiring high-risk job applicants including people with criminal records; administered through state workforce agencies"
+    },
+    {
+      "subject": "Work Opportunity Tax Credit (WOTC)",
+      "predicate": "incentive",
+      "object": "employers get $2,400–$9,600 federal tax credit for hiring ex-felons within 1 year of conviction or release; mention this to potential employers — it reduces their cost of hiring you"
+    },
+    {
+      "subject": "reentry housing",
+      "predicate": "HUD_rule",
+      "object": "PHAs can admit people with criminal records to public housing unless conviction is for methamphetamine production on premises or sex offender registration — other denials are discretionary"
+    },
+    {
+      "subject": "reentry housing",
+      "predicate": "Section_8_note",
+      "object": "lifetime ban for sex offenders on registry; 3-year ban after drug eviction; other convictions are discretionary — appeal denials using One Strike guidance; ask for reasonable accommodation"
+    },
+    {
+      "subject": "reentry resources",
+      "predicate": "national_directory",
+      "object": "re-entry.net and reentrycouncil.org provide state-by-state resource directories; 211 hotline connects to local services for housing, food, and benefits in most areas"
+    }
+  ]
+}

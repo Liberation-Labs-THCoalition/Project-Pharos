@@ -1,0 +1,148 @@
+{
+  "description": "Disaster recovery navigation: FEMA Individual Assistance application and appeals, SBA disaster loans, D-SNAP activation, insurance claim disputes, and contractor fraud red flags.",
+  "sources": [
+    "44 CFR Parts 206 and 212 (FEMA Individual Assistance regulations)",
+    "FEMA Individual Assistance Policy FP 104-009-03 (2021)",
+    "SBA Disaster Loan Program 13 CFR Part 123",
+    "USDA FNS D-SNAP policy (7 CFR 280)",
+    "State Department of Insurance complaint procedures",
+    "National Insurance Crime Bureau (NICB) contractor fraud alerts"
+  ],
+  "triples": [
+    {
+      "subject": "FEMA Individual Assistance (IA)",
+      "predicate": "covers",
+      "object": "Housing Assistance (HA) for temporary housing or home repair, and Other Needs Assistance (ONA) for personal property, medical, dental, childcare, and moving costs"
+    },
+    {
+      "subject": "FEMA IA application",
+      "predicate": "apply_at",
+      "object": "DisasterAssistance.gov, FEMA app, or 1-800-621-3362; apply as soon as disaster declaration is made — do not wait for damage assessment"
+    },
+    {
+      "subject": "FEMA IA application deadline",
+      "predicate": "standard",
+      "object": "60 days from the date of major disaster declaration; check disaster-specific registration period — some are extended; missing deadline is one of the most common errors"
+    },
+    {
+      "subject": "FEMA IA application",
+      "predicate": "required_information",
+      "object": "SSN (or SSN of minor child), address of damaged property, insurance information (even if denied or insufficient), contact phone, direct deposit info for faster payment"
+    },
+    {
+      "subject": "FEMA IA denial",
+      "predicate": "most_common_reasons",
+      "object": "(1) insufficient damage documented, (2) insurance coverage available, (3) unable to verify occupancy or ownership, (4) address not in disaster area, (5) duplicate application"
+    },
+    {
+      "subject": "FEMA IA appeal",
+      "predicate": "timeline",
+      "object": "60 days from date on denial letter to submit written appeal; do not miss this window — reinstatement after 60 days requires proof of good cause"
+    },
+    {
+      "subject": "FEMA IA appeal",
+      "predicate": "process",
+      "object": "write appeal letter explaining why decision is wrong; attach supporting documents (deed, lease, photos, contractor estimates, insurance denial letter); mail or upload to DisasterAssistance.gov"
+    },
+    {
+      "subject": "FEMA IA appeal",
+      "predicate": "success_rate_note",
+      "object": "appeals are frequently successful — inspectors may have been unable to access property, documentation was missing, or damage was underestimated; always appeal a denial"
+    },
+    {
+      "subject": "FEMA insurance requirement",
+      "predicate": "rule",
+      "object": "FEMA requires use of insurance proceeds first; if insured, you must file an insurance claim and provide documentation of outcome before FEMA will cover unmet needs"
+    },
+    {
+      "subject": "FEMA IA housing assistance",
+      "predicate": "maximum_2024",
+      "object": "maximum Housing Assistance award adjusted annually; as of 2024 approximately $43,900 for home repair/replacement; check FEMA.gov for current fiscal year cap"
+    },
+    {
+      "subject": "FEMA Transitional Sheltering Assistance (TSA)",
+      "predicate": "provides",
+      "object": "hotel/motel housing directly paid by FEMA for displaced disaster survivors who cannot return home; requires IA eligibility determination first"
+    },
+    {
+      "subject": "SBA disaster loan",
+      "predicate": "applies_to",
+      "object": "homeowners (up to $500,000 for real property), renters and homeowners (up to $100,000 for personal property), and businesses (up to $2M for economic injury or physical damage)"
+    },
+    {
+      "subject": "SBA disaster loan",
+      "predicate": "interest_rates_2024",
+      "object": "homeowners: approximately 2.75–4% depending on income and credit; businesses: approximately 4%; rates vary by disaster — check SBA disaster declaration announcement"
+    },
+    {
+      "subject": "SBA disaster loan",
+      "predicate": "apply_at",
+      "object": "SBA.gov/disaster or 1-800-659-2955; apply even if you don't want a loan — SBA denial may be required to unlock FEMA Other Needs Assistance (ONA) grants"
+    },
+    {
+      "subject": "SBA disaster loan denial",
+      "predicate": "unlocks",
+      "object": "if denied SBA loan for creditworthiness reasons, FEMA may provide additional ONA grant assistance; this is a known pathway — apply to SBA even with poor credit"
+    },
+    {
+      "subject": "D-SNAP (Disaster SNAP)",
+      "predicate": "provides",
+      "object": "emergency food benefits for households in presidentially declared disaster areas who do not normally receive SNAP; one-time or short-term benefit"
+    },
+    {
+      "subject": "D-SNAP eligibility",
+      "predicate": "income_limit",
+      "object": "disaster-net-income limit is higher than regular SNAP; includes households up to the gross income limit of the SNAP program plus disaster-related expenses (food loss, home repair costs)"
+    },
+    {
+      "subject": "D-SNAP",
+      "predicate": "activation_requirement",
+      "object": "state must request D-SNAP from USDA FNS after major disaster declaration; not available in all disasters — check USDA FNS disaster assistance page for active activations"
+    },
+    {
+      "subject": "homeowners insurance claim",
+      "predicate": "first_steps",
+      "object": "file promptly (within days not weeks — policies have prompt notice requirements); photograph all damage before cleanup; get claim number and adjuster name in writing"
+    },
+    {
+      "subject": "insurance claim dispute",
+      "predicate": "first_escalation",
+      "object": "request itemized denial letter explaining basis; ask for supervisor review; request complete claim file under your state's right-to-examine laws"
+    },
+    {
+      "subject": "insurance claim dispute",
+      "predicate": "public_adjuster",
+      "object": "public adjusters represent policyholders (not insurers) on a contingency fee (10–15% of settlement); useful for complex or large claims; find through National Association of Public Insurance Adjusters (NAPIA)"
+    },
+    {
+      "subject": "insurance claim dispute",
+      "predicate": "state_department_complaint",
+      "object": "file complaint with state Department of Insurance if insurer unreasonably delays or denies; most states require insurers to acknowledge claim within 10 days and decide within 30–45 days"
+    },
+    {
+      "subject": "insurance bad faith",
+      "predicate": "definition",
+      "object": "insurer acts in bad faith by unreasonably denying valid claim, delaying payment without cause, or failing to investigate; gives rise to bad faith lawsuit for damages beyond policy limits in most states"
+    },
+    {
+      "subject": "contractor fraud red flags",
+      "predicate": "list",
+      "object": "(1) door-to-door solicitation immediately after disaster, (2) demands large upfront cash payment, (3) no local address or license number, (4) pressures you to sign immediately, (5) offers to waive your insurance deductible"
+    },
+    {
+      "subject": "contractor fraud protection",
+      "predicate": "steps",
+      "object": "verify license with state contractor licensing board; require written contract with scope, price, and timeline; never pay more than 10–30% upfront; file complaint with NICB at 800-TEL-NICB if fraud suspected"
+    },
+    {
+      "subject": "disaster legal aid",
+      "predicate": "resource",
+      "object": "many state bar associations activate disaster legal aid hotlines after major disasters; American Bar Association provides free legal help at disasterlegalhelp.org; FEMA may fund legal aid through LSC"
+    },
+    {
+      "subject": "FEMA hazard mitigation grant",
+      "predicate": "note",
+      "object": "after disaster, FEMA Hazard Mitigation Grant Program (HMGP) may fund elevation, retrofitting, or buyout of flood-prone homes; contact state emergency management agency — separate from IA grants"
+    }
+  ]
+}
