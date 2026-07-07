@@ -1,0 +1,156 @@
+{
+  "description": "US medication access for uninsured and underinsured: patient assistance programs, $4 generics, insulin cost caps, 340B clinics, manufacturer programs. Verified 2026.",
+  "source": "NeedyMeds, RxAssist, HRSA 340B program guidance, IRA 2022 insulin cap provisions, FDA generic drug guidance",
+  "triples": [
+    {
+      "subject": "patient assistance program (PAP)",
+      "predicate": "definition",
+      "object": "free or low-cost brand-name medications provided by pharmaceutical manufacturers to uninsured or underinsured patients"
+    },
+    {
+      "subject": "patient assistance program",
+      "predicate": "eligibility_typical",
+      "object": "uninsured or underinsured, income usually under 200–400% FPL; some programs have no income cap"
+    },
+    {
+      "subject": "patient assistance program",
+      "predicate": "find_at",
+      "object": "NeedyMeds.org, RxAssist.org, or manufacturer website directly — search drug name + 'patient assistance'"
+    },
+    {
+      "subject": "patient assistance program",
+      "predicate": "application_tip",
+      "object": "doctor's office often submits applications on behalf of patients; ask your prescriber for help"
+    },
+    {
+      "subject": "$4 generics",
+      "predicate": "definition",
+      "object": "retail pharmacy programs offering common generics for $4/month or $10/90-day supply without insurance"
+    },
+    {
+      "subject": "$4 generics",
+      "predicate": "major_programs",
+      "object": "Walmart Rx $4 list, Kroger Rx Savings Club, Publix free antibiotic/prenatal program, Wegmans free generics"
+    },
+    {
+      "subject": "$4 generics",
+      "predicate": "coverage",
+      "object": "covers many common drugs: metformin, lisinopril, atorvastatin, amoxicillin, levothyroxine, SSRIs, others"
+    },
+    {
+      "subject": "GoodRx",
+      "predicate": "provides",
+      "object": "free coupon/discount program reducing retail drug prices — often cheaper than insurance copay"
+    },
+    {
+      "subject": "GoodRx",
+      "predicate": "note",
+      "object": "cannot be combined with insurance; ask pharmacist to run GoodRx price vs. insurance to find lowest"
+    },
+    {
+      "subject": "Mark Cuban Cost Plus Drugs",
+      "predicate": "provides",
+      "object": "online pharmacy selling generics at cost plus 15% markup and $5 pharmacy fee — often dramatically cheaper"
+    },
+    {
+      "subject": "Mark Cuban Cost Plus Drugs",
+      "predicate": "find_at",
+      "object": "costplusdrugs.com — requires a valid prescription; ships to most states"
+    },
+    {
+      "subject": "insulin cost cap Medicare",
+      "predicate": "law",
+      "object": "Inflation Reduction Act 2022 caps Medicare Part D insulin at $35/month per insulin product"
+    },
+    {
+      "subject": "insulin cost cap Medicare",
+      "predicate": "effective",
+      "object": "Medicare beneficiaries — caps apply to covered insulins under Part D and Part B since January 2023"
+    },
+    {
+      "subject": "insulin manufacturer programs",
+      "predicate": "Eli_Lilly",
+      "object": "Lilly Insulin Value Program caps out-of-pocket at $35/month for uninsured; $35 co-pay cards for insured"
+    },
+    {
+      "subject": "insulin manufacturer programs",
+      "predicate": "Novo_Nordisk",
+      "object": "Patient Assistance Program for uninsured; My$99Insulin program for cash-pay patients"
+    },
+    {
+      "subject": "insulin manufacturer programs",
+      "predicate": "Sanofi",
+      "object": "Insulins Valyou Savings Program; PAP for low-income uninsured; insulinhelp.com"
+    },
+    {
+      "subject": "340B program",
+      "predicate": "definition",
+      "object": "federal program requiring drug manufacturers to provide discounted medications to qualifying healthcare organizations"
+    },
+    {
+      "subject": "340B program",
+      "predicate": "statute",
+      "object": "Section 340B of the Public Health Service Act, 42 U.S.C. § 256b"
+    },
+    {
+      "subject": "340B clinic",
+      "predicate": "who_qualifies",
+      "object": "Federally Qualified Health Centers (FQHCs), Ryan White HIV clinics, disproportionate share hospitals, tribal clinics"
+    },
+    {
+      "subject": "340B clinic",
+      "predicate": "benefit_to_patient",
+      "object": "clinic buys drugs at 340B discount and may pass savings to uninsured/underinsured patients"
+    },
+    {
+      "subject": "340B clinic",
+      "predicate": "find_at",
+      "object": "HRSA Health Center Finder: findahealthcenter.hrsa.gov — FQHCs serve patients regardless of ability to pay"
+    },
+    {
+      "subject": "FQHC sliding scale",
+      "predicate": "definition",
+      "object": "Federally Qualified Health Centers charge on sliding fee scale based on income; no one turned away for inability to pay"
+    },
+    {
+      "subject": "NeedyMeds",
+      "predicate": "provides",
+      "object": "database of PAPs, free clinics, disease-specific assistance programs, drug discount cards"
+    },
+    {
+      "subject": "NeedyMeds",
+      "predicate": "find_at",
+      "object": "needymeds.org or call 800-503-6897"
+    },
+    {
+      "subject": "RxOutreach",
+      "predicate": "provides",
+      "object": "nonprofit mail-order pharmacy offering generic medications at low cost to income-eligible patients"
+    },
+    {
+      "subject": "Extra Help / LIS",
+      "predicate": "definition",
+      "object": "Medicare Low Income Subsidy (LIS) covers most Part D premiums, deductibles, and copays for low-income enrollees"
+    },
+    {
+      "subject": "Extra Help / LIS",
+      "predicate": "eligibility",
+      "object": "income under ~150% FPL, limited resources; automatically enrolled if receiving SSI or full Medicaid"
+    },
+    {
+      "subject": "Extra Help / LIS",
+      "predicate": "apply_at",
+      "object": "Social Security Administration — ssa.gov/extrahelp or 1-800-772-1213"
+    },
+    {
+      "subject": "state pharmaceutical assistance programs",
+      "predicate": "examples",
+      "object": "Pennsylvania PACE/PACENET, New York EPIC, New Jersey PAAD — many states have senior drug assistance"
+    },
+    {
+      "subject": "medication splitting",
+      "predicate": "tip",
+      "object": "for some medications, prescribing double-dose tablets cut in half can halve cost — ask prescriber if tablet is splittable"
+    }
+  ]
+}

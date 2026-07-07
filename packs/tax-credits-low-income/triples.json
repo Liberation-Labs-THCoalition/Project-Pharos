@@ -1,0 +1,166 @@
+{
+  "description": "US federal tax credits for low-income individuals and families: EITC, CTC, Saver's Credit, premium tax credits, and free filing via VITA/TCE. Reflects tax year 2025 parameters.",
+  "source": "IRS Publication 596 (EITC), 972 (CTC), 590-A (Saver's Credit), 974 (premium tax credits), VITA program; verified 2026",
+  "triples": [
+    {
+      "subject": "Earned Income Tax Credit (EITC)",
+      "predicate": "is",
+      "object": "refundable federal tax credit for low-to-moderate income workers; one of largest anti-poverty programs"
+    },
+    {
+      "subject": "EITC",
+      "predicate": "statute",
+      "object": "26 U.S.C. § 32"
+    },
+    {
+      "subject": "EITC 2025",
+      "predicate": "maximum_credit_3_children",
+      "object": "$7,830 for families with 3 or more qualifying children"
+    },
+    {
+      "subject": "EITC 2025",
+      "predicate": "maximum_credit_2_children",
+      "object": "$6,960 for families with 2 qualifying children"
+    },
+    {
+      "subject": "EITC 2025",
+      "predicate": "maximum_credit_1_child",
+      "object": "$4,213 for families with 1 qualifying child"
+    },
+    {
+      "subject": "EITC 2025",
+      "predicate": "maximum_credit_no_children",
+      "object": "$632 for workers without qualifying children (ages 25–64)"
+    },
+    {
+      "subject": "EITC",
+      "predicate": "eligibility",
+      "object": "must have earned income, valid SSN, meet income limits, and not be claimed as dependent"
+    },
+    {
+      "subject": "EITC",
+      "predicate": "investment_income_limit_2025",
+      "object": "investment income must be $11,600 or less per year"
+    },
+    {
+      "subject": "EITC",
+      "predicate": "refundable",
+      "object": "yes — if credit exceeds taxes owed, IRS pays the difference as a refund"
+    },
+    {
+      "subject": "Child Tax Credit (CTC)",
+      "predicate": "provides",
+      "object": "up to $2,000 per qualifying child under age 17 as of 2025 tax year"
+    },
+    {
+      "subject": "Child Tax Credit",
+      "predicate": "statute",
+      "object": "26 U.S.C. § 24"
+    },
+    {
+      "subject": "Additional Child Tax Credit (ACTC)",
+      "predicate": "provides",
+      "object": "refundable portion of CTC — up to $1,700 per child for 2025 if credit exceeds tax liability"
+    },
+    {
+      "subject": "Child Tax Credit",
+      "predicate": "phase_out",
+      "object": "begins phasing out at $200,000 AGI (single) or $400,000 (married filing jointly)"
+    },
+    {
+      "subject": "Child Tax Credit",
+      "predicate": "qualifying_child",
+      "object": "under 17 at end of tax year, related to taxpayer, lived with taxpayer over half year, SSN required"
+    },
+    {
+      "subject": "Saver's Credit",
+      "predicate": "official_name",
+      "object": "Retirement Savings Contributions Credit — 26 U.S.C. § 25B"
+    },
+    {
+      "subject": "Saver's Credit",
+      "predicate": "provides",
+      "object": "credit of 10–50% of retirement contributions to IRA or employer plan, up to $2,000 ($4,000 MFJ)"
+    },
+    {
+      "subject": "Saver's Credit 2025",
+      "predicate": "eligibility_income_single",
+      "object": "AGI at or below $38,250 for single filers"
+    },
+    {
+      "subject": "Saver's Credit 2025",
+      "predicate": "eligibility_income_MFJ",
+      "object": "AGI at or below $76,500 for married filing jointly"
+    },
+    {
+      "subject": "Saver's Credit",
+      "predicate": "note",
+      "object": "not refundable — only reduces tax owed; claim on IRS Form 8880"
+    },
+    {
+      "subject": "Premium Tax Credit",
+      "predicate": "provides",
+      "object": "subsidy for health insurance purchased through ACA marketplace for households 100–400% FPL (no cliff as of 2025)"
+    },
+    {
+      "subject": "Premium Tax Credit",
+      "predicate": "statute",
+      "object": "26 U.S.C. § 36B; ARP 2021 expanded eligibility and IRA 2022 extended through 2025"
+    },
+    {
+      "subject": "Premium Tax Credit",
+      "predicate": "advance_payment",
+      "object": "can be taken in advance (APTC) to lower monthly premiums, reconciled at tax time on Form 8962"
+    },
+    {
+      "subject": "Premium Tax Credit",
+      "predicate": "note",
+      "object": "report changes in income or household to marketplace within 30 days to avoid repayment at tax time"
+    },
+    {
+      "subject": "VITA",
+      "predicate": "stands_for",
+      "object": "Volunteer Income Tax Assistance — IRS-sponsored free tax prep for income under ~$67,000"
+    },
+    {
+      "subject": "VITA",
+      "predicate": "find_at",
+      "object": "IRS.gov/vita or call 800-906-9887 for nearest site; also available at many libraries and community centers"
+    },
+    {
+      "subject": "TCE",
+      "predicate": "stands_for",
+      "object": "Tax Counseling for the Elderly — free tax prep for age 60+, specializes in pension and retirement questions"
+    },
+    {
+      "subject": "TCE",
+      "predicate": "find_at",
+      "object": "AARP Tax-Aide locator at aarp.org/money/taxes/aarp_taxaide; available Feb–April"
+    },
+    {
+      "subject": "IRS Free File",
+      "predicate": "provides",
+      "object": "free federal tax software for AGI at or below $84,000 (2025); Free File Fillable Forms available to all"
+    },
+    {
+      "subject": "IRS Free File",
+      "predicate": "find_at",
+      "object": "irs.gov/freefile — access only through IRS website to avoid upsell traps"
+    },
+    {
+      "subject": "Child and Dependent Care Credit",
+      "predicate": "provides",
+      "object": "credit for childcare or dependent care expenses needed to work; 20–35% of up to $3,000 (1 child) or $6,000 (2+)"
+    },
+    {
+      "subject": "Child and Dependent Care Credit",
+      "predicate": "refundable",
+      "object": "nonrefundable federally (some states have refundable versions)"
+    },
+    {
+      "subject": "tax filing tip",
+      "predicate": "eitc_lookback",
+      "object": "if income dropped significantly, you can elect to use prior year earned income to calculate EITC if it yields a higher credit"
+    }
+  ]
+}

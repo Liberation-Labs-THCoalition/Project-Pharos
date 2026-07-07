@@ -1,0 +1,161 @@
+{
+  "description": "US special education rights for children with disabilities: IDEA, Section 504, IEP process, manifestation determination, dispute resolution. Federal floor — state rules may add protections.",
+  "source": "IDEA 2004 (20 U.S.C. § 1400 et seq.), Section 504 Rehabilitation Act 1973 (29 U.S.C. § 794), 34 CFR Part 300, OSEP guidance",
+  "triples": [
+    {
+      "subject": "IDEA",
+      "predicate": "stands_for",
+      "object": "Individuals with Disabilities Education Act — federal law guaranteeing free appropriate public education (FAPE) for children with disabilities"
+    },
+    {
+      "subject": "IDEA",
+      "predicate": "statute",
+      "object": "20 U.S.C. § 1400 et seq.; implementing regulations at 34 CFR Part 300"
+    },
+    {
+      "subject": "IDEA",
+      "predicate": "age_range",
+      "object": "covers children ages 3–21 (or through graduation); Part C covers birth through age 2 (Early Intervention)"
+    },
+    {
+      "subject": "FAPE",
+      "predicate": "definition",
+      "object": "Free Appropriate Public Education — special education and related services at no cost, designed to meet the child's unique needs"
+    },
+    {
+      "subject": "IDEA eligibility",
+      "predicate": "categories",
+      "object": "13 disability categories: autism, deaf-blindness, deafness, emotional disturbance, hearing impairment, intellectual disability, multiple disabilities, orthopedic impairment, other health impairment, SLD, speech/language, TBI, visual impairment"
+    },
+    {
+      "subject": "IDEA evaluation",
+      "predicate": "right",
+      "object": "parents can request evaluation in writing; school must evaluate within 60 days (or state timeline) at no cost to family"
+    },
+    {
+      "subject": "IDEA evaluation",
+      "predicate": "independent_evaluation",
+      "object": "if parents disagree with school evaluation, they may request an Independent Educational Evaluation (IEE) at public expense"
+    },
+    {
+      "subject": "IEP",
+      "predicate": "stands_for",
+      "object": "Individualized Education Program — written plan describing services, goals, accommodations for each eligible child"
+    },
+    {
+      "subject": "IEP",
+      "predicate": "team_members",
+      "object": "parents, regular education teacher, special education teacher, school representative, child (if appropriate), evaluation interpreter"
+    },
+    {
+      "subject": "IEP",
+      "predicate": "required_components",
+      "object": "present levels of performance, annual goals, special education services, participation in general education, accommodations, transition planning (age 16+)"
+    },
+    {
+      "subject": "IEP meeting",
+      "predicate": "frequency",
+      "object": "must be reviewed at least annually; parents can request a meeting at any time"
+    },
+    {
+      "subject": "IEP meeting",
+      "predicate": "parent_rights",
+      "object": "prior written notice before any change; right to bring advocate or attorney; right to disagree and dispute"
+    },
+    {
+      "subject": "prior written notice",
+      "predicate": "definition",
+      "object": "school must provide written notice whenever it proposes to or refuses to change identification, evaluation, placement, or services"
+    },
+    {
+      "subject": "Section 504",
+      "predicate": "statute",
+      "object": "Section 504 of the Rehabilitation Act of 1973, 29 U.S.C. § 794 — bars disability discrimination by federally funded entities"
+    },
+    {
+      "subject": "Section 504",
+      "predicate": "broader_than_IDEA",
+      "object": "covers any disability substantially limiting a major life activity — does not require educational impact for eligibility"
+    },
+    {
+      "subject": "Section 504 plan",
+      "predicate": "provides",
+      "object": "accommodations and modifications in general education: extended time, preferential seating, copy of notes, sensory breaks"
+    },
+    {
+      "subject": "Section 504 vs IDEA",
+      "predicate": "key_difference",
+      "object": "IDEA provides specialized instruction and services with enforceable IEP; 504 provides accommodations only, no specialized instruction"
+    },
+    {
+      "subject": "LRE",
+      "predicate": "stands_for",
+      "object": "Least Restrictive Environment — IDEA requires children be educated alongside non-disabled peers to the maximum extent appropriate"
+    },
+    {
+      "subject": "manifestation determination",
+      "predicate": "definition",
+      "object": "required review when school proposes to suspend IDEA-eligible child for 10+ days or change placement due to behavior"
+    },
+    {
+      "subject": "manifestation determination",
+      "predicate": "questions",
+      "object": "was behavior caused by or substantially related to child's disability? Was it direct result of school's failure to implement IEP?"
+    },
+    {
+      "subject": "manifestation determination",
+      "predicate": "if_manifestation_found",
+      "object": "child must return to original placement (unless safety exception); IEP team must conduct FBA and revise behavior plan"
+    },
+    {
+      "subject": "FBA",
+      "predicate": "stands_for",
+      "object": "Functional Behavioral Assessment — evaluation to determine function/reason for behavior and develop appropriate interventions"
+    },
+    {
+      "subject": "dispute resolution IDEA",
+      "predicate": "options",
+      "object": "State Complaint to State Education Agency, mediation, due process hearing, federal court — multiple tracks available"
+    },
+    {
+      "subject": "State Complaint",
+      "predicate": "timeline",
+      "object": "SEA must investigate and issue written decision within 60 days; must be filed within 1 year of alleged violation"
+    },
+    {
+      "subject": "due process",
+      "predicate": "timeline",
+      "object": "request must be filed within 2 years of violation; hearing officer issues decision within 45 days of end of resolution period"
+    },
+    {
+      "subject": "parent surrogate",
+      "predicate": "definition",
+      "object": "when child has no parent or parent cannot be located, school must assign surrogate parent to protect IDEA rights"
+    },
+    {
+      "subject": "child find",
+      "predicate": "obligation",
+      "object": "schools are affirmatively required to identify and evaluate all children with suspected disabilities including homeless, private school, migrant"
+    },
+    {
+      "subject": "Section 504 complaint",
+      "predicate": "file_with",
+      "object": "US Department of Education Office for Civil Rights (OCR) within 180 days of discrimination; ed.gov/ocr"
+    },
+    {
+      "subject": "special education advocate",
+      "predicate": "role",
+      "object": "trained non-attorney who assists families at IEP meetings and in disputes; not a lawyer but often effective and lower cost"
+    },
+    {
+      "subject": "Parent Training and Information Center",
+      "predicate": "provides",
+      "object": "free information, training, and assistance to families of children with disabilities — one in every state"
+    },
+    {
+      "subject": "Parent Training and Information Center",
+      "predicate": "find_at",
+      "object": "parentcenterhub.org — federally funded, staffed by parents of children with disabilities"
+    }
+  ]
+}

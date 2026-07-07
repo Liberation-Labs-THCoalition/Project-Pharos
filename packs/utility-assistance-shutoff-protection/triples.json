@@ -1,0 +1,156 @@
+{
+  "description": "US utility assistance and shutoff protection: LIHEAP, state moratoria, temperature triggers, payment plans, arrearage programs. Federal baseline — state rules vary significantly.",
+  "source": "LIHEAP statute 42 U.S.C. § 8621 et seq., HHS ACF LIHEAP guidance, NCLC utility shutoff resources, verified 2026",
+  "triples": [
+    {
+      "subject": "LIHEAP",
+      "predicate": "stands_for",
+      "object": "Low Income Home Energy Assistance Program — federal block grant to states for home energy costs"
+    },
+    {
+      "subject": "LIHEAP",
+      "predicate": "statute",
+      "object": "42 U.S.C. § 8621 et seq. (Energy Assistance Act, Title XXVI of Omnibus Budget Reconciliation Act 1981)"
+    },
+    {
+      "subject": "LIHEAP",
+      "predicate": "provides",
+      "object": "heating/cooling cost assistance, crisis intervention grants, and weatherization for low-income households"
+    },
+    {
+      "subject": "LIHEAP",
+      "predicate": "eligibility_income",
+      "object": "at or below 150% federal poverty level (FPL), or 60% state median income — whichever is higher"
+    },
+    {
+      "subject": "LIHEAP",
+      "predicate": "priority_groups",
+      "object": "households with elderly (60+), disabled members, or young children under 6 receive priority"
+    },
+    {
+      "subject": "LIHEAP",
+      "predicate": "apply_at",
+      "object": "state/local LIHEAP grantee — find via HHS ACF at acf.hhs.gov/ocs/map/liheap-map or 1-800-552-4867"
+    },
+    {
+      "subject": "LIHEAP",
+      "predicate": "note",
+      "object": "funding is finite and seasonal; many states open enrollment in fall and close when funds are exhausted"
+    },
+    {
+      "subject": "LIHEAP crisis component",
+      "predicate": "provides",
+      "object": "emergency assistance for imminent shutoff, broken heating equipment, or unsafe conditions"
+    },
+    {
+      "subject": "LIHEAP crisis component",
+      "predicate": "timeline",
+      "object": "must be delivered within 18 hours for life-threatening situations, 48 hours otherwise"
+    },
+    {
+      "subject": "utility shutoff moratorium",
+      "predicate": "definition",
+      "object": "temporary prohibition on disconnecting service, typically triggered by extreme temperatures"
+    },
+    {
+      "subject": "temperature-triggered shutoff ban",
+      "predicate": "examples",
+      "object": "many states ban shutoffs when outdoor temp is forecast below 32°F or above 95–100°F"
+    },
+    {
+      "subject": "temperature-triggered shutoff ban",
+      "predicate": "state_variation",
+      "object": "California bans shutoffs during heat advisories; Minnesota bans Oct 15–Apr 15; Texas has limited protections"
+    },
+    {
+      "subject": "utility shutoff",
+      "predicate": "federal_protection_renters",
+      "object": "no federal law prevents shutoffs for inability to pay, but states and utilities have their own rules"
+    },
+    {
+      "subject": "medical baseline rate",
+      "predicate": "definition",
+      "object": "reduced utility rate for households with qualifying medical conditions (e.g., life-support equipment)"
+    },
+    {
+      "subject": "medical baseline rate",
+      "predicate": "available_in",
+      "object": "California (CARE/FERA programs), New York, and other states — check state PUC or utility provider"
+    },
+    {
+      "subject": "shutoff notice requirement",
+      "predicate": "typical",
+      "object": "most states require 10–30 days written notice before disconnection; some require phone call first"
+    },
+    {
+      "subject": "payment arrangement",
+      "predicate": "right_to_request",
+      "object": "most state utility commissions require utilities to offer payment plans before shutoff"
+    },
+    {
+      "subject": "payment arrangement",
+      "predicate": "negotiation_tip",
+      "object": "ask for budget billing (level pay), arrearage management programs, and extended repayment schedules"
+    },
+    {
+      "subject": "arrearage management program",
+      "predicate": "definition",
+      "object": "utility program that forgives past-due balance incrementally when current bills are paid on time"
+    },
+    {
+      "subject": "arrearage management program",
+      "predicate": "examples",
+      "object": "PPL Electric (PA) forgives $5 per on-time payment; Consolidated Edison (NY) similar programs"
+    },
+    {
+      "subject": "CARE program California",
+      "predicate": "provides",
+      "object": "30–35% discount on electricity and gas bills for income-qualified households"
+    },
+    {
+      "subject": "CARE program California",
+      "predicate": "eligibility",
+      "object": "household income at or below 200% FPL, or enrolled in qualifying public assistance program"
+    },
+    {
+      "subject": "FERA program California",
+      "predicate": "provides",
+      "object": "18% discount on electricity for households with 3+ people at 200–250% FPL"
+    },
+    {
+      "subject": "Home Energy Assistance Target Program",
+      "predicate": "state",
+      "object": "New York — HEAP provides heating/cooling assistance plus Emergency HEAP for crisis situations"
+    },
+    {
+      "subject": "utility reconnection fee",
+      "predicate": "waiver",
+      "object": "many state commissions allow waiver of reconnection fees for low-income or medical-necessity households"
+    },
+    {
+      "subject": "third-party notification",
+      "predicate": "definition",
+      "object": "right to designate a third party (relative, social worker) to receive shutoff notices on your behalf"
+    },
+    {
+      "subject": "third-party notification",
+      "predicate": "available_in",
+      "object": "most states — request from your utility company directly"
+    },
+    {
+      "subject": "Equal Pay or Budget Billing",
+      "predicate": "definition",
+      "object": "utility averages annual bill into equal monthly payments to prevent seasonal spikes"
+    },
+    {
+      "subject": "state utility commission",
+      "predicate": "complaint_role",
+      "object": "file complaints about improper shutoffs, denied payment plans, or discrimination with state PUC or PSC"
+    },
+    {
+      "subject": "state utility commission",
+      "predicate": "find_at",
+      "object": "search '[state] Public Utilities Commission' or '[state] Public Service Commission' for local contact"
+    }
+  ]
+}
