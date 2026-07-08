@@ -1,0 +1,161 @@
+{
+  "description": "CHW-level protocols for diabetes and hypertension self-management: reading numbers, medication adherence, low-cost monitoring, diet on a budget, when to go to the ER. The two conditions that dominate underserved-community morbidity.",
+  "source": "ADA Standards of Care 2024, JNC 8 hypertension guidelines, CDC National Diabetes Education Program, American Heart Association, National Kidney Foundation",
+  "triples": [
+    {
+      "subject": "HbA1c (A1c)",
+      "predicate": "what_it_measures",
+      "object": "average blood sugar over the past 2-3 months — expressed as a percentage of hemoglobin that has glucose attached"
+    },
+    {
+      "subject": "HbA1c targets",
+      "predicate": "normal",
+      "object": "below 5.7% — no diabetes"
+    },
+    {
+      "subject": "HbA1c targets",
+      "predicate": "prediabetes",
+      "object": "5.7%–6.4% — act now with lifestyle change; metformin is an option for high-risk individuals"
+    },
+    {
+      "subject": "HbA1c targets",
+      "predicate": "diabetes_goal",
+      "object": "below 7.0% for most adults with diabetes (ADA 2024); below 8.0% acceptable for elderly or those with hypoglycemia risk"
+    },
+    {
+      "subject": "HbA1c",
+      "predicate": "urgent_threshold",
+      "object": "above 10% — indicates very poor control; warrants same-week provider contact, not waiting for next scheduled visit"
+    },
+    {
+      "subject": "blood glucose (daily readings)",
+      "predicate": "fasting_target",
+      "object": "80–130 mg/dL before meals (ADA goal for most adults on diabetes medications)"
+    },
+    {
+      "subject": "blood glucose (daily readings)",
+      "predicate": "post_meal_target",
+      "object": "below 180 mg/dL one to two hours after eating"
+    },
+    {
+      "subject": "blood glucose",
+      "predicate": "low_blood_sugar_threshold",
+      "object": "below 70 mg/dL is hypoglycemia — treat immediately with 15g fast carbs (4 oz juice, 3-4 glucose tabs, 1 tbsp honey)"
+    },
+    {
+      "subject": "blood glucose",
+      "predicate": "dangerously_high",
+      "object": "above 400 mg/dL — call provider immediately; above 600 mg/dL with confusion or vomiting is a 911 emergency (hyperosmolar hyperglycemic state)"
+    },
+    {
+      "subject": "blood pressure",
+      "predicate": "normal",
+      "object": "below 120/80 mmHg"
+    },
+    {
+      "subject": "blood pressure",
+      "predicate": "hypertension_stage1",
+      "object": "130–139/80–89 mmHg — lifestyle change; medication if cardiovascular risk is high"
+    },
+    {
+      "subject": "blood pressure",
+      "predicate": "hypertension_stage2",
+      "object": "140+/90+ mmHg — medication indicated alongside lifestyle change"
+    },
+    {
+      "subject": "blood pressure",
+      "predicate": "hypertensive_urgency",
+      "object": "above 180/120 mmHg without symptoms — call provider same day; do not drive yourself to ER unless symptomatic"
+    },
+    {
+      "subject": "blood pressure",
+      "predicate": "hypertensive_emergency",
+      "object": "above 180/120 mmHg WITH chest pain, severe headache, vision changes, facial droop, arm weakness, or difficulty speaking — call 911 immediately"
+    },
+    {
+      "subject": "diabetes medication adherence",
+      "predicate": "common_barrier",
+      "object": "cost — metformin is generic and typically under $10/month at Walmart, Costco, or Cost Plus Drugs; always ask about generic options"
+    },
+    {
+      "subject": "diabetes medication adherence",
+      "predicate": "insulin_access",
+      "object": "OTC human insulin (ReliOn brand at Walmart) is available without prescription for ~$25/vial; not identical to analog insulins but functional for many type 2 patients — discuss with provider"
+    },
+    {
+      "subject": "diabetes medication adherence",
+      "predicate": "skipping_doses",
+      "object": "if a dose is missed, take it as soon as remembered unless it is almost time for the next — never double-dose; always carry a list of medications"
+    },
+    {
+      "subject": "hypertension medication adherence",
+      "predicate": "common_barrier",
+      "object": "side effects — ACE inhibitors can cause dry cough (ARBs are alternative); diuretics cause frequent urination; beta-blockers cause fatigue — all are manageable with provider help"
+    },
+    {
+      "subject": "hypertension medication adherence",
+      "predicate": "never_stop_abruptly",
+      "object": "stopping beta-blockers suddenly can trigger rebound hypertension or angina — always taper under provider guidance"
+    },
+    {
+      "subject": "low-cost blood glucose monitoring",
+      "predicate": "option",
+      "object": "ReliOn Premier meter and strips at Walmart — strips ~$9/50 count; no prescription needed; compatible with most Medicaid formularies"
+    },
+    {
+      "subject": "low-cost blood pressure monitoring",
+      "predicate": "option",
+      "object": "upper-arm automatic cuffs validated by American Medical Association available under $40 (Omron HEM-7120 series); wrist cuffs are less accurate"
+    },
+    {
+      "subject": "low-cost blood pressure monitoring",
+      "predicate": "free_option",
+      "object": "many pharmacies (CVS, Rite Aid, Walmart) have free blood pressure kiosks — sit quietly for 5 minutes first, take 2 readings 1 minute apart and average them"
+    },
+    {
+      "subject": "diabetes diet on a food budget",
+      "predicate": "key_principle",
+      "object": "control carbohydrate portion sizes, not total elimination — choose high-fiber slow-digesting carbs over refined ones"
+    },
+    {
+      "subject": "diabetes diet on a food budget",
+      "predicate": "low_cost_foods",
+      "object": "dried beans and lentils (lowest glycemic index legumes, under $1/lb), canned sardines, eggs, frozen vegetables, oats (plain rolled), brown rice in small portions"
+    },
+    {
+      "subject": "diabetes diet on a food budget",
+      "predicate": "avoid",
+      "object": "sugar-sweetened beverages are the single most impactful dietary change — swap soda for water; fruit juice spikes blood sugar as fast as soda"
+    },
+    {
+      "subject": "hypertension diet on a food budget",
+      "predicate": "DASH_diet_key",
+      "object": "reduce sodium to under 1,500mg/day; increase potassium (bananas, canned tomatoes, beans, potatoes with skin) — potassium blunts sodium's blood pressure effect"
+    },
+    {
+      "subject": "hypertension diet on a food budget",
+      "predicate": "sodium_tips",
+      "object": "canned goods have high sodium — rinse canned beans and vegetables under water to remove up to 40% of sodium; choose 'no salt added' when available"
+    },
+    {
+      "subject": "diabetes and hypertension",
+      "predicate": "coexistence",
+      "object": "occur together in 70% of people with type 2 diabetes — managing both simultaneously is critical; uncontrolled hypertension accelerates diabetic kidney damage"
+    },
+    {
+      "subject": "diabetic complications",
+      "predicate": "foot_emergency",
+      "object": "any break in skin on the foot, even a small cut or blister, requires daily inspection and provider contact within 48 hours if not healing — diabetic foot infections can progress to amputation in days"
+    },
+    {
+      "subject": "when to go to ER",
+      "predicate": "diabetes",
+      "object": "blood sugar above 400 with symptoms (nausea, vomiting, confusion, rapid breathing), fruity breath odor (DKA), blood sugar cannot be raised above 70 mg/dL after two attempts with fast carbs"
+    },
+    {
+      "subject": "when to go to ER",
+      "predicate": "hypertension",
+      "object": "BP above 180/120 with chest pain, severe headache, vision changes, neurological symptoms, or difficulty breathing — these are hypertensive emergency signs requiring IV medication"
+    }
+  ]
+}

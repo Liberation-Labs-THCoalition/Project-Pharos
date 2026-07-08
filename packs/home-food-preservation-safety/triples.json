@@ -1,0 +1,156 @@
+{
+  "description": "Safe food preservation: pressure vs water-bath canning, botulism prevention, fermentation, dehydrating, root cellaring, and freeze failure triage. Specific temperatures, times, and pH thresholds — genuinely dangerous to get wrong.",
+  "source": "USDA Complete Guide to Home Canning (2015 rev.), National Center for Home Food Preservation, FDA, CDC botulism surveillance data, Ball Blue Book (2020)",
+  "triples": [
+    {
+      "subject": "home canning",
+      "predicate": "cardinal_rule",
+      "object": "use only USDA-tested recipes with exact ingredients and proportions — improvised recipes cannot be verified safe; botulism has no taste, smell, or appearance"
+    },
+    {
+      "subject": "botulism",
+      "predicate": "cause",
+      "object": "Clostridium botulinum spores survive boiling (212°F / 100°C) and produce toxin in low-oxygen, low-acid, moist environments — exactly what a sealed jar provides"
+    },
+    {
+      "subject": "botulism",
+      "predicate": "destruction_temperature",
+      "object": "toxin is destroyed by boiling 10 minutes; spores require 240–250°F (115–121°C) — achievable only in a pressure canner, not a boiling water bath"
+    },
+    {
+      "subject": "pressure canning",
+      "predicate": "required_for",
+      "object": "all low-acid foods: all vegetables (green beans, corn, beets, carrots, potatoes), all meats, poultry, fish, and all mixed products containing them — pH above 4.6"
+    },
+    {
+      "subject": "pressure canning",
+      "predicate": "operating_pressure",
+      "object": "10 PSI at sea level for most foods; at altitudes above 1,000 feet increase to 15 PSI with a weighted gauge, or adjust dial-gauge per USDA table — lower pressure means lower temperature, inadequate kill"
+    },
+    {
+      "subject": "pressure canning",
+      "predicate": "internal_temperature",
+      "object": "240°F (115°C) at 10 PSI — this is the temperature that kills C. botulinum spores over the USDA-tested processing time"
+    },
+    {
+      "subject": "water bath canning",
+      "predicate": "required_for",
+      "object": "high-acid foods only: most fruits, properly acidified tomatoes, jams, jellies, pickles with verified acid levels — pH at or below 4.6"
+    },
+    {
+      "subject": "water bath canning",
+      "predicate": "operating_temperature",
+      "object": "212°F (100°C) — kills mold and yeast but NOT C. botulinum spores; safe only when pH below 4.6 prevents spore germination"
+    },
+    {
+      "subject": "tomatoes",
+      "predicate": "acidification_required",
+      "object": "modern tomato varieties may have pH above 4.6 — always add 2 tablespoons bottled lemon juice or 1/2 teaspoon citric acid per quart before water-bath canning; bottled lemon juice has consistent acidity, fresh does not"
+    },
+    {
+      "subject": "pH threshold",
+      "predicate": "safety_line",
+      "object": "4.6 pH is the safety boundary — C. botulinum cannot germinate below 4.6; foods above 4.6 require pressure canning regardless of apparent safety"
+    },
+    {
+      "subject": "pickle safety",
+      "predicate": "vinegar_requirement",
+      "object": "use only 5% acidity vinegar (labeled on bottle); do not dilute beyond tested recipe ratios; do not substitute lower-acidity wine vinegar or homemade vinegar"
+    },
+    {
+      "subject": "jar seals",
+      "predicate": "checking",
+      "object": "press center of lid after cooling — should not flex up and down; tap with spoon, should ring clear not dull; any unsealed jar must be refrigerated and used within a few days or reprocessed within 24 hours"
+    },
+    {
+      "subject": "canned food",
+      "predicate": "discard_signs",
+      "object": "discard without tasting: spurting liquid when opened, off odor, mold, damaged or bulging lid — boil home-canned low-acid foods 10 minutes before tasting as an additional safety step"
+    },
+    {
+      "subject": "altitude adjustment",
+      "predicate": "water_bath",
+      "object": "above 1,000 feet add 5 minutes processing time per 1,000-foot increment (above 3,000 feet add 10 min, 6,000 ft add 15 min) — water boils at lower temperature at altitude"
+    },
+    {
+      "subject": "fermentation safety",
+      "predicate": "mechanism",
+      "object": "lacto-fermentation acidifies food through lactic acid bacteria — the acid environment (pH drops to 3.0–3.5 in mature ferments) prevents pathogen growth including C. botulinum"
+    },
+    {
+      "subject": "fermentation safety",
+      "predicate": "salt_brine_requirement",
+      "object": "use 2–3% salt brine by weight (20–30g salt per liter of water) for vegetables; inadequate salt allows harmful bacteria to outcompete beneficial lactobacillus before acidification occurs"
+    },
+    {
+      "subject": "fermentation safety",
+      "predicate": "anaerobic_requirement",
+      "object": "keep vegetables submerged below brine at all times — exposed vegetables can develop mold; white film (kahm yeast) on surface is harmless but remove it; fuzzy colored mold means discard"
+    },
+    {
+      "subject": "fermentation",
+      "predicate": "temperature_range",
+      "object": "65–75°F (18–24°C) is optimal; below 60°F fermentation stalls; above 80°F ferments too fast and can develop off-flavors or allow unwanted bacteria — refrigerate when target sourness is reached"
+    },
+    {
+      "subject": "dehydrating",
+      "predicate": "minimum_temperature",
+      "object": "135°F (57°C) for fruits and vegetables; 160°F (71°C) for meats and jerky (food safety), or pre-heat meat to 160°F in oven before dehydrating if dehydrator cannot reach 160°F"
+    },
+    {
+      "subject": "dehydrating",
+      "predicate": "moisture_test",
+      "object": "properly dried food should be leathery with no visible moisture and should not clump when a handful is squeezed; fruits should be pliable not sticky; vegetables should be brittle"
+    },
+    {
+      "subject": "dehydrating",
+      "predicate": "storage",
+      "object": "store in airtight containers away from light; label with date; vegetables 1 year, fruits 1 year, meats 1–2 months at room temperature or 6 months refrigerated"
+    },
+    {
+      "subject": "root cellaring",
+      "predicate": "temperature_humidity",
+      "object": "optimal: 32–40°F (0–4°C) with 90–95% humidity for most root vegetables and apples; carrots, beets, and turnips store 4–6 months under these conditions"
+    },
+    {
+      "subject": "root cellaring",
+      "predicate": "ethylene_separation",
+      "object": "apples emit ethylene gas that accelerates ripening — store separately from other vegetables or in a different area of the cellar"
+    },
+    {
+      "subject": "root cellaring",
+      "predicate": "do_not_store",
+      "object": "onions and garlic prefer cool-dry (60–70°F, low humidity), not cold-moist — they rot in typical root cellar conditions; hang in mesh bags in a cool pantry instead"
+    },
+    {
+      "subject": "freezer failure triage",
+      "predicate": "safe_window",
+      "object": "a full freezer holds safe temperature for 48 hours without power; half-full for 24 hours — do not open the freezer door; check with thermometer only if needed"
+    },
+    {
+      "subject": "freezer failure triage",
+      "predicate": "still_frozen_rule",
+      "object": "food with ice crystals throughout or temperature at or below 40°F is safe to refreeze, though quality degrades; raw proteins may be cooked and refrozen"
+    },
+    {
+      "subject": "freezer failure triage",
+      "predicate": "discard_rule",
+      "object": "discard any food that has been above 40°F for more than 2 hours — when in doubt, throw it out; the cost of spoiled food is less than the cost of foodborne illness"
+    },
+    {
+      "subject": "canning equipment",
+      "predicate": "pressure_canner_safety",
+      "object": "test pressure gauge accuracy yearly at your local cooperative extension office (free service in most states); a faulty gauge is the most common cause of under-processing"
+    },
+    {
+      "subject": "canning equipment",
+      "predicate": "lid_reuse",
+      "object": "flat lids (the part with the sealing compound) are single-use only; bands can be reused if not rusted; jars can be reused if free of cracks and chips"
+    },
+    {
+      "subject": "USDA tested recipes",
+      "predicate": "where_to_find",
+      "object": "National Center for Home Food Preservation (nchfp.uga.edu) — free, authoritative, searchable by food type; also available as USDA Complete Guide to Home Canning downloadable PDF"
+    }
+  ]
+}
