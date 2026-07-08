@@ -1,0 +1,141 @@
+{
+  "description": "US domestic violence and stalking protective orders: order types, evidence standards, firearm surrender, interstate enforcement, and safety planning including technology safety. Verified 2026.",
+  "source": "VAWA 18 U.S.C. §§ 2265-2266, 18 U.S.C. § 922(g)(8)-(9), U.S. v. Rahimi (2024), state protective order statutes, National Network to End Domestic Violence Safety Net project, National DV Hotline",
+  "triples": [
+    {
+      "subject": "protective order",
+      "predicate": "definition",
+      "object": "civil court order restraining an abuser from contact, proximity, or specific conduct; called protection order, restraining order, or injunction depending on state"
+    },
+    {
+      "subject": "emergency protective order (EPO)",
+      "predicate": "definition",
+      "object": "issued immediately, often by police calling an on-call judge at the scene; lasts days (e.g., 5-7 days) to bridge until the victim can petition the court"
+    },
+    {
+      "subject": "temporary (ex parte) order",
+      "predicate": "definition",
+      "object": "issued the day of filing based on the petition alone, without the respondent present; typically lasts about 14 days (up to 20-25 in some states) until the full hearing"
+    },
+    {
+      "subject": "final protective order",
+      "predicate": "definition",
+      "object": "issued after a hearing where both sides can appear; typically lasts 1-5 years, and many states allow renewal or permanent orders for severe cases"
+    },
+    {
+      "subject": "protective order evidence standard",
+      "predicate": "legal_standard",
+      "object": "civil preponderance of the evidence (more likely than not) in most states — far lower than criminal beyond-a-reasonable-doubt; no criminal charge or police report is required to petition"
+    },
+    {
+      "subject": "protective order evidence",
+      "predicate": "examples",
+      "object": "petitioner testimony alone can suffice; texts, voicemails, photos of injuries, medical records, witness statements, and call logs strengthen the case — bring printouts, not just a phone"
+    },
+    {
+      "subject": "protective order filing",
+      "predicate": "cost",
+      "object": "free — VAWA conditions federal funds on states not charging filing or service fees for DV protective orders (34 U.S.C. § 10450)"
+    },
+    {
+      "subject": "full faith and credit",
+      "predicate": "provides",
+      "object": "a valid protective order is enforceable in every state, territory, and tribal land (18 U.S.C. § 2265); carry a certified copy but registration in the new state is not required"
+    },
+    {
+      "subject": "firearm prohibition",
+      "predicate": "legal_basis",
+      "object": "18 U.S.C. § 922(g)(8) bars firearm possession while subject to a qualifying final protective order (issued after notice and hearing, protecting an intimate partner or child); upheld in U.S. v. Rahimi (2024)"
+    },
+    {
+      "subject": "firearm surrender",
+      "predicate": "note",
+      "object": "many states (e.g., CA, WA, NY, IL, MD) require respondents to surrender firearms to police or a dealer within 24-72 hours and file proof; ex parte orders trigger surrender in some states but not under the federal statute"
+    },
+    {
+      "subject": "DV misdemeanor conviction",
+      "predicate": "legal_basis",
+      "object": "18 U.S.C. § 922(g)(9) (Lautenberg Amendment) permanently bars firearm possession after a misdemeanor crime of domestic violence conviction"
+    },
+    {
+      "subject": "protective order violation",
+      "predicate": "consequence",
+      "object": "criminal offense (misdemeanor, felony for repeats) and/or contempt; most states have mandatory or preferred arrest policies for violations — call 911 and report every violation to build the record"
+    },
+    {
+      "subject": "protective order",
+      "predicate": "note",
+      "object": "only the respondent can violate the order; a petitioner who initiates contact does not commit a crime but weakens enforcement — modification through the court is the safe route to resume contact"
+    },
+    {
+      "subject": "stalking protective order",
+      "predicate": "definition",
+      "object": "most states offer civil stalking or harassment orders that do not require any intimate-partner or family relationship, covering neighbors, acquaintances, and strangers"
+    },
+    {
+      "subject": "protective order relief",
+      "predicate": "can_include",
+      "object": "no-contact and stay-away distances, exclusive use of the home, temporary custody and child support, pet protection, and no third-party contact"
+    },
+    {
+      "subject": "lethality indicator: strangulation",
+      "predicate": "note",
+      "object": "prior non-fatal strangulation raises later homicide risk roughly 7-fold (Glass et al. 2008); always disclose it to court and medical providers — many states charge it as a felony"
+    },
+    {
+      "subject": "lethality indicators",
+      "predicate": "examples",
+      "object": "abuser access to a gun (about 5x homicide risk, Campbell 2003), recent separation, threats to kill, unemployment, and escalating violence — the Danger Assessment tool scores these"
+    },
+    {
+      "subject": "safety plan",
+      "predicate": "definition",
+      "object": "concrete, personalized plan for staying safer while in, leaving, or after leaving an abusive situation; leaving is the highest-risk period, so plans focus heavily on the exit"
+    },
+    {
+      "subject": "go-bag",
+      "predicate": "contents",
+      "object": "IDs, birth certificates, Social Security cards, protective order copies, medications, cash, spare keys, phone charger, kids' comfort items — stored with a trusted person or hidden outside the home"
+    },
+    {
+      "subject": "National Domestic Violence Hotline",
+      "predicate": "contact",
+      "object": "1-800-799-7233, text START to 88788, or chat at thehotline.org; 24/7, confidential, can locate local shelters and help build a safety plan"
+    },
+    {
+      "subject": "technology safety: phone",
+      "predicate": "action",
+      "object": "assume a shared or abuser-purchased phone is monitored; check for stalkerware (unexplained battery drain, unknown device-admin apps), and do sensitive research on a library or friend's device"
+    },
+    {
+      "subject": "technology safety: location",
+      "predicate": "action",
+      "object": "audit location sharing (Find My, Google Maps sharing, family plans), scan for hidden trackers like AirTags (iPhone alerts automatically; Android users can scan via Find My Device 'unknown tracker alerts'), and check vehicles"
+    },
+    {
+      "subject": "technology safety: accounts",
+      "predicate": "action",
+      "object": "create a new email the abuser doesn't know, change passwords from a safe device, enable two-factor, and leave shared iCloud/Google family groups; iPhone Safety Check (Settings > Privacy) resets sharing in one flow"
+    },
+    {
+      "subject": "technology safety: evidence",
+      "predicate": "note",
+      "object": "preserve threats before blocking — screenshot with dates and phone numbers visible, forward to a safe email; most states allow recording only with consent rules that vary, so check before recording calls"
+    },
+    {
+      "subject": "address confidentiality program (ACP)",
+      "predicate": "provides",
+      "object": "state-run substitute mailing address so survivors' real addresses stay out of public records (voter rolls, DMV, court filings); available in roughly 40+ states via the attorney general or secretary of state"
+    },
+    {
+      "subject": "protective orders and immigration",
+      "predicate": "note",
+      "object": "immigration status does not bar getting a protective order; VAWA self-petitions and U-visas exist for abused immigrants — courts should not ask petitioners about status"
+    },
+    {
+      "subject": "protective order denial",
+      "predicate": "note",
+      "object": "denial of a temporary order does not end the case — the petitioner can still proceed to the full hearing, refile after new incidents, or appeal; documentation of each incident matters"
+    }
+  ]
+}

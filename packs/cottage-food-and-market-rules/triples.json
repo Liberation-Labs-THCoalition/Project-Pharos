@@ -1,0 +1,141 @@
+{
+  "description": "US cottage food laws for the 10 largest states, farmers market rules: SNAP/EBT acceptance, egg and honey sales exemptions, labeling, and sales tax basics for home food producers. Verified 2026.",
+  "source": "State cottage food statutes (CA AB 1616/AB 1144, TX HB 970/SB 572, FL HB 663, etc.), Institute for Justice Food Freedom research, USDA FNS SNAP retailer rules, Egg Products Inspection Act 21 U.S.C. § 1044, state departments of agriculture",
+  "triples": [
+    {
+      "subject": "cottage food law",
+      "predicate": "definition",
+      "object": "state law allowing sale of low-risk, shelf-stable foods made in an uninspected home kitchen — typically baked goods without cream fillings, jams and jellies, candy, granola, dried herbs, and honey"
+    },
+    {
+      "subject": "cottage food",
+      "predicate": "excludes",
+      "object": "potentially hazardous (TCS) foods needing refrigeration: meat, dairy-based items, cheesecake, cream pies, canned low-acid vegetables, and in most states fresh eggs and juice"
+    },
+    {
+      "subject": "cottage food: California",
+      "predicate": "rule",
+      "object": "AB 1616: Class A permit for direct sales (self-certification, no home inspection) and Class B for indirect/retail sales (county inspection); gross sales caps $75,000 (Class A) and $150,000 (Class B)"
+    },
+    {
+      "subject": "California MEHKO",
+      "predicate": "note",
+      "object": "separate Microenterprise Home Kitchen Operation law (AB 626) lets home cooks sell hot meals in counties that opt in, capped around $100,000/year after AB 1325 (2023)"
+    },
+    {
+      "subject": "cottage food: Texas",
+      "predicate": "rule",
+      "object": "no permit or inspection required; $50,000 annual sales cap; direct sales anywhere in Texas including delivery and (since SB 572, 2021) fermented and pickled acidified foods; labeling with a required disclosure statement"
+    },
+    {
+      "subject": "cottage food: Florida",
+      "predicate": "rule",
+      "object": "no license or inspection; annual gross sales cap $250,000 (raised by HB 663, 2021); direct sales only but includes online orders shipped within Florida"
+    },
+    {
+      "subject": "cottage food: New York",
+      "predicate": "rule",
+      "object": "Home Processor exemption through Dept. of Agriculture & Markets: free registration, no sales cap, no inspection for the allowed shelf-stable list; sales allowed at markets and to in-state retailers"
+    },
+    {
+      "subject": "cottage food: Pennsylvania",
+      "predicate": "rule",
+      "object": "Limited Food Establishment registration with PDA: application (~$35), home kitchen inspection required, no sales cap; wholesale and online sales allowed — one of the more permissive eastern states"
+    },
+    {
+      "subject": "cottage food: Illinois",
+      "predicate": "rule",
+      "object": "Home-to-Market Act (2022): register with local health department (fee capped at $50), most non-TCS foods allowed, direct sales statewide including delivery and pickup; no sales cap"
+    },
+    {
+      "subject": "cottage food: Ohio",
+      "predicate": "rule",
+      "object": "no license or cap for the defined cottage food list (labeled 'This product is home produced'); items needing refrigeration or outside the list require a licensed home bakery or commercial kitchen"
+    },
+    {
+      "subject": "cottage food: Georgia",
+      "predicate": "rule",
+      "object": "cottage food license from GA Dept. of Agriculture required (application, ~$100 initial fee, online training); direct-to-consumer sales only, including online within Georgia; no sales cap"
+    },
+    {
+      "subject": "cottage food: North Carolina",
+      "predicate": "rule",
+      "object": "home processor registration with NCDA&CS: free, includes a home inspection for most products; no sales cap and wholesale allowed — acidified foods need additional approval"
+    },
+    {
+      "subject": "cottage food: Michigan",
+      "predicate": "rule",
+      "object": "no license or registration; $25,000 annual sales cap; direct-to-consumer only (farmers markets, roadside stands) — no online ordering with shipment, no wholesale"
+    },
+    {
+      "subject": "food freedom laws",
+      "predicate": "note",
+      "object": "Wyoming's Food Freedom Act (2015, expanded since) is the broadest — nearly any homemade food including some meat and raw milk sold direct to informed end consumers; UT, ND, MT have similar laws"
+    },
+    {
+      "subject": "cottage food labeling",
+      "predicate": "typical_requirements",
+      "object": "product name, producer name and address (or registration number), ingredients by weight, allergen disclosure, net weight, and a state-specified disclaimer like 'made in a home kitchen not inspected by the health department'"
+    },
+    {
+      "subject": "cottage food interstate sales",
+      "predicate": "warning",
+      "object": "shipping cottage food across state lines is generally prohibited — interstate commerce triggers FDA jurisdiction and the home-kitchen exemption stops at the state border"
+    },
+    {
+      "subject": "farmers market SNAP/EBT",
+      "predicate": "rule",
+      "object": "markets or individual vendors must get FNS retailer authorization (free, apply at fns.usda.gov); markets often run a central terminal exchanging EBT swipes for tokens or scrip vendors redeem"
+    },
+    {
+      "subject": "SNAP-eligible at markets",
+      "predicate": "includes",
+      "object": "fruits, vegetables, meat, dairy, eggs, honey, jams, baked goods for home consumption, and food-producing plants and seeds"
+    },
+    {
+      "subject": "SNAP-ineligible at markets",
+      "predicate": "excludes",
+      "object": "hot foods and foods sold for on-site eating, alcohol, and non-food items like soap, flowers, or crafts"
+    },
+    {
+      "subject": "Double Up Food Bucks / GusNIP",
+      "predicate": "provides",
+      "object": "USDA-funded nutrition incentive programs matching SNAP dollars spent on fruits and vegetables (commonly 1:1 up to $10-$20/day) at participating markets — check doubleupamerica.org"
+    },
+    {
+      "subject": "small-flock egg sales",
+      "predicate": "rule",
+      "object": "producers with fewer than 3,000 hens are exempt from federal EPIA grading; most states allow ungraded direct sales with labels like 'ungraded eggs,' clean intact shells, and refrigeration at or below 41-45°F at market"
+    },
+    {
+      "subject": "egg sales",
+      "predicate": "warning",
+      "object": "eggs are usually not covered by cottage food laws (they are TCS food); the small-flock exemption is a separate track and some states (e.g., CA) require an egg handler registration"
+    },
+    {
+      "subject": "honey sales",
+      "predicate": "rule",
+      "object": "raw honey is shelf-stable and allowed as a cottage food or under specific small-producer honey exemptions in most states; label must say 'honey,' include producer info and net weight, and cannot claim health benefits"
+    },
+    {
+      "subject": "sales tax on food",
+      "predicate": "rule",
+      "object": "most states exempt grocery-type food from sales tax, but 'prepared food' (hot, or sold with utensils) is usually taxable; a handful of states (e.g., MS, AL until 2025 reductions, ID, KS phasing out) tax groceries"
+    },
+    {
+      "subject": "cottage food seller taxes",
+      "predicate": "action",
+      "object": "register for a state sales tax/seller's permit if selling taxable items, and report income on Schedule C — the cottage food cap is on gross sales, and exceeding it means moving to a commercial kitchen license"
+    },
+    {
+      "subject": "farmers market vendor basics",
+      "predicate": "checklist",
+      "object": "market application and stall fee, cottage food registration if required, liability insurance (many markets require $1M), sales tax permit, scale certification if selling by weight, and compliant labels"
+    },
+    {
+      "subject": "sampling at markets",
+      "predicate": "note",
+      "object": "offering samples usually triggers extra rules — covered samples, gloves or utensils, handwash setup, sometimes a temporary food permit from the county even for cottage food vendors"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "description": "US jail support: locating arrested people, bail and bond mechanics, commissary and phone costs, visitation and mail rules, sending books, medication advocacy, and release support. Verified 2026.",
+  "source": "County of Riverside v. McLaughlin 500 U.S. 44 (1991), Gideon v. Wainwright 372 U.S. 335 (1963), Estelle v. Gamble 429 U.S. 97 (1976), Martha Wright-Reed Act / FCC 2024 rate order, Prison Policy Initiative research, state bail statutes, National Lawyers Guild jail support guides",
+  "triples": [
+    {
+      "subject": "locating an arrestee",
+      "predicate": "action",
+      "object": "check the county jail's online inmate locator first (search by name and birthdate), then call the jail's booking line; VINELink.com covers custody status in most states, and the federal BOP locator (bop.gov) covers federal custody"
+    },
+    {
+      "subject": "locating an arrestee",
+      "predicate": "note",
+      "object": "booking takes hours (commonly 4-12, longer when busy) and the person won't appear in locators or receive calls until it finishes; if they may be in immigration custody, use the ICE Online Detainee Locator (locator.ice.gov)"
+    },
+    {
+      "subject": "probable cause determination",
+      "predicate": "legal_basis",
+      "object": "for warrantless arrests, a judicial probable cause finding must generally happen within 48 hours including weekends (County of Riverside v. McLaughlin, 1991)"
+    },
+    {
+      "subject": "arraignment",
+      "predicate": "definition",
+      "object": "first court appearance where charges are read, counsel is appointed for indigent defendants (Gideon v. Wainwright), and bail is set; typically within 24-72 hours of arrest"
+    },
+    {
+      "subject": "phone calls from jail",
+      "predicate": "warning",
+      "object": "all calls except properly designated attorney calls are recorded and used by prosecutors — never discuss the facts of the case, and warn the arrested person's family of the same"
+    },
+    {
+      "subject": "right to a phone call",
+      "predicate": "note",
+      "object": "not a federal constitutional right; state law or policy usually grants calls after booking (e.g., California Penal Code § 851.5 guarantees three completed calls, and makes all jail calls free as of 2023 under SB 1008)"
+    },
+    {
+      "subject": "cash bail",
+      "predicate": "definition",
+      "object": "full amount deposited with the court, refunded at case conclusion (minus administrative fees in some counties) if the defendant makes all appearances — regardless of guilt or conviction"
+    },
+    {
+      "subject": "surety bond (bail bondsman)",
+      "predicate": "definition",
+      "object": "bondsman posts bail for a nonrefundable premium, typically 10% (regulated by state, sometimes 8-15%), often plus collateral; the premium is never returned even if charges are dropped the next day"
+    },
+    {
+      "subject": "release on recognizance (ROR)",
+      "predicate": "definition",
+      "object": "release on a written promise to appear, no money required; courts weigh community ties, record, and charge severity — a lawyer can request an ROR or bail reduction hearing"
+    },
+    {
+      "subject": "bail schedule",
+      "predicate": "note",
+      "object": "many counties set standard amounts by charge, allowing bail-out from the jail before seeing a judge; paying at the jail is usually cash, cashier's check, or card with a processing fee"
+    },
+    {
+      "subject": "bail reform states",
+      "predicate": "note",
+      "object": "Illinois eliminated cash bail entirely (Pretrial Fairness Act, in effect Sept 2023); New Jersey nearly eliminated it in 2017; NM, KY, and NY (for most misdemeanors/nonviolent felonies) sharply limit it — release decisions there use risk assessment and conditions instead"
+    },
+    {
+      "subject": "charitable bail funds",
+      "predicate": "resource",
+      "object": "community bail funds (directory at communityjusticeexchange.org) post bail at no cost to the family; some states (e.g., TX, GA, KY) have restricted them, so availability varies"
+    },
+    {
+      "subject": "commissary",
+      "predicate": "definition",
+      "object": "jail store for food, hygiene, stationery, and OTC medicine; markups commonly run 2-5x retail (a ramen pack for $1+, deodorant $4-6), and indigent kits cover only bare minimums"
+    },
+    {
+      "subject": "sending money to jail",
+      "predicate": "note",
+      "object": "deposits go through contractors (ViaPath/GTL, Securus/JPay, Access Corrections, TouchPay) charging $2-$12 per deposit; mailed money orders or lobby kiosks often carry the lowest fees — check the jail's site for the cheapest channel"
+    },
+    {
+      "subject": "money on the books",
+      "predicate": "warning",
+      "object": "many jails deduct booking fees, medical copays, or owed fines from deposits before the person can spend anything; small frequent deposits can be eaten by per-deposit fees — balance fee versus seizure risk"
+    },
+    {
+      "subject": "jail phone rates",
+      "predicate": "legal_basis",
+      "object": "the Martha Wright-Reed Just and Reasonable Communications Act (2022) and the FCC's 2024 order capped rates (roughly $0.06-$0.12/min depending on facility size) and banned most ancillary fees, cutting costs sharply from the $1+/min era"
+    },
+    {
+      "subject": "video visitation",
+      "predicate": "warning",
+      "object": "many jails replaced in-person visits with paid video calls ($5-$15 per 20-30 min); remote video is also recorded — same rule: no case talk"
+    },
+    {
+      "subject": "in-person visitation",
+      "predicate": "rules",
+      "object": "visitors usually must be pre-approved on the inmate's list, bring government photo ID, pass a dress code (no gang colors, revealing clothing, or metal), and book slots in advance; prior felony convictions can bar approval"
+    },
+    {
+      "subject": "mail to jail",
+      "predicate": "rules",
+      "object": "many jails allow postcards only or photocopy all personal mail (originals destroyed, some route scans through services like Smart Communications); no stickers, glitter, polaroids, or stamps enclosed — check the specific facility's rules first"
+    },
+    {
+      "subject": "legal mail",
+      "predicate": "legal_basis",
+      "object": "mail clearly marked from an attorney is privileged: it may be opened for contraband inspection only in the prisoner's presence and not read (Wolff v. McDonnell, 1974)"
+    },
+    {
+      "subject": "sending books",
+      "predicate": "rules",
+      "object": "most facilities accept only new paperbacks shipped directly from a publisher or retailer (Amazon, Barnes & Noble); no hardcovers, no used books from individuals, content restrictions apply — verify the facility's vendor list before ordering"
+    },
+    {
+      "subject": "books-to-prisoners programs",
+      "predicate": "resource",
+      "object": "volunteer groups (e.g., Books to Prisoners Seattle, Appalachian Prison Book Project, Prison Book Program) mail free books on request by letter; the Prison Book Program's 'National Prisoner Resource List' catalogs them by state"
+    },
+    {
+      "subject": "medications in jail",
+      "predicate": "action",
+      "object": "call the jail medical unit immediately with the person's prescriptions, dosages, pharmacy, and prescriber — especially insulin, psych meds, seizure meds, and MOUD (methadone/buprenorphine); put it in writing and keep records"
+    },
+    {
+      "subject": "jail medical care",
+      "predicate": "legal_basis",
+      "object": "deliberate indifference to serious medical needs violates the Eighth Amendment (Estelle v. Gamble, 1976; pretrial detainees are protected by the Fourteenth); documented complaints and grievances build the record for advocacy or litigation"
+    },
+    {
+      "subject": "public defender",
+      "predicate": "note",
+      "object": "appointed at arraignment for indigent defendants; family should not discuss case facts even with each other on recorded lines, and should route information through the defender's office"
+    },
+    {
+      "subject": "jail support at release",
+      "predicate": "practice",
+      "object": "releases often happen at odd hours with no notice; supporters wait outside with a phone, charger, food, water, cigarettes if wanted, and a ride — property and cash are returned at release, sometimes as a fee-laden debit card"
+    },
+    {
+      "subject": "court watching",
+      "predicate": "practice",
+      "object": "arraignments are public; supporters attending court signal community ties to the judge (helps ROR arguments) and take notes on charges, bail, and next dates for the support network"
+    },
+    {
+      "subject": "protest jail support",
+      "predicate": "practice",
+      "object": "National Lawyers Guild chapters run legal support hotlines during mass arrests — write the hotline number on your arm in sharpie; jail support teams track arrestees by name and birthdate through booking to release"
+    }
+  ]
+}

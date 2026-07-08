@@ -1,0 +1,146 @@
+{
+  "description": "US debt collection defense: FDCPA violations and remedies, debt validation, statutes of limitations by state, garnishment-exempt income, sewer service, and answering collection lawsuits. Verified 2026.",
+  "source": "FDCPA 15 U.S.C. § 1692 et seq., Regulation F 12 CFR Part 1006, CCPA 15 U.S.C. § 1673, 42 U.S.C. § 407, 31 CFR Part 212, CFPB debt collection guidance, state civil procedure codes",
+  "triples": [
+    {
+      "subject": "FDCPA (Fair Debt Collection Practices Act)",
+      "predicate": "definition",
+      "object": "federal law (15 U.S.C. § 1692) regulating third-party debt collectors and debt buyers; generally does not cover original creditors collecting their own debts"
+    },
+    {
+      "subject": "FDCPA",
+      "predicate": "prohibits",
+      "object": "calls before 8am or after 9pm local time, harassment, obscene language, threats of violence, and false or misleading representations (§§ 1692c-1692e)"
+    },
+    {
+      "subject": "FDCPA",
+      "predicate": "prohibits",
+      "object": "discussing the debt with third parties like employers or family, except to locate the debtor (§ 1692b-c)"
+    },
+    {
+      "subject": "FDCPA damages",
+      "predicate": "provides",
+      "object": "up to $1,000 statutory damages plus actual damages and attorney fees; consumer must sue within 1 year of the violation (§ 1692k)"
+    },
+    {
+      "subject": "Regulation F 7-in-7 rule",
+      "predicate": "provides",
+      "object": "collector may not call more than 7 times within 7 days about one debt, nor within 7 days of a phone conversation about it (12 CFR 1006.14, effective Nov 2021)"
+    },
+    {
+      "subject": "cease communication letter",
+      "predicate": "provides",
+      "object": "after written demand to stop contact, collector may only confirm receipt or notify of specific action like a lawsuit (§ 1692c(c)); send certified mail, keep a copy"
+    },
+    {
+      "subject": "debt validation",
+      "predicate": "definition",
+      "object": "consumer's right to dispute the debt in writing within 30 days of the initial notice; collector must pause collection until it mails verification (§ 1692g)"
+    },
+    {
+      "subject": "debt validation demand",
+      "predicate": "note",
+      "object": "debt buyers often cannot produce the original contract or a full chain of assignment; a validation demand or discovery request frequently ends the case"
+    },
+    {
+      "subject": "debt buyer",
+      "predicate": "note",
+      "object": "purchases charged-off debt for pennies on the dollar (historically averaging around 4 cents per dollar of face value per FTC study) but sues for the full balance"
+    },
+    {
+      "subject": "statute of limitations on debt",
+      "predicate": "definition",
+      "object": "state-law deadline for filing a collection lawsuit, typically 3-6 years for credit card debt, running from the last payment or default; ranges from 3 to 10 years depending on state and contract type"
+    },
+    {
+      "subject": "statute of limitations",
+      "predicate": "state_examples_short",
+      "object": "3 years: New York (consumer credit, CPLR 214-i since 2022), North Carolina, Delaware, Mississippi, South Carolina, New Hampshire"
+    },
+    {
+      "subject": "statute of limitations",
+      "predicate": "state_examples_common",
+      "object": "4 years: California, Texas, Florida (store accounts), Pennsylvania; 5 years: Illinois (unwritten), Missouri, Virginia; 6 years: written contracts in many states including Ohio, Michigan, New Jersey, Washington"
+    },
+    {
+      "subject": "statute of limitations revival",
+      "predicate": "warning",
+      "object": "in many states a partial payment or written acknowledgment of a stale debt restarts the limitations clock; never make a token payment on old debt without checking state law"
+    },
+    {
+      "subject": "time-barred debt",
+      "predicate": "legal_protection",
+      "object": "suing or threatening suit on debt past the statute of limitations violates the FDCPA; Regulation F expressly bans such suits (12 CFR 1006.26)"
+    },
+    {
+      "subject": "time-barred debt",
+      "predicate": "note",
+      "object": "the debt still exists and can be reported on credit for up to 7 years from first delinquency (FCRA), but courts cannot enforce it if the SOL defense is raised"
+    },
+    {
+      "subject": "statute of limitations defense",
+      "predicate": "warning",
+      "object": "SOL is an affirmative defense; it is waived unless raised in the answer, so ignoring a lawsuit on time-barred debt still produces a valid default judgment"
+    },
+    {
+      "subject": "collection lawsuit answer",
+      "predicate": "action",
+      "object": "file a written answer by the deadline (often 20-30 days after service) denying what is not proven and raising defenses; most collection suits win by default because 70%+ of defendants never respond"
+    },
+    {
+      "subject": "sewer service",
+      "predicate": "definition",
+      "object": "process server falsely claims to have served the lawsuit (e.g., tosses it or fabricates the affidavit), so the defendant never learns of the case until a default judgment or garnishment appears"
+    },
+    {
+      "subject": "sewer service remedy",
+      "predicate": "action",
+      "object": "motion to vacate the default judgment for lack of personal jurisdiction / improper service; evidence like work records or a wrong physical description on the affidavit of service helps"
+    },
+    {
+      "subject": "wage garnishment",
+      "predicate": "federal_limit",
+      "object": "capped at the lesser of 25% of disposable earnings or the amount exceeding 30 times the federal minimum wage per week (CCPA, 15 U.S.C. § 1673)"
+    },
+    {
+      "subject": "wage garnishment",
+      "predicate": "state_exceptions",
+      "object": "Texas, Pennsylvania, North Carolina, and South Carolina prohibit wage garnishment for most consumer debts; many other states protect more than the federal floor"
+    },
+    {
+      "subject": "exempt income",
+      "predicate": "definition",
+      "object": "Social Security, SSI, VA benefits, and most federal pensions cannot be garnished by judgment creditors for consumer debt (42 U.S.C. § 407)"
+    },
+    {
+      "subject": "bank account protection",
+      "predicate": "provides",
+      "object": "banks must automatically protect two months' worth of directly deposited federal benefits from account freezes and garnishment (31 CFR Part 212)"
+    },
+    {
+      "subject": "exempt income",
+      "predicate": "warning",
+      "object": "protection is strongest when benefits are direct-deposited and not commingled; funds moved to another account may require claiming the exemption in court"
+    },
+    {
+      "subject": "debt collection court hearing",
+      "predicate": "note",
+      "object": "simply appearing and demanding proof (original signed contract, complete account statements, assignment chain) causes many debt-buyer cases to be dismissed or settled for far less"
+    },
+    {
+      "subject": "identity of collector",
+      "predicate": "action",
+      "object": "verify the caller: get the company name, mailing address, and account details in writing before paying anything; fake-debt scams mimic collectors and demand gift cards or wires"
+    },
+    {
+      "subject": "CFPB complaint",
+      "predicate": "apply_at",
+      "object": "consumerfinance.gov/complaint or (855) 411-2372; companies must respond, and complaints create a record for later litigation; state attorney general is a parallel channel"
+    },
+    {
+      "subject": "legal help for debt defense",
+      "predicate": "resource",
+      "object": "Legal Services Corporation offices (lsc.gov), state legal aid, law school clinics; NACA (consumeradvocates.org) lists private consumer attorneys who take FDCPA cases on contingency because fees are statutory"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "description": "US unemployment insurance: eligibility rules and quirks, quitting with good cause by state, appeals process and deadlines, overpayment waivers, and worker misclassification. Verified 2026.",
+  "source": "Social Security Act Titles III/IX/XII, FUTA 26 U.S.C. ch. 23, 20 CFR Part 625/650, USDOL UI comparison of state laws, state UI statutes, NELP misclassification research",
+  "triples": [
+    {
+      "subject": "unemployment insurance (UI)",
+      "predicate": "definition",
+      "object": "joint federal-state program paying weekly benefits to workers unemployed through no fault of their own; each state sets its own eligibility, amounts, and duration under federal minimums"
+    },
+    {
+      "subject": "UI eligibility",
+      "predicate": "requires",
+      "object": "sufficient earnings in the base period, being able and available for work, and actively seeking work each week claimed"
+    },
+    {
+      "subject": "base period",
+      "predicate": "definition",
+      "object": "first 4 of the last 5 completed calendar quarters before filing; most states offer an alternate base period (most recent 4 quarters) for workers who fail the standard test"
+    },
+    {
+      "subject": "UI benefit amount",
+      "predicate": "typical",
+      "object": "roughly half of prior weekly wages up to a state maximum; maximums range from $235/week (Mississippi) to over $1,000/week (Massachusetts, plus dependent allowances)"
+    },
+    {
+      "subject": "UI benefit duration",
+      "predicate": "typical",
+      "object": "26 weeks in most states; shorter in some — Florida and North Carolina slide as low as 12 weeks depending on the state unemployment rate"
+    },
+    {
+      "subject": "quitting and UI",
+      "predicate": "rule",
+      "object": "voluntarily quitting disqualifies a claimant unless they quit with good cause; roughly half the states require the cause be connected to the work, others accept compelling personal reasons"
+    },
+    {
+      "subject": "good cause: work-related",
+      "predicate": "examples",
+      "object": "substantial pay cut (commonly 20%+), unsafe conditions reported to the employer, unpaid wages, discrimination or harassment reported and unresolved, drastic change in duties or hours"
+    },
+    {
+      "subject": "good cause: domestic violence",
+      "predicate": "note",
+      "object": "the large majority of states allow benefits for quitting due to domestic violence (relocating for safety); documentation like a protective order or shelter letter helps"
+    },
+    {
+      "subject": "good cause: trailing spouse",
+      "predicate": "note",
+      "object": "quitting to follow a military spouse's transfer qualifies in most states; following a civilian spouse's relocation qualifies in a smaller set (e.g., CA, NY, KS) and is disqualifying in many others"
+    },
+    {
+      "subject": "good cause: medical",
+      "predicate": "note",
+      "object": "quitting for one's own illness or disability generally qualifies if the claimant asked for accommodation or leave first and is still able to do some work; quitting to care for an ill family member qualifies in only some states"
+    },
+    {
+      "subject": "good cause",
+      "predicate": "warning",
+      "object": "claimants usually must show they tried to preserve the job first — reporting the problem, requesting transfer or leave — before quitting; skipping this step is a common denial reason"
+    },
+    {
+      "subject": "misconduct disqualification",
+      "predicate": "rule",
+      "object": "fired workers get benefits unless the employer proves misconduct — willful disregard of the employer's interests; ordinary poor performance, inability, or a single good-faith error is not misconduct"
+    },
+    {
+      "subject": "misconduct",
+      "predicate": "note",
+      "object": "the burden of proof is on the employer; being fired 'for cause' in HR language does not automatically mean UI-disqualifying misconduct"
+    },
+    {
+      "subject": "UI appeal",
+      "predicate": "deadline",
+      "object": "strict and short: 10-30 days from the determination mailing date depending on state (e.g., 10 days in Missouri, 15 in Texas, 21 in New York, 30 in California); late appeals are dismissed absent good cause"
+    },
+    {
+      "subject": "UI appeal hearing",
+      "predicate": "process",
+      "object": "informal hearing (usually by phone) before an administrative law judge or referee; both sides testify under oath, can submit documents and question witnesses; decisions come in writing"
+    },
+    {
+      "subject": "UI appeal",
+      "predicate": "note",
+      "object": "claimants win a large share of appeals — especially quit/misconduct cases where the employer fails to appear; free legal aid or a claimant advocate substantially raises win rates"
+    },
+    {
+      "subject": "UI appeal levels",
+      "predicate": "process",
+      "object": "determination → ALJ/referee hearing → board of review → state court judicial review; new evidence generally only enters at the hearing stage, so bring everything then"
+    },
+    {
+      "subject": "certifying during appeal",
+      "predicate": "action",
+      "object": "keep filing weekly claims while any appeal is pending; winning the appeal only pays weeks that were properly certified"
+    },
+    {
+      "subject": "UI overpayment",
+      "predicate": "definition",
+      "object": "benefits the state later decides were not owed; non-fraud overpayments (agency error, reversed decisions) are waivable, while fraud overpayments carry penalties of 15%+ and disqualification weeks"
+    },
+    {
+      "subject": "overpayment waiver",
+      "predicate": "standard",
+      "object": "most states waive non-fraud overpayments when the claimant was without fault and repayment would cause financial hardship or be against equity and good conscience; a waiver must usually be requested — it is not automatic"
+    },
+    {
+      "subject": "overpayment",
+      "predicate": "warning",
+      "object": "appeal the overpayment determination itself and separately request a waiver; states can offset future benefits and tax refunds (TOP) but exempt income rules and payment plans apply"
+    },
+    {
+      "subject": "worker misclassification",
+      "predicate": "definition",
+      "object": "labeling employees as independent contractors (1099) to avoid UI taxes; misclassified workers can still file a UI claim, which triggers a state audit of the employment relationship"
+    },
+    {
+      "subject": "misclassification tests",
+      "predicate": "note",
+      "object": "many states use the ABC test (worker is an employee unless free from control, outside the usual course of business, and independently established — e.g., CA under AB5, NJ, MA); others use common-law control factors"
+    },
+    {
+      "subject": "1099 workers",
+      "predicate": "action",
+      "object": "file the claim anyway and report the work relationship accurately; getting a 1099 does not decide the question — the state applies its own test to the facts"
+    },
+    {
+      "subject": "severance and UI",
+      "predicate": "note",
+      "object": "treatment varies by state: some delay benefits during weeks covered by severance (e.g., TX, NY over a threshold), others (e.g., CA) do not count true severance against benefits at all"
+    },
+    {
+      "subject": "part-time earnings",
+      "predicate": "rule",
+      "object": "claimants can work part-time and keep partial benefits; states disregard a portion of earnings (a flat amount or fraction of the weekly benefit) and reduce the rest dollar-for-dollar"
+    },
+    {
+      "subject": "refusal of suitable work",
+      "predicate": "warning",
+      "object": "refusing a suitable job offer or referral can end benefits; suitability weighs prior wages, skill, commute, and length of unemployment — standards loosen the longer the claim runs"
+    },
+    {
+      "subject": "UI benefits and taxes",
+      "predicate": "note",
+      "object": "UI benefits are federally taxable income; claimants can elect 10% federal withholding (Form W-4V) to avoid a surprise bill"
+    }
+  ]
+}

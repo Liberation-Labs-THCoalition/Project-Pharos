@@ -1,0 +1,141 @@
+{
+  "description": "US death and funeral navigation for families without money: FTC Funeral Rule rights, direct cremation, indigent burial programs, body donation, small estate affidavits, survivor benefits, and debt liability after death. Verified 2026.",
+  "source": "FTC Funeral Rule 16 CFR Part 453, NFDA 2023 price surveys, SSA survivor benefit rules (42 U.S.C. § 402), VA burial benefits 38 U.S.C. ch. 23, state small-estate and disposition statutes, Funeral Consumers Alliance",
+  "triples": [
+    {
+      "subject": "FTC Funeral Rule",
+      "predicate": "definition",
+      "object": "federal rule (16 CFR Part 453) requiring funeral homes to give itemized prices over the phone and a written General Price List in person, and to let buyers pick only the goods and services they want"
+    },
+    {
+      "subject": "FTC Funeral Rule",
+      "predicate": "provides",
+      "object": "right to buy a casket or urn elsewhere (online, big-box) and have the funeral home use it without any handling fee or being present for delivery"
+    },
+    {
+      "subject": "embalming",
+      "predicate": "rule",
+      "object": "not required by law in routine cases; funeral homes cannot charge for unauthorized embalming and must disclose that refrigeration or immediate disposition are alternatives"
+    },
+    {
+      "subject": "direct cremation",
+      "predicate": "definition",
+      "object": "cremation shortly after death with no viewing, embalming, or ceremony; the body is picked up, cremated, and ashes returned — typically $800-$2,500 versus a median $8,300 full burial funeral with vault (NFDA 2023)"
+    },
+    {
+      "subject": "direct cremation",
+      "predicate": "note",
+      "object": "providers must offer an inexpensive alternative container (cardboard/fiberboard) — a casket is never required for cremation; compare prices, as quotes in one city commonly vary 3x"
+    },
+    {
+      "subject": "direct burial",
+      "predicate": "definition",
+      "object": "burial shortly after death without viewing or ceremony, usually the cheapest burial option; graveside service can be held separately at low cost"
+    },
+    {
+      "subject": "indigent burial program",
+      "predicate": "definition",
+      "object": "county or state programs paying for basic cremation or burial when the deceased and family cannot; apply through the county coroner/medical examiner, social services, or the funeral home before signing any contract"
+    },
+    {
+      "subject": "indigent burial",
+      "predicate": "warning",
+      "object": "signing a funeral home contract or claiming the body as the paying party can forfeit county assistance in some jurisdictions — ask about the indigent program first"
+    },
+    {
+      "subject": "unclaimed body",
+      "predicate": "note",
+      "object": "families are not legally required to claim a body or pay for disposition; if unclaimed, the county handles cremation or burial — a legal, if painful, last resort"
+    },
+    {
+      "subject": "whole-body donation",
+      "predicate": "provides",
+      "object": "medical schools and programs (e.g., ScienceCare, university anatomical boards) cover cremation and return ashes at no cost; must usually be arranged near time of death and some conditions cause rejection, so have a backup plan"
+    },
+    {
+      "subject": "debts of the deceased",
+      "predicate": "rule",
+      "object": "debts are paid from the estate's assets, not by relatives; family members are not personally liable unless they co-signed, were joint account holders, or (rarely) under state filial or necessaries laws"
+    },
+    {
+      "subject": "debt collectors after death",
+      "predicate": "warning",
+      "object": "collectors may contact the executor but cannot claim relatives personally owe the debt; if the estate has no assets, unsecured debts like credit cards typically go unpaid — do not pay from personal funds under pressure"
+    },
+    {
+      "subject": "filial responsibility laws",
+      "predicate": "note",
+      "object": "about half the states have statutes making adult children liable for parents' care costs, but enforcement is rare; Pennsylvania is the notable exception (HCR v. Pittas, 2012, nursing home debt)"
+    },
+    {
+      "subject": "small estate affidavit",
+      "predicate": "definition",
+      "object": "sworn form letting heirs collect bank accounts, vehicles, and personal property without probate when the estate is under a state threshold; usually available 30-45 days after death"
+    },
+    {
+      "subject": "small estate affidavit",
+      "predicate": "thresholds",
+      "object": "varies widely by state: e.g., $184,500+ in California (Prob. Code § 13100, indexed), $75,000 in Texas and Arizona (personal property), $50,000 in New York (voluntary administration), $15,000-$40,000 in several others"
+    },
+    {
+      "subject": "probate",
+      "predicate": "note",
+      "object": "assets with beneficiary designations (life insurance, retirement accounts, POD/TOD accounts) and jointly-owned property pass outside probate regardless of estate size"
+    },
+    {
+      "subject": "death certificates",
+      "predicate": "action",
+      "object": "order 5-10 certified copies through the funeral home or vital records office ($10-$25 each); banks, insurers, DMV, and Social Security each want one"
+    },
+    {
+      "subject": "SSA lump-sum death payment",
+      "predicate": "provides",
+      "object": "one-time $255 to a surviving spouse living with the deceased (or eligible child); must be claimed within 2 years — call SSA at 1-800-772-1213"
+    },
+    {
+      "subject": "Social Security survivor benefits",
+      "predicate": "provides",
+      "object": "monthly benefits to widow(er)s from age 60 (50 if disabled), at any age while caring for the deceased's child under 16, and to unmarried children under 18 (19 if in high school)"
+    },
+    {
+      "subject": "Social Security after death",
+      "predicate": "warning",
+      "object": "benefits are not due for the month of death; payments received after must be returned — the funeral home usually reports the death to SSA, but confirm"
+    },
+    {
+      "subject": "VA burial benefits",
+      "predicate": "provides",
+      "object": "free burial in a national cemetery (grave, liner, marker, opening/closing) for eligible veterans and often spouses; burial allowance of $2,000 for service-connected deaths, smaller allowances ($300-$978 range, indexed) otherwise"
+    },
+    {
+      "subject": "VA burial benefits",
+      "predicate": "apply_at",
+      "object": "va.gov/burials-memorials or through the funeral home; the National Cemetery Scheduling Office (800-535-1117) verifies eligibility at time of need"
+    },
+    {
+      "subject": "home funeral",
+      "predicate": "note",
+      "object": "families may care for their own dead (home viewing, transport, filing the death certificate) in most states; a handful (e.g., NY, LA, IN) require a funeral director's involvement for some step"
+    },
+    {
+      "subject": "funeral crowdfunding and assistance",
+      "predicate": "resource",
+      "object": "churches and mosques often have burial funds; unions, employers, and last-employer life insurance are worth checking; crime victims' compensation funds pay funeral costs (commonly $5,000-$7,500) when death resulted from a crime"
+    },
+    {
+      "subject": "preneed funeral contracts",
+      "predicate": "warning",
+      "object": "prepaid plans can lose value or fail if the funeral home closes; a POD (payable-on-death) savings account earmarked for the funeral is safer and keeps the money in the family's control"
+    },
+    {
+      "subject": "Funeral Consumers Alliance",
+      "predicate": "resource",
+      "object": "nonprofit (funerals.org) with local chapters publishing price surveys and advising on low-cost, legal alternatives; complement to FTC complaint channel (reportfraud.ftc.gov) for Funeral Rule violations"
+    },
+    {
+      "subject": "medicaid estate recovery",
+      "predicate": "note",
+      "object": "states must seek repayment of long-term-care Medicaid from estates of recipients 55+, but recovery is delayed or waived for surviving spouses, minor or disabled children, and hardship — heirs should not pay out of pocket"
+    }
+  ]
+}
