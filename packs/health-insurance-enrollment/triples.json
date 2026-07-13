@@ -1,0 +1,27 @@
+{
+  "name": "health-insurance-enrollment",
+  "description": "Marketplace enrollment, special enrollment periods, Medicaid expansion, CHIP, and COBRA alternatives. For the acute 'I just lost my coverage' crisis.",
+  "source": "Liberation Labs mutual aid knowledge base",
+  "triples": [
+    {"subject": "job loss", "predicate": "triggers", "object": "special enrollment period of 60 days to enroll in marketplace health insurance — clock starts from date coverage ends, not last day of work"},
+    {"subject": "COBRA continuation coverage", "predicate": "is_often_more_expensive_than", "object": "marketplace plan with income-based subsidies — always compare costs before defaulting to COBRA"},
+    {"subject": "income below 138% federal poverty level", "predicate": "qualifies_for", "object": "Medicaid in expansion states (41 states + DC as of 2026) — application can be done same-day at local DSS"},
+    {"subject": "children under 19", "predicate": "may_qualify_for", "object": "CHIP (Children's Health Insurance Program) at higher income thresholds than adult Medicaid — covers dental and vision"},
+    {"subject": "marketplace premium subsidy", "predicate": "is_available_to", "object": "households earning 100-400% FPL (expanded through 2025 legislation) — calculated on a sliding scale"},
+    {"subject": "community health center", "predicate": "provides", "object": "sliding-scale primary care regardless of insurance status — federally funded, cannot turn patients away for inability to pay"},
+    {"subject": "special enrollment period", "predicate": "is_also_triggered_by", "object": "marriage, divorce, birth/adoption, moving to new coverage area, aging off parent's plan, losing Medicaid eligibility"},
+    {"subject": "marketplace application", "predicate": "can_be_completed_at", "object": "healthcare.gov (federal), state marketplace websites, by phone (1-800-318-2596), or with in-person navigator assistance"},
+    {"subject": "navigator or certified application counselor", "predicate": "provides", "object": "free help with marketplace enrollment — trained, certified, and prohibited from charging fees"},
+    {"subject": "cost-sharing reduction (CSR)", "predicate": "lowers", "object": "deductibles, copays, and out-of-pocket maximums for enrollees earning 100-250% FPL — only available on Silver tier plans"},
+    {"subject": "Medicaid application", "predicate": "can_provide", "object": "retroactive coverage for up to 3 months before application date — covers medical bills incurred before enrollment"},
+    {"subject": "presumptive eligibility", "predicate": "provides", "object": "temporary Medicaid coverage while full application is processed — available at hospitals and qualified providers"},
+    {"subject": "COBRA election period", "predicate": "is", "object": "60 days from notification — can elect retroactively to cover gap, but must pay all premiums back to coverage loss date"},
+    {"subject": "losing marketplace subsidy", "predicate": "can_happen_if", "object": "income increases mid-year — report income changes promptly to avoid owing subsidy repayment at tax time"},
+    {"subject": "gap in coverage", "predicate": "can_be_bridged_by", "object": "short-term health plans (limited coverage, check exclusions), health sharing ministries, or Medicaid if eligible"},
+    {"subject": "dental coverage for adults", "predicate": "is_available_through", "object": "some marketplace plans, standalone dental plans, dental schools (reduced-cost care), and Medicaid in some states"},
+    {"subject": "mental health parity law", "predicate": "requires", "object": "marketplace and employer plans to cover mental health and substance use treatment at the same level as medical/surgical care"},
+    {"subject": "prescription drug coverage", "predicate": "varies_by_plan", "object": "check the plan formulary before enrolling — the cheapest premium plan may not cover your medications"},
+    {"subject": "young adults", "predicate": "can_stay_on", "object": "parent's health insurance until age 26 regardless of student status, employment, marital status, or financial dependence"},
+    {"subject": "immigration status", "predicate": "affects_eligibility", "object": "lawfully present immigrants can buy marketplace plans; undocumented immigrants cannot enroll but emergency Medicaid covers emergencies regardless of status"}
+  ]
+}

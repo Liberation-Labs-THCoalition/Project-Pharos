@@ -1,0 +1,27 @@
+{
+  "name": "digital-access-programs",
+  "description": "Free and subsidized internet, devices, digital literacy programs, and tech resources for low-income individuals and students. Directly tied to educational access.",
+  "source": "Liberation Labs mutual aid knowledge base",
+  "triples": [
+    {"subject": "Affordable Connectivity Program (ACP)", "predicate": "provides", "object": "up to $30/month internet subsidy ($75 on tribal lands) for qualifying households — check current program status as funding has been intermittent"},
+    {"subject": "Lifeline program", "predicate": "covers", "object": "$9.25/month discount on phone or internet service for households at or below 135% FPL or participating in SNAP, Medicaid, SSI, etc."},
+    {"subject": "public library", "predicate": "offers", "object": "free computer access, WiFi, digital literacy classes, and often mobile hotspot lending — no income verification required"},
+    {"subject": "Pell Grant recipient", "predicate": "qualifies_for", "object": "various device lending and internet discount programs — Pell eligibility is a common qualifying criterion"},
+    {"subject": "refurbished laptop program", "predicate": "typically_requires", "object": "income verification or enrollment proof — organizations like PCs for People, Human-I-T, and Digitunity provide devices at low or no cost"},
+    {"subject": "school district", "predicate": "may_provide", "object": "1:1 device programs (Chromebook/laptop) and home internet hotspots for enrolled students — ask the school technology coordinator"},
+    {"subject": "FCC Emergency Broadband Benefit", "predicate": "was_replaced_by", "object": "ACP — check current program status; successor programs may exist"},
+    {"subject": "digital literacy training", "predicate": "is_available_through", "object": "public libraries, community colleges, workforce development programs, and senior centers — often free"},
+    {"subject": "low-cost internet plan", "predicate": "is_offered_by", "object": "most major ISPs for qualifying households — typically $10-30/month for basic broadband, ask about income-qualified tiers"},
+    {"subject": "mobile phone", "predicate": "can_be_obtained_free_through", "object": "Lifeline-participating carriers who provide free smartphones with monthly data plans to qualifying individuals"},
+    {"subject": "assistive technology", "predicate": "is_available_through", "object": "state Assistive Technology Programs (every state has one) — screen readers, adaptive keyboards, magnification software at no cost"},
+    {"subject": "workforce training program", "predicate": "often_includes", "object": "digital skills training, device access, and internet stipends as part of the program — ask during enrollment"},
+    {"subject": "community technology center", "predicate": "provides", "object": "free computer access, classes, and tech support in underserved neighborhoods — often in community centers, housing authorities, or faith organizations"},
+    {"subject": "tribal broadband", "predicate": "initiatives_include", "object": "enhanced ACP benefit ($75/month), tribal library programs, and USDA ReConnect grants for rural tribal areas"},
+    {"subject": "veterans", "predicate": "can_access", "object": "VA digital divide programs, veteran-serving organizations with device programs, and GI Bill technology allowances"},
+    {"subject": "telehealth access", "predicate": "requires", "object": "reliable internet and a device with camera/microphone — FQHCs (community health centers) often help patients get set up"},
+    {"subject": "online safety", "predicate": "basics_include", "object": "strong unique passwords (use a password manager), two-factor authentication, recognizing phishing, and keeping software updated"},
+    {"subject": "digital access barrier", "predicate": "should_be_documented_for", "object": "benefits applications, reasonable accommodation requests, and school IEP/504 plans — it's a recognized barrier that triggers support obligations"},
+    {"subject": "hotspot lending", "predicate": "is_available_at", "object": "many public libraries for 2-4 week checkout periods — provides home internet access without a subscription"},
+    {"subject": "E-Rate program", "predicate": "provides", "object": "discounted internet and telecommunications to schools and libraries — schools can use this to fund student home internet programs"}
+  ]
+}

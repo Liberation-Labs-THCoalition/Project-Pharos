@@ -1,0 +1,27 @@
+{
+  "name": "domestic-violence-safety",
+  "description": "Safety planning, shelter access, protective order process, financial separation from abusive partners, and confidential communication. The full safety ecosystem beyond just the legal instrument.",
+  "source": "Liberation Labs mutual aid knowledge base",
+  "triples": [
+    {"subject": "National Domestic Violence Hotline", "predicate": "is_reached_at", "object": "1-800-799-7233 (SAFE) or text START to 88788 — 24/7 confidential support, safety planning, and local referrals"},
+    {"subject": "safety plan", "predicate": "includes", "object": "identifying safe rooms, packed emergency bag, copies of important documents, memorized phone numbers, code word with trusted person, and planned escape route"},
+    {"subject": "emergency protective order", "predicate": "can_be_obtained", "object": "without the abuser being notified initially — issued by a judge, typically valid 5-7 days until a full hearing"},
+    {"subject": "address confidentiality program", "predicate": "provides", "object": "a substitute mailing address so the survivor's actual location is not in public records — available in most states through the Secretary of State"},
+    {"subject": "safe phone plan", "predicate": "requires", "object": "a separate account NOT on the abuser's family plan — prepaid phones, Lifeline program phones, or shelter-provided phones"},
+    {"subject": "digital safety", "predicate": "includes", "object": "checking for tracking apps/spyware, using private browsing, creating new email accounts, and being aware that smart home devices can be used for surveillance"},
+    {"subject": "Victims of Crime Act (VOCA) fund", "predicate": "covers", "object": "relocation costs, lost wages, medical expenses, counseling, and legal fees for crime victims — apply through state victim compensation program"},
+    {"subject": "shelter", "predicate": "provides", "object": "safe housing, meals, case management, legal advocacy, children's services, and support groups — locations are confidential"},
+    {"subject": "safety plan for leaving", "predicate": "critical_items", "object": "ID, birth certificates, Social Security cards, insurance info, medication, children's school records, evidence of abuse (photos, police reports), cash, and a change of clothes"},
+    {"subject": "financial separation", "predicate": "steps_include", "object": "opening a separate bank account, securing credit in own name, documenting all shared assets, changing direct deposit, and freezing joint credit cards"},
+    {"subject": "workplace safety", "predicate": "protections_include", "object": "informing HR/security (confidentially), requesting schedule changes, varying routes to work, and state laws protecting DV survivors from employment discrimination"},
+    {"subject": "children in DV situations", "predicate": "considerations", "object": "custody orders should be obtained quickly after separation, school safety plans established, and children may need age-appropriate counseling"},
+    {"subject": "immigrant survivors", "predicate": "protections_include", "object": "U visa (for crime victims), VAWA self-petition (no need for abuser's cooperation), and T visa for trafficking victims — immigration status should NOT prevent seeking help"},
+    {"subject": "pet safety", "predicate": "options_include", "object": "SAF-T program (Sheltering Animals and Families Together), local animal shelters with DV pet housing, or trusted friend/family member — abusers often threaten pets"},
+    {"subject": "evidence documentation", "predicate": "best_practices", "object": "photograph injuries with timestamps, save threatening messages/voicemails, keep a written log with dates/details, and store copies outside the home (email to trusted person or cloud)"},
+    {"subject": "strangulation", "predicate": "is_a_critical_indicator", "object": "survivors who have been strangled are 750% more likely to be killed — seek immediate medical evaluation even without visible injury, as internal damage may be present"},
+    {"subject": "protection order violation", "predicate": "should_be_reported_to", "object": "police immediately — violations are criminal offenses, document every violation even if police response is slow"},
+    {"subject": "DV and substance use", "predicate": "intersection", "object": "substance use programs should screen for DV; DV programs should not require sobriety — integrated services exist, and either issue can be addressed first"},
+    {"subject": "lethality assessment", "predicate": "risk_factors_include", "object": "prior strangulation, threats to kill, access to weapons, escalating violence, stalking, forced sex, controlling behavior, and separation/divorce (leaving is the highest-risk period)"},
+    {"subject": "coordinator", "predicate": "should_know", "object": "believe the survivor, don't pressure them to leave before they're ready, safety plan for staying AND leaving, never contact the abuser on the survivor's behalf, and respect their autonomy"}
+  ]
+}
