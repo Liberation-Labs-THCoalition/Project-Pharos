@@ -1,0 +1,32 @@
+{
+  "name": "crisis-mental-health",
+  "description": "Immediate mental health crisis resources, warmlines, 988 navigation, involuntary hold rights, and alternatives to police welfare checks. For coordinators encountering acute distress.",
+  "source": "Liberation Labs mutual aid knowledge base",
+  "triples": [
+    {"subject": "988 Suicide and Crisis Lifeline", "predicate": "provides", "object": "24/7 crisis counseling by phone (dial 988), chat (988lifeline.org), or text (text 988)"},
+    {"subject": "Crisis Text Line", "predicate": "is_reached_by", "object": "texting HOME to 741741 — connects to trained crisis counselor via text"},
+    {"subject": "988", "predicate": "differs_from_911_because", "object": "988 routes to mental health professionals, not police — designed to de-escalate without law enforcement"},
+    {"subject": "peer support warmline", "predicate": "serves", "object": "people in distress who are NOT in imminent danger — emotional support, not crisis intervention"},
+    {"subject": "warmline", "predicate": "differs_from_hotline_because", "object": "staffed by peers with lived experience, lower intensity, available when you need to talk but aren't in crisis"},
+    {"subject": "community crisis response team", "predicate": "is_alternative_to", "object": "police welfare check — unarmed mental health professionals respond to non-violent crises"},
+    {"subject": "involuntary psychiatric hold (5150/302)", "predicate": "requires", "object": "imminent danger to self or others AND professional assessment — cannot be applied for sadness or unusual behavior alone"},
+    {"subject": "person on involuntary hold", "predicate": "has_right_to", "object": "attorney, hearing within statutory timeframe (typically 72 hours), and challenge the hold before a judge"},
+    {"subject": "safety planning", "predicate": "includes", "object": "identifying warning signs, coping strategies, people to contact, professionals to call, and making the environment safe"},
+    {"subject": "means restriction", "predicate": "is_evidence-based_approach_that", "object": "temporarily removes access to lethal means during crisis — reduces impulsive acts without long-term restriction"},
+    {"subject": "trauma response", "predicate": "can_present_as", "object": "dissociation, hypervigilance, emotional numbness, flashbacks, or panic — these are normal responses to abnormal events"},
+    {"subject": "panic attack", "predicate": "is_not", "object": "a heart attack or medical emergency (though it feels like one) — peaks within 10 minutes, passes within 30"},
+    {"subject": "grounding technique", "predicate": "helps_during", "object": "dissociation or panic — 5-4-3-2-1 (name 5 things you see, 4 you hear, 3 you touch, 2 you smell, 1 you taste)"},
+    {"subject": "mandatory reporting", "predicate": "applies_when", "object": "a person expresses specific plan and intent to harm self or identified others — not for general distress or past ideation"},
+    {"subject": "substance use crisis", "predicate": "resources_include", "object": "SAMHSA helpline (1-800-662-4357), local detox programs, naloxone access for opioid overdose"},
+    {"subject": "naloxone (Narcan)", "predicate": "is_available", "object": "over-the-counter at pharmacies — reverses opioid overdose, safe to administer even if opioids aren't involved"},
+    {"subject": "Veterans Crisis Line", "predicate": "is_reached_by", "object": "dialing 988 then pressing 1, or texting 838255 — specialized support for veterans and service members"},
+    {"subject": "Trans Lifeline", "predicate": "provides", "object": "peer support for trans people in crisis at 877-565-8860 — staffed by trans people, no non-consensual active rescue"},
+    {"subject": "Trevor Project", "predicate": "provides", "object": "crisis intervention for LGBTQ+ youth at 1-866-488-7386, text START to 678-678, or chat at TrevorProject.org"},
+    {"subject": "crisis stabilization unit", "predicate": "is_alternative_to", "object": "emergency room — short-term (23-hour) facility for psychiatric stabilization without ER wait times and costs"},
+    {"subject": "mobile crisis team", "predicate": "can_be_requested_through", "object": "988, local crisis hotline, or community mental health center — comes to the person's location"},
+    {"subject": "after a crisis", "predicate": "follow-up_should_include", "object": "connecting to ongoing care within 48 hours — the period after crisis resolution has elevated risk"},
+    {"subject": "coordinator", "predicate": "should_not", "object": "promise confidentiality if someone is in imminent danger — be honest about what you can and cannot keep private"},
+    {"subject": "compassion fatigue", "predicate": "affects", "object": "crisis responders and coordinators — secondary trauma from repeated exposure to others' crises is real and requires self-care"},
+    {"subject": "psychiatric advance directive", "predicate": "allows", "object": "a person to document treatment preferences while stable, for use during future crises when they may not be able to communicate"}
+  ]
+}

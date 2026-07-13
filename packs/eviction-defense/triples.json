@@ -1,0 +1,32 @@
+{
+  "name": "eviction-defense",
+  "description": "Tenant rights, eviction timelines, legal defenses, and emergency resources for people facing housing loss. The acute crisis pack — not long-term housing programs.",
+  "source": "Liberation Labs mutual aid knowledge base",
+  "triples": [
+    {"subject": "pay-or-quit notice", "predicate": "requires", "object": "minimum statutory notice period (typically 3-30 days depending on state)"},
+    {"subject": "tenant", "predicate": "can_assert", "object": "habitability defense — landlord's failure to maintain safe/livable conditions can defeat eviction for nonpayment"},
+    {"subject": "eviction filing", "predicate": "triggers", "object": "right to file an answer within the statutory deadline (typically 5-14 days)"},
+    {"subject": "illegal lockout", "predicate": "entitles_tenant_to", "object": "emergency court order for re-entry — landlords cannot change locks, remove belongings, or shut off utilities without court order"},
+    {"subject": "rental assistance application", "predicate": "can_pause", "object": "eviction proceedings in many jurisdictions while application is pending"},
+    {"subject": "retaliatory eviction", "predicate": "is_illegal_when", "object": "filed within protected period after tenant complained about code violations, organized tenants, or exercised legal rights"},
+    {"subject": "tenant", "predicate": "has_right_to", "object": "cure period — opportunity to pay overdue rent and stop the eviction before judgment"},
+    {"subject": "eviction judgment", "predicate": "can_be_appealed", "object": "within statutory window (typically 5-30 days), sometimes requiring bond for rent during appeal"},
+    {"subject": "notice to quit", "predicate": "must_contain", "object": "correct tenant name, property address, specific reason for eviction, and comply with service requirements"},
+    {"subject": "improper notice", "predicate": "is_grounds_for", "object": "dismissal of eviction case — technical defects in notice are a common defense"},
+    {"subject": "self-help eviction", "predicate": "includes", "object": "changing locks, removing doors/windows, shutting off utilities, removing belongings — all illegal in every US state"},
+    {"subject": "tenant", "predicate": "should_document", "object": "all communications with landlord, condition of property, repairs requested, and payments made — photos with timestamps"},
+    {"subject": "legal aid organization", "predicate": "provides", "object": "free eviction defense for income-qualifying tenants — most cities have at least one"},
+    {"subject": "court appearance", "predicate": "is_critical_because", "object": "failure to appear results in default judgment for landlord even if tenant has valid defenses"},
+    {"subject": "section 8 voucher holder", "predicate": "has_additional_protection", "object": "landlord cannot terminate tenancy solely because tenant uses housing voucher (in most jurisdictions)"},
+    {"subject": "lease violation eviction", "predicate": "requires", "object": "landlord to prove the specific violation occurred AND that it's material enough to warrant termination"},
+    {"subject": "covid-era protections", "predicate": "status", "object": "most federal protections expired but some state/local protections remain — check local rules"},
+    {"subject": "tenant", "predicate": "cannot_be_evicted_for", "object": "reporting health/safety violations to authorities (protected activity in all states)"},
+    {"subject": "mobile home tenant", "predicate": "has_special_protections", "object": "many states have specific mobile home tenant acts with longer notice periods and relocation assistance"},
+    {"subject": "emergency shelter", "predicate": "can_be_accessed_through", "object": "211 hotline, local homeless services, domestic violence hotlines (if applicable), or faith-based organizations"},
+    {"subject": "eviction record", "predicate": "can_be_sealed_or_expunged", "object": "in some states, especially if tenant won the case or it was dismissed"},
+    {"subject": "just cause eviction ordinance", "predicate": "exists_in", "object": "many cities — limits eviction to specific enumerated reasons even for month-to-month tenancies"},
+    {"subject": "constructive eviction", "predicate": "occurs_when", "object": "landlord's failure to maintain property makes it uninhabitable, effectively forcing tenant to leave"},
+    {"subject": "tenant organizing", "predicate": "is_protected_by", "object": "state and federal law — landlords cannot retaliate against tenants for organizing or joining tenant unions"},
+    {"subject": "eviction moratorium", "predicate": "may_apply_during", "object": "declared emergencies — check local emergency orders for temporary protections"}
+  ]
+}

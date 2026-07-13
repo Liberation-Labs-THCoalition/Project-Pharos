@@ -1,0 +1,27 @@
+{
+  "name": "childcare-assistance",
+  "description": "Subsidized childcare programs, Head Start eligibility, emergency childcare options, and childcare tax benefits. The barrier that keeps parents from working or studying.",
+  "source": "Liberation Labs mutual aid knowledge base",
+  "triples": [
+    {"subject": "CCDF (Child Care Development Fund)", "predicate": "covers", "object": "childcare costs for parents who are working, in job training, or attending school — income limits vary by state"},
+    {"subject": "Head Start", "predicate": "serves", "object": "children ages 3-5 from families below the federal poverty line — free preschool plus meals, health screenings, and family services"},
+    {"subject": "Early Head Start", "predicate": "serves", "object": "pregnant women and children birth to age 3 — home-based or center-based options"},
+    {"subject": "approved training program", "predicate": "qualifies_parent_for", "object": "childcare subsidy in most states — being enrolled in education/training counts as an eligible activity"},
+    {"subject": "childcare subsidy", "predicate": "application_process", "object": "apply through local Department of Social Services or childcare resource and referral agency — waitlists are common"},
+    {"subject": "Child and Dependent Care Tax Credit", "predicate": "provides", "object": "tax credit of 20-35% of childcare expenses up to $3,000 per child ($6,000 for two or more)"},
+    {"subject": "Dependent Care FSA", "predicate": "allows", "object": "pre-tax dollars (up to $5,000/year) for childcare expenses through employer benefits plan"},
+    {"subject": "emergency childcare voucher", "predicate": "may_be_available_through", "object": "211 referral, local community action agency, or employer assistance programs"},
+    {"subject": "childcare resource and referral (CCR&R)", "predicate": "helps_families", "object": "find licensed providers, understand subsidy options, and navigate the application process — every state has one"},
+    {"subject": "family child care", "predicate": "is_often", "object": "more affordable and flexible than center-based care — licensed providers who care for children in their homes"},
+    {"subject": "school-age care", "predicate": "is_available_through", "object": "before/after school programs, Boys & Girls Clubs, YMCA, and parks department programs — often sliding scale"},
+    {"subject": "summer programs", "predicate": "include", "object": "camps, library programs, parks department activities — many offer free or reduced-rate options for low-income families"},
+    {"subject": "parent co-op", "predicate": "provides", "object": "shared childcare among families who take turns — reduces cost to zero but requires schedule coordination"},
+    {"subject": "childcare waitlist", "predicate": "strategy", "object": "apply to multiple programs simultaneously, ask about cancellation lists, and reapply if initially denied — persistence matters"},
+    {"subject": "military childcare", "predicate": "is_available_to", "object": "active duty, Guard/Reserve, and eligible DOD civilians — Child Development Centers operate on a sliding fee scale"},
+    {"subject": "tribal childcare", "predicate": "is_funded_by", "object": "CCDF Tribal Set-Aside — federally recognized tribes administer their own childcare assistance programs"},
+    {"subject": "special needs childcare", "predicate": "additional_resources", "object": "IDEA Part C (birth-3) and Part B (3-21) provide services including therapeutic childcare at no cost to families"},
+    {"subject": "kinship care", "predicate": "may_qualify_for", "object": "kinship navigator programs, TANF child-only grants, and foster care subsidies when grandparents or relatives are primary caregivers"},
+    {"subject": "childcare provider quality", "predicate": "can_be_checked_through", "object": "state licensing databases, QRIS (Quality Rating and Improvement System) star ratings, and parent reviews"},
+    {"subject": "sick child care", "predicate": "options_include", "object": "mildly-ill childcare programs (some centers offer this), employer-provided backup care, and family medical leave (FMLA) for caregiver absences"}
+  ]
+}

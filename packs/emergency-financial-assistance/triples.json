@@ -1,0 +1,32 @@
+{
+  "name": "emergency-financial-assistance",
+  "description": "One-time emergency funds for rent, utilities, and essential expenses. How to find money by Friday. The bridge between crisis and longer-term benefits.",
+  "source": "Liberation Labs mutual aid knowledge base",
+  "triples": [
+    {"subject": "211 helpline", "predicate": "connects_to", "object": "local emergency assistance funds, utility help, food banks, and shelter — dial 2-1-1 or visit 211.org"},
+    {"subject": "emergency assistance application", "predicate": "typically_requires", "object": "proof of crisis (shutoff notice, eviction filing, medical bill), proof of income, and ID"},
+    {"subject": "TANF emergency assistance", "predicate": "provides", "object": "one-time cash payment in some states for families with children facing housing or utility emergencies"},
+    {"subject": "LIHEAP", "predicate": "provides", "object": "Low Income Home Energy Assistance — pays heating/cooling bills directly, available seasonally through local agencies"},
+    {"subject": "utility shutoff", "predicate": "can_be_prevented_by", "object": "contacting the utility company to request a payment plan BEFORE the shutoff date — many states require this option"},
+    {"subject": "medical debt", "predicate": "should_not_prevent", "object": "accessing emergency rooms — EMTALA requires treatment regardless of ability to pay, and hospital financial assistance (charity care) exists"},
+    {"subject": "hospital financial assistance", "predicate": "is_required_by", "object": "nonprofit hospitals (most hospitals) under IRS rules — apply even after receiving a bill"},
+    {"subject": "prescription assistance", "predicate": "is_available_through", "object": "manufacturer patient assistance programs, GoodRx/RxAssist for cost reduction, and state pharmaceutical assistance programs"},
+    {"subject": "SNAP emergency benefits", "predicate": "can_be_expedited", "object": "within 7 days if household has less than $150 monthly income and less than $100 in liquid resources"},
+    {"subject": "eviction prevention fund", "predicate": "exists_in", "object": "most counties — administered through local community action agencies, typically covers 1-3 months rent"},
+    {"subject": "deposit assistance", "predicate": "may_be_available_through", "object": "local housing authorities, community action agencies, or transitional housing programs"},
+    {"subject": "car repair assistance", "predicate": "is_available_through", "object": "some community action agencies, Modest Needs, and local auto repair charity programs"},
+    {"subject": "modest needs self-sufficiency grant", "predicate": "provides", "object": "one-time grants to prevent specific financial crises for people above poverty line but below self-sufficiency"},
+    {"subject": "food stamps (SNAP)", "predicate": "application_timeline", "object": "regular processing within 30 days, expedited within 7 days for emergencies — apply at local DSS or online"},
+    {"subject": "WIC (Women Infants Children)", "predicate": "provides", "object": "supplemental food, nutrition education, and healthcare referrals for pregnant women, new mothers, and children under 5"},
+    {"subject": "free tax preparation", "predicate": "is_available_through", "object": "VITA (Volunteer Income Tax Assistance) sites for households under ~$67,000 — may reveal unclaimed credits worth thousands"},
+    {"subject": "Earned Income Tax Credit", "predicate": "provides", "object": "refundable tax credit up to ~$7,800 for working families — can be claimed for prior years if missed"},
+    {"subject": "mutual aid network", "predicate": "provides", "object": "community-organized direct assistance without means testing or bureaucracy — find local groups through social media or community boards"},
+    {"subject": "benefit enrollment", "predicate": "is_assisted_by", "object": "Benefits.gov screening tool, local community action agencies, and hospital social workers who can identify all available programs"},
+    {"subject": "garnishment protection", "predicate": "shields", "object": "Social Security, SSI, VA benefits, and federal student aid from most creditor garnishment — these funds are protected in bank accounts for 2 months"},
+    {"subject": "internet/phone assistance", "predicate": "is_available_through", "object": "Affordable Connectivity Program (ACP) for $30/month internet subsidy, Lifeline for $9.25/month phone/internet discount"},
+    {"subject": "emergency food", "predicate": "is_available_at", "object": "food banks (no proof of income required at most), community meal programs, and school meal programs for children"},
+    {"subject": "veteran emergency assistance", "predicate": "is_available_through", "object": "VA's Supportive Services for Veteran Families (SSVF) — rapid re-housing and homelessness prevention for veterans"},
+    {"subject": "crowdfunding", "predicate": "considerations", "object": "GoFundMe and similar platforms can help but may affect benefits eligibility — check before posting if receiving means-tested benefits"},
+    {"subject": "financial crisis triage", "predicate": "priority_order", "object": "1) immediate safety (shelter, food, medication) 2) prevent irreversible loss (eviction, utility shutoff) 3) stabilize (benefits enrollment, payment plans)"}
+  ]
+}

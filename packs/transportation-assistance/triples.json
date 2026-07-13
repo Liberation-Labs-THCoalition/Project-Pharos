@@ -1,0 +1,27 @@
+{
+  "name": "transportation-assistance",
+  "description": "Subsidized transit, vehicle repair assistance, ride programs, and transportation barriers to employment and education. The invisible wall.",
+  "source": "Liberation Labs mutual aid knowledge base",
+  "triples": [
+    {"subject": "Medicaid NEMT", "predicate": "provides", "object": "free rides to medical appointments for Medicaid recipients — Non-Emergency Medical Transportation, arranged through Medicaid managed care plan"},
+    {"subject": "workforce development board", "predicate": "may_fund", "object": "transit passes for participants in approved training programs — ask when enrolling in workforce services"},
+    {"subject": "vehicle repair charity", "predicate": "provides", "object": "free or low-cost repairs for low-income car owners — programs like Working Cars for Working People exist in many areas"},
+    {"subject": "ADA paratransit", "predicate": "is_required_in", "object": "any area with fixed-route public transit — door-to-door service for people unable to use regular buses/trains"},
+    {"subject": "211 transportation", "predicate": "connects_to", "object": "local volunteer driver programs, subsidized transit, rideshare vouchers, and transportation assistance funds"},
+    {"subject": "car donation program", "predicate": "provides", "object": "donated vehicles to qualifying low-income individuals — programs like 1-800-Charity-Cars, Vehicles for Change, and local programs"},
+    {"subject": "reduced-fare transit pass", "predicate": "is_available_for", "object": "seniors, people with disabilities, Medicare cardholders, and sometimes students and low-income riders"},
+    {"subject": "employer transportation benefit", "predicate": "may_include", "object": "pre-tax transit passes ($315/month max), vanpool subsidies, or bicycle commuter benefits"},
+    {"subject": "JARC (Job Access and Reverse Commute)", "predicate": "funds", "object": "transit services connecting low-income workers to suburban job sites — operated by local transit agencies"},
+    {"subject": "bike share/lending library", "predicate": "provides", "object": "free or low-cost bicycle access — many cities have income-qualified free memberships for bike share systems"},
+    {"subject": "gas assistance", "predicate": "may_be_available_through", "object": "Salvation Army, St. Vincent de Paul, community action agencies, and some TANF emergency assistance programs"},
+    {"subject": "driver's license recovery", "predicate": "assistance_includes", "object": "programs to clear license suspensions for unpaid fines/fees — many states now limit license suspension for non-driving debts"},
+    {"subject": "insurance assistance", "predicate": "options_include", "object": "state minimum liability only, pay-per-mile programs (Metromile), and low-cost auto insurance programs in some states"},
+    {"subject": "carpooling", "predicate": "resources_include", "object": "employer-sponsored vanpools, community ride boards, and apps like Waze Carpool — reduces cost and provides backup transportation"},
+    {"subject": "rural transportation", "predicate": "options_include", "object": "rural transit systems (Section 5311 funded), volunteer driver programs, faith-based transportation ministries, and telehealth as transportation substitute"},
+    {"subject": "school transportation", "predicate": "rights_include", "object": "free bus service within district boundaries, McKinney-Vento transportation for homeless students regardless of district, and IEP transportation for eligible students"},
+    {"subject": "transportation to court", "predicate": "may_be_arranged_through", "object": "legal aid organizations, court social workers, or community organizations — missing court for transportation reasons can result in warrants"},
+    {"subject": "transportation barrier", "predicate": "should_be_documented_for", "object": "benefits applications, reasonable accommodation requests, and job interview scheduling — it's a recognized barrier that programs are designed to address"},
+    {"subject": "electric vehicle assistance", "predicate": "includes", "object": "federal tax credit up to $7,500, state rebates, and used EV tax credit up to $4,000 — some programs target low-income buyers"},
+    {"subject": "transportation planning", "predicate": "strategy", "object": "map all options (transit, bike, carpool, walk, telecommute) before assuming a car is necessary — total car ownership cost often exceeds $500/month"}
+  ]
+}
