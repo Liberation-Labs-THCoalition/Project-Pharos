@@ -1,0 +1,27 @@
+{
+  "name": "disability-accommodations",
+  "description": "ADA rights, reasonable accommodation requests, disability benefits application, assistive technology, and the appeals process. Rights and processes, not local services.",
+  "source": "Liberation Labs mutual aid knowledge base",
+  "triples": [
+    {"subject": "reasonable accommodation", "predicate": "must_be_provided_unless", "object": "undue hardship on the employer — the employer must engage in an interactive process to find an effective accommodation"},
+    {"subject": "ADA", "predicate": "covers", "object": "employers with 15+ employees, state/local government, and places of public accommodation — disability is defined as a physical or mental impairment substantially limiting major life activities"},
+    {"subject": "reasonable accommodation examples", "predicate": "include", "object": "modified work schedule, telework, assistive technology, job restructuring, reassignment, modified break schedule, and physical workspace modifications"},
+    {"subject": "accommodation request", "predicate": "does_not_require", "object": "specific magic words — any communication telling the employer you need a change because of a medical condition initiates the interactive process"},
+    {"subject": "employer", "predicate": "can_request", "object": "medical documentation supporting the need for accommodation — but cannot demand a specific diagnosis, only functional limitations and how accommodation helps"},
+    {"subject": "SSI (Supplemental Security Income)", "predicate": "provides", "object": "monthly cash benefit for disabled individuals with limited income and resources — current maximum ~$943/month for individuals"},
+    {"subject": "SSDI (Social Security Disability Insurance)", "predicate": "provides", "object": "monthly benefit based on work history for individuals who worked and paid Social Security taxes before becoming disabled"},
+    {"subject": "SSI/SSDI application", "predicate": "typically_requires", "object": "3-6 months processing — apply as soon as disability begins, as benefits may be retroactive to application date (SSDI) or filing date (SSI)"},
+    {"subject": "disability determination", "predicate": "can_be_appealed_through", "object": "four stages: reconsideration, ALJ hearing, Appeals Council, and federal court — most claims are won at the ALJ hearing stage"},
+    {"subject": "disability attorney", "predicate": "works_on", "object": "contingency — no upfront cost, fee is limited to 25% of back benefits (capped at ~$7,200) and only paid if you win"},
+    {"subject": "ADA complaint", "predicate": "can_be_filed_with", "object": "EEOC (employment) within 180-300 days, DOJ (public accommodations), or HUD (housing) — no attorney required to file"},
+    {"subject": "assistive technology program", "predicate": "exists_in", "object": "every state (mandated by AT Act) — provides free device demonstrations, short-term loans, and sometimes permanent devices for people with disabilities"},
+    {"subject": "ABLE account", "predicate": "allows", "object": "people disabled before age 26 to save up to $100,000 without affecting SSI eligibility — tax-advantaged savings for disability-related expenses"},
+    {"subject": "Ticket to Work", "predicate": "allows", "object": "SSI/SSDI recipients to test their ability to work while keeping benefits and Medicare/Medicaid — free vocational rehabilitation and employment support"},
+    {"subject": "Plan to Achieve Self-Support (PASS)", "predicate": "allows", "object": "SSI recipients to set aside income/resources for a work goal without reducing SSI payment — must be approved by Social Security"},
+    {"subject": "Medicaid waiver programs", "predicate": "provide", "object": "home and community-based services (personal care, home modifications, respite care) as alternatives to institutional care — eligibility varies by state"},
+    {"subject": "IEP (Individualized Education Program)", "predicate": "provides", "object": "free appropriate public education with accommodations and services for children with disabilities ages 3-21 — enforceable legal document"},
+    {"subject": "Section 504 plan", "predicate": "provides", "object": "accommodations for students with disabilities who don't qualify for an IEP — less intensive than IEP but still legally enforceable"},
+    {"subject": "housing accommodation", "predicate": "under_Fair_Housing_Act", "object": "landlords must allow reasonable modifications (at tenant's expense) and provide reasonable accommodations (at landlord's expense) including service/emotional support animals"},
+    {"subject": "disability rights organization", "predicate": "provides", "object": "free advocacy, legal assistance, and systems change work — every state has a Protection & Advocacy organization (federally mandated)"}
+  ]
+}

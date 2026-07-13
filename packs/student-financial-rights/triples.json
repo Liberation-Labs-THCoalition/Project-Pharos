@@ -1,0 +1,27 @@
+{
+  "name": "student-financial-rights",
+  "description": "Financial aid, student loan rights, tuition payment plans, education tax benefits, and workforce training funding. For students navigating the financial maze of education.",
+  "source": "Liberation Labs mutual aid knowledge base",
+  "triples": [
+    {"subject": "Pell Grant", "predicate": "does_not_require", "object": "repayment — it is a grant, not a loan, for undergraduate students with demonstrated financial need"},
+    {"subject": "FAFSA (Free Application for Federal Student Aid)", "predicate": "unlocks", "object": "Pell Grants, federal loans, work-study, and many state/institutional aid programs — file annually even if you think you won't qualify"},
+    {"subject": "WIOA (Workforce Innovation and Opportunity Act)", "predicate": "may_fund", "object": "tuition, books, supplies, transportation, and childcare for approved training programs — apply through local American Job Center"},
+    {"subject": "WIOA and Pell", "predicate": "can_be_stacked", "object": "students can receive both WIOA funding AND Pell Grants simultaneously — WIOA covers what Pell doesn't"},
+    {"subject": "income-driven repayment (IDR)", "predicate": "caps_payments_at", "object": "percentage of discretionary income (5-20% depending on plan) — remaining balance forgiven after 20-25 years of payments"},
+    {"subject": "SAVE plan", "predicate": "is_the_newest_IDR_that", "object": "calculates payments on income above 225% FPL, forgives interest not covered by payments, and forgives balances after 10 years for those who borrowed ≤$12,000"},
+    {"subject": "economic hardship deferment", "predicate": "allows", "object": "temporary suspension of federal loan payments when income is below 150% FPL or during unemployment — interest may still accrue on unsubsidized loans"},
+    {"subject": "in-school deferment", "predicate": "automatically_applies", "object": "while enrolled at least half-time in an eligible program — no payments required, subsidized loan interest covered by government"},
+    {"subject": "Public Service Loan Forgiveness (PSLF)", "predicate": "forgives", "object": "remaining federal loan balance after 120 qualifying payments while working full-time for government or nonprofit employers"},
+    {"subject": "Lifetime Learning Credit", "predicate": "provides", "object": "tax credit of 20% of first $10,000 in tuition expenses — available for undergraduate, graduate, and professional development courses"},
+    {"subject": "American Opportunity Tax Credit", "predicate": "provides", "object": "up to $2,500/year for first 4 years of undergraduate education — 40% is refundable even with zero tax liability"},
+    {"subject": "student loan borrower", "predicate": "has_right_to", "object": "loan servicer transfer notification, accurate payment history, and clear disclosure of repayment options — file CFPB complaint if rights violated"},
+    {"subject": "default on federal loans", "predicate": "consequences_include", "object": "wage garnishment, tax refund seizure, damaged credit, and loss of future federal aid eligibility — but Fresh Start program can restore eligibility"},
+    {"subject": "loan rehabilitation", "predicate": "exits_default_by", "object": "making 9 agreed-upon payments within 10 months — removes default status from credit report, restores federal aid eligibility"},
+    {"subject": "consolidation", "predicate": "combines", "object": "multiple federal loans into one with a weighted average interest rate — can also exit default and provide access to IDR plans"},
+    {"subject": "Total and Permanent Disability discharge", "predicate": "forgives", "object": "federal student loans for borrowers who are totally and permanently disabled — apply with documentation from VA, SSA, or physician"},
+    {"subject": "closed school discharge", "predicate": "forgives", "object": "federal loans if your school closed while you were enrolled or within 180 days of withdrawal — automatic for some closures"},
+    {"subject": "Satisfactory Academic Progress (SAP)", "predicate": "is_required_for", "object": "continued financial aid eligibility — appeal if you fail SAP due to documented circumstances (illness, family emergency, etc.)"},
+    {"subject": "scholarship displacement", "predicate": "occurs_when", "object": "institutional aid is reduced because you received outside scholarships — ask the financial aid office about their policy before accepting outside awards"},
+    {"subject": "financial aid appeal", "predicate": "can_be_filed_for", "object": "special circumstances (job loss, medical expenses, family changes) that aren't reflected in FAFSA data — always appeal rather than accepting an insufficient package"}
+  ]
+}

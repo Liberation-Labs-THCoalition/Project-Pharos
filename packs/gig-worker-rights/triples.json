@@ -1,0 +1,27 @@
+{
+  "name": "gig-worker-rights",
+  "description": "Rights, protections, tax obligations, and benefit access for independent contractors, gig workers, and freelancers. For career changers doing gig work while studying.",
+  "source": "Liberation Labs mutual aid knowledge base",
+  "triples": [
+    {"subject": "ABC test", "predicate": "determines", "object": "worker classification in many states — worker is an employee UNLESS: (A) free from control, (B) performing work outside usual business, AND (C) independently established in that trade"},
+    {"subject": "misclassified employee", "predicate": "can_file", "object": "wage claim with state labor agency or IRS Form SS-8 for back wages, overtime, benefits, and employer tax contributions"},
+    {"subject": "independent contractor", "predicate": "must_pay", "object": "quarterly estimated taxes (federal + state + self-employment) using Form 1040-ES — penalties apply for underpayment"},
+    {"subject": "self-employment tax", "predicate": "is", "object": "15.3% on net earnings (12.4% Social Security + 2.9% Medicare) — this is in ADDITION to income tax"},
+    {"subject": "gig worker", "predicate": "can_deduct", "object": "business expenses including mileage (67 cents/mile in 2024), phone/internet (business percentage), supplies, home office, and health insurance premiums"},
+    {"subject": "self-employed health insurance deduction", "predicate": "allows", "object": "deducting 100% of health insurance premiums from gross income (not just itemized) — marketplace plans qualify"},
+    {"subject": "gig worker", "predicate": "qualifies_for", "object": "marketplace health insurance with income-based subsidies — self-employment income counts for subsidy calculations"},
+    {"subject": "unemployment for gig workers", "predicate": "depends_on", "object": "state law and classification — some states extend benefits to gig workers under ABC test rulings; pandemic-era PUA expired but set precedent"},
+    {"subject": "platform deactivation", "predicate": "may_be_challengeable_through", "object": "arbitration clause in the platform's terms of service, state labor board complaint if misclassified, or small claims court"},
+    {"subject": "gig worker", "predicate": "should_track", "object": "all income (even if no 1099 received), all expenses with receipts, and mileage log — IRS requires reporting ALL income regardless of platform reporting thresholds"},
+    {"subject": "1099-NEC threshold", "predicate": "is", "object": "$600 — platforms must issue 1099-NEC for payments of $600+ but you must report ALL income even below this threshold"},
+    {"subject": "Qualified Business Income deduction", "predicate": "allows", "object": "deducting up to 20% of net self-employment income from taxable income — available to sole proprietors and single-member LLCs"},
+    {"subject": "gig worker retirement savings", "predicate": "options_include", "object": "SEP-IRA (up to 25% of net earnings), Solo 401(k) (up to $23,000 + 25%), or traditional/Roth IRA — no employer match but tax advantages"},
+    {"subject": "workers compensation", "predicate": "is_generally_not_available_to", "object": "independent contractors — consider occupational accident insurance as a substitute, especially for delivery/driving work"},
+    {"subject": "gig worker organizing", "predicate": "options_include", "object": "freelancer unions (Freelancers Union), platform-specific driver/worker groups, and advocating for portable benefits legislation"},
+    {"subject": "tax withholding", "predicate": "is_not_automatic_for", "object": "gig workers — set aside 25-30% of every payment for taxes, or make quarterly estimated payments to avoid year-end shock"},
+    {"subject": "multi-app strategy", "predicate": "tax_implication", "object": "income from ALL platforms is combined for tax purposes — you file one Schedule C covering all gig work, not separate filings per app"},
+    {"subject": "business license", "predicate": "may_be_required_by", "object": "your city or county for gig work — check local requirements, as operating without one can result in fines"},
+    {"subject": "contract review", "predicate": "best_practice", "object": "read the arbitration clause, non-compete provisions, and IP assignment in platform terms — these affect your rights if disputes arise"},
+    {"subject": "gig-to-employment transition", "predicate": "considerations", "object": "negotiate salary to account for lost deductions and self-employment tax savings — a $50/hour gig rate does NOT equal $50/hour salary"}
+  ]
+}

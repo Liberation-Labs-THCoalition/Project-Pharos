@@ -1,0 +1,1222 @@
+{
+  "name": "campus-animal-ecosystem",
+  "description": "Multiverse Campus animal ecosystem: species profiles with behavioral traits, habitat biomes, social structure, breeding rules, and lore.",
+  "source": "Extracted from multiversecampus/shared/src/builtinSpecies.ts",
+  "triples": [
+    {
+      "subject": "Rabbit",
+      "predicate": "is_classified_as",
+      "object": "common real creature"
+    },
+    {
+      "subject": "Rabbit",
+      "predicate": "lore",
+      "object": "Quick and cautious, rabbits dart between meadow patches at dawn and dusk. They thump their hind legs to warn the group when danger approaches."
+    },
+    {
+      "subject": "Rabbit",
+      "predicate": "has_behaviors",
+      "object": "wanderer, grazer, skittish, herding, crepuscular"
+    },
+    {
+      "subject": "Rabbit",
+      "predicate": "inhabits",
+      "object": "meadow, garden, village"
+    },
+    {
+      "subject": "Rabbit",
+      "predicate": "lives_in_groups_of",
+      "object": "2-5"
+    },
+    {
+      "subject": "Rabbit",
+      "predicate": "breeding",
+      "object": "breeds in spring, summer, 30-day gestation, 3-7 offspring, polygamous"
+    },
+    {
+      "subject": "Rabbit",
+      "predicate": "courtship_behavior",
+      "object": "chasing and circling"
+    },
+    {
+      "subject": "Squirrel",
+      "predicate": "is_classified_as",
+      "object": "common real creature"
+    },
+    {
+      "subject": "Squirrel",
+      "predicate": "lore",
+      "object": "Endlessly energetic, squirrels dash between trees, burying acorns they\\"
+    },
+    {
+      "subject": "Squirrel",
+      "predicate": "has_behaviors",
+      "object": "wanderer, forager, skittish, arboreal, diurnal"
+    },
+    {
+      "subject": "Squirrel",
+      "predicate": "inhabits",
+      "object": "forest, garden, village"
+    },
+    {
+      "subject": "Squirrel",
+      "predicate": "lives_in_groups_of",
+      "object": "1-3"
+    },
+    {
+      "subject": "Squirrel",
+      "predicate": "breeding",
+      "object": "breeds in spring, 44-day gestation, 2-5 offspring, solitary"
+    },
+    {
+      "subject": "Squirrel",
+      "predicate": "courtship_behavior",
+      "object": "acrobatic chasing through trees"
+    },
+    {
+      "subject": "Sparrow",
+      "predicate": "is_classified_as",
+      "object": "common real creature"
+    },
+    {
+      "subject": "Sparrow",
+      "predicate": "lore",
+      "object": "Cheerful little birds that hop along paths and rooftops, always looking for crumbs. Where there\\"
+    },
+    {
+      "subject": "Sparrow",
+      "predicate": "has_behaviors",
+      "object": "flyer, forager, herding, shy, arboreal, diurnal"
+    },
+    {
+      "subject": "Sparrow",
+      "predicate": "inhabits",
+      "object": "village, garden, meadow, forest, path"
+    },
+    {
+      "subject": "Sparrow",
+      "predicate": "lives_in_groups_of",
+      "object": "4-10"
+    },
+    {
+      "subject": "Sparrow",
+      "predicate": "breeding",
+      "object": "breeds in spring, summer, 14-day gestation, 3-5 offspring, monogamous"
+    },
+    {
+      "subject": "Sparrow",
+      "predicate": "courtship_behavior",
+      "object": "singing and nest building"
+    },
+    {
+      "subject": "Robin",
+      "predicate": "is_classified_as",
+      "object": "common real creature"
+    },
+    {
+      "subject": "Robin",
+      "predicate": "lore",
+      "object": "Bold little songbirds with russet breasts who hop across lawns cocking their heads to listen for worms. Robins are among the first birds to sing at dawn and the last to stop at dusk, filling the campu"
+    },
+    {
+      "subject": "Robin",
+      "predicate": "has_behaviors",
+      "object": "flyer, forager, curious, arboreal, diurnal"
+    },
+    {
+      "subject": "Robin",
+      "predicate": "inhabits",
+      "object": "garden, meadow, village, path"
+    },
+    {
+      "subject": "Robin",
+      "predicate": "lives_in_groups_of",
+      "object": "2-5"
+    },
+    {
+      "subject": "Robin",
+      "predicate": "breeding",
+      "object": "breeds in spring, summer, 14-day gestation, 3-5 offspring, monogamous"
+    },
+    {
+      "subject": "Robin",
+      "predicate": "courtship_behavior",
+      "object": "singing from the highest perch at sunrise"
+    },
+    {
+      "subject": "Finch",
+      "predicate": "is_classified_as",
+      "object": "common real creature"
+    },
+    {
+      "subject": "Finch",
+      "predicate": "lore",
+      "object": "Tiny, colorful seed-crackers that travel in chattering flocks and descend on garden flowers like a living cloud. Their rapid twittering is the background music of campus life."
+    },
+    {
+      "subject": "Finch",
+      "predicate": "has_behaviors",
+      "object": "flyer, forager, herding, skittish, arboreal, diurnal"
+    },
+    {
+      "subject": "Finch",
+      "predicate": "inhabits",
+      "object": "garden, meadow, forest"
+    },
+    {
+      "subject": "Finch",
+      "predicate": "lives_in_groups_of",
+      "object": "5-12"
+    },
+    {
+      "subject": "Finch",
+      "predicate": "breeding",
+      "object": "breeds in spring, summer, 13-day gestation, 3-6 offspring, monogamous"
+    },
+    {
+      "subject": "Finch",
+      "predicate": "courtship_behavior",
+      "object": "elaborate song duets from adjacent branches"
+    },
+    {
+      "subject": "Starling",
+      "predicate": "is_classified_as",
+      "object": "common real creature"
+    },
+    {
+      "subject": "Starling",
+      "predicate": "lore",
+      "object": "Iridescent, noisy, and impossibly social, starlings form murmurations at dusk \u2014 swirling clouds of hundreds that wheel and pivot as one mind. They mimic sounds they hear: door creaks, phone ringtones,"
+    },
+    {
+      "subject": "Starling",
+      "predicate": "has_behaviors",
+      "object": "flyer, forager, herding, communal, diurnal"
+    },
+    {
+      "subject": "Starling",
+      "predicate": "inhabits",
+      "object": "village, garden, meadow, forest, path"
+    },
+    {
+      "subject": "Starling",
+      "predicate": "lives_in_groups_of",
+      "object": "5-15"
+    },
+    {
+      "subject": "Starling",
+      "predicate": "breeding",
+      "object": "breeds in spring, 12-day gestation, 4-6 offspring, monogamous"
+    },
+    {
+      "subject": "Starling",
+      "predicate": "courtship_behavior",
+      "object": "fluffing iridescent feathers and singing a medley of mimicked sounds"
+    },
+    {
+      "subject": "Frog",
+      "predicate": "is_classified_as",
+      "object": "common real creature"
+    },
+    {
+      "subject": "Frog",
+      "predicate": "lore",
+      "object": "Patient amphibians that sit motionless for hours, then leap with startling speed when a bug passes. They sing in chorus after rain."
+    },
+    {
+      "subject": "Frog",
+      "predicate": "has_behaviors",
+      "object": "percher, amphibious, shy, nocturnal"
+    },
+    {
+      "subject": "Frog",
+      "predicate": "inhabits",
+      "object": "pond, garden"
+    },
+    {
+      "subject": "Frog",
+      "predicate": "lives_in_groups_of",
+      "object": "1-4"
+    },
+    {
+      "subject": "Frog",
+      "predicate": "breeding",
+      "object": "breeds in spring, 90-day gestation, 4-10 offspring, solitary"
+    },
+    {
+      "subject": "Frog",
+      "predicate": "courtship_behavior",
+      "object": "chorus singing at the pond edge"
+    },
+    {
+      "subject": "Butterfly",
+      "predicate": "is_classified_as",
+      "object": "common real creature"
+    },
+    {
+      "subject": "Butterfly",
+      "predicate": "lore",
+      "object": "Drifting on invisible currents, butterflies trace lazy spirals between flowers. Their flight paths look random but always end where the nectar is."
+    },
+    {
+      "subject": "Butterfly",
+      "predicate": "has_behaviors",
+      "object": "flyer, forager, docile, diurnal"
+    },
+    {
+      "subject": "Butterfly",
+      "predicate": "inhabits",
+      "object": "garden, meadow"
+    },
+    {
+      "subject": "Butterfly",
+      "predicate": "lives_in_groups_of",
+      "object": "1-3"
+    },
+    {
+      "subject": "Butterfly",
+      "predicate": "breeding",
+      "object": "breeds in spring, summer, 30-day gestation, 2-6 offspring, solitary"
+    },
+    {
+      "subject": "Butterfly",
+      "predicate": "courtship_behavior",
+      "object": "spiraling flight dance"
+    },
+    {
+      "subject": "Red Fox",
+      "predicate": "is_classified_as",
+      "object": "uncommon real creature"
+    },
+    {
+      "subject": "Red Fox",
+      "predicate": "lore",
+      "object": "Clever and cautious, foxes trot through the campus at twilight. They watch humans with intelligent eyes but vanish the moment you reach for your phone."
+    },
+    {
+      "subject": "Red Fox",
+      "predicate": "has_behaviors",
+      "object": "wanderer, predator, curious, solitary, crepuscular"
+    },
+    {
+      "subject": "Red Fox",
+      "predicate": "inhabits",
+      "object": "forest, meadow, village"
+    },
+    {
+      "subject": "Red Fox",
+      "predicate": "lives_in_groups_of",
+      "object": "1-2"
+    },
+    {
+      "subject": "Red Fox",
+      "predicate": "breeding",
+      "object": "breeds in winter, 52-day gestation, 3-6 offspring, monogamous"
+    },
+    {
+      "subject": "Red Fox",
+      "predicate": "courtship_behavior",
+      "object": "the pair hunts together during courtship"
+    },
+    {
+      "subject": "Deer",
+      "predicate": "is_classified_as",
+      "object": "uncommon real creature"
+    },
+    {
+      "subject": "Deer",
+      "predicate": "lore",
+      "object": "Graceful and wary, deer move through the forest edges in small family groups. They freeze when startled, ears swiveling like satellite dishes, before bounding away in elegant leaps."
+    },
+    {
+      "subject": "Deer",
+      "predicate": "has_behaviors",
+      "object": "wanderer, grazer, skittish, herding, crepuscular"
+    },
+    {
+      "subject": "Deer",
+      "predicate": "inhabits",
+      "object": "forest, meadow"
+    },
+    {
+      "subject": "Deer",
+      "predicate": "lives_in_groups_of",
+      "object": "2-5"
+    },
+    {
+      "subject": "Deer",
+      "predicate": "breeding",
+      "object": "breeds in autumn, 200-day gestation, 1-2 offspring, polygamous"
+    },
+    {
+      "subject": "Deer",
+      "predicate": "courtship_behavior",
+      "object": "bucks spar with antlers, does watch from a distance"
+    },
+    {
+      "subject": "Raccoon",
+      "predicate": "is_classified_as",
+      "object": "uncommon real creature"
+    },
+    {
+      "subject": "Raccoon",
+      "predicate": "lore",
+      "object": "Masked bandits of the campus, raccoons investigate everything with their dexterous paws. They\\"
+    },
+    {
+      "subject": "Raccoon",
+      "predicate": "has_behaviors",
+      "object": "wanderer, scavenger, curious, nocturnal"
+    },
+    {
+      "subject": "Raccoon",
+      "predicate": "inhabits",
+      "object": "village, forest, garden"
+    },
+    {
+      "subject": "Raccoon",
+      "predicate": "lives_in_groups_of",
+      "object": "1-3"
+    },
+    {
+      "subject": "Raccoon",
+      "predicate": "breeding",
+      "object": "breeds in winter, spring, 63-day gestation, 2-5 offspring, solitary"
+    },
+    {
+      "subject": "Raccoon",
+      "predicate": "courtship_behavior",
+      "object": "males bring shiny objects to females"
+    },
+    {
+      "subject": "Blue Heron",
+      "predicate": "is_classified_as",
+      "object": "uncommon real creature"
+    },
+    {
+      "subject": "Blue Heron",
+      "predicate": "lore",
+      "object": "Standing perfectly still at the water\\"
+    },
+    {
+      "subject": "Blue Heron",
+      "predicate": "has_behaviors",
+      "object": "percher, predator, solitary, aquatic, diurnal"
+    },
+    {
+      "subject": "Blue Heron",
+      "predicate": "inhabits",
+      "object": "pond"
+    },
+    {
+      "subject": "Blue Heron",
+      "predicate": "lives_in_groups_of",
+      "object": "1-1"
+    },
+    {
+      "subject": "Blue Heron",
+      "predicate": "breeding",
+      "object": "breeds in spring, 28-day gestation, 2-4 offspring, monogamous"
+    },
+    {
+      "subject": "Blue Heron",
+      "predicate": "courtship_behavior",
+      "object": "elaborate aerial displays and bill clacking"
+    },
+    {
+      "subject": "Pond Turtle",
+      "predicate": "is_classified_as",
+      "object": "uncommon real creature"
+    },
+    {
+      "subject": "Pond Turtle",
+      "predicate": "lore",
+      "object": "Unhurried and unbothered, turtles bask on warm rocks and slip into the water at the first sign of trouble. They carry their homes wherever they go."
+    },
+    {
+      "subject": "Pond Turtle",
+      "predicate": "has_behaviors",
+      "object": "wanderer, amphibious, shy, docile, diurnal"
+    },
+    {
+      "subject": "Pond Turtle",
+      "predicate": "inhabits",
+      "object": "pond"
+    },
+    {
+      "subject": "Pond Turtle",
+      "predicate": "lives_in_groups_of",
+      "object": "1-3"
+    },
+    {
+      "subject": "Pond Turtle",
+      "predicate": "breeding",
+      "object": "breeds in spring, summer, 75-day gestation, 2-8 offspring, solitary"
+    },
+    {
+      "subject": "Pond Turtle",
+      "predicate": "courtship_behavior",
+      "object": "males bob their heads and follow females persistently"
+    },
+    {
+      "subject": "Great Horned Owl",
+      "predicate": "is_classified_as",
+      "object": "rare real creature"
+    },
+    {
+      "subject": "Great Horned Owl",
+      "predicate": "lore",
+      "object": "Silent hunters of the night, owls perch in high places and scan the ground with enormous eyes. Their heads rotate with an eerie deliberateness."
+    },
+    {
+      "subject": "Great Horned Owl",
+      "predicate": "has_behaviors",
+      "object": "percher, predator, solitary, territorial, arboreal, nocturnal"
+    },
+    {
+      "subject": "Great Horned Owl",
+      "predicate": "inhabits",
+      "object": "forest"
+    },
+    {
+      "subject": "Great Horned Owl",
+      "predicate": "lives_in_groups_of",
+      "object": "1-2"
+    },
+    {
+      "subject": "Great Horned Owl",
+      "predicate": "breeding",
+      "object": "breeds in winter, spring, 33-day gestation, 1-3 offspring, monogamous"
+    },
+    {
+      "subject": "Great Horned Owl",
+      "predicate": "courtship_behavior",
+      "object": "duet hooting and mutual preening"
+    },
+    {
+      "subject": "Grey Wolf",
+      "predicate": "is_classified_as",
+      "object": "rare real creature"
+    },
+    {
+      "subject": "Grey Wolf",
+      "predicate": "lore",
+      "object": "Pack hunters with complex social bonds, wolves communicate through howls, body posture, and shared hunts. They range far but always return to the den."
+    },
+    {
+      "subject": "Grey Wolf",
+      "predicate": "has_behaviors",
+      "object": "wanderer, predator, herding, communal, nocturnal"
+    },
+    {
+      "subject": "Grey Wolf",
+      "predicate": "inhabits",
+      "object": "wilderness"
+    },
+    {
+      "subject": "Grey Wolf",
+      "predicate": "lives_in_groups_of",
+      "object": "2-5"
+    },
+    {
+      "subject": "Grey Wolf",
+      "predicate": "breeding",
+      "object": "breeds in winter, 63-day gestation, 3-6 offspring, monogamous"
+    },
+    {
+      "subject": "Grey Wolf",
+      "predicate": "courtship_behavior",
+      "object": "the alpha pair howls together under the moon"
+    },
+    {
+      "subject": "Village Cat",
+      "predicate": "is_classified_as",
+      "object": "common real creature"
+    },
+    {
+      "subject": "Village Cat",
+      "predicate": "lore",
+      "object": "Independent and aloof, village cats claim sunny spots on warm surfaces as their personal territory. They tolerate human presence with regal indifference."
+    },
+    {
+      "subject": "Village Cat",
+      "predicate": "has_behaviors",
+      "object": "wanderer, curious, solitary, cathemeral"
+    },
+    {
+      "subject": "Village Cat",
+      "predicate": "inhabits",
+      "object": "village, garden"
+    },
+    {
+      "subject": "Village Cat",
+      "predicate": "lives_in_groups_of",
+      "object": "1-2"
+    },
+    {
+      "subject": "Village Cat",
+      "predicate": "breeding",
+      "object": "breeds in spring, summer, autumn, 63-day gestation, 2-5 offspring, solitary"
+    },
+    {
+      "subject": "Village Cat",
+      "predicate": "courtship_behavior",
+      "object": "yowling serenades at dusk"
+    },
+    {
+      "subject": "Village Dog",
+      "predicate": "is_classified_as",
+      "object": "common real creature"
+    },
+    {
+      "subject": "Village Dog",
+      "predicate": "lore",
+      "object": "Friendly and loyal, village dogs wander between buildings, greeting everyone with a wagging tail. They nap in doorways and bark at nothing in particular."
+    },
+    {
+      "subject": "Village Dog",
+      "predicate": "has_behaviors",
+      "object": "wanderer, curious, communal, playful, diurnal"
+    },
+    {
+      "subject": "Village Dog",
+      "predicate": "inhabits",
+      "object": "village, path"
+    },
+    {
+      "subject": "Village Dog",
+      "predicate": "lives_in_groups_of",
+      "object": "1-3"
+    },
+    {
+      "subject": "Village Dog",
+      "predicate": "breeding",
+      "object": "breeds in spring, autumn, 63-day gestation, 3-6 offspring, solitary"
+    },
+    {
+      "subject": "Village Dog",
+      "predicate": "courtship_behavior",
+      "object": "playful chasing and mutual grooming"
+    },
+    {
+      "subject": "Golden Retriever",
+      "predicate": "is_classified_as",
+      "object": "common real creature"
+    },
+    {
+      "subject": "Golden Retriever",
+      "predicate": "lore",
+      "object": "The friendliest face on campus. Golden retrievers greet everyone like a long-lost best friend and will carry anything in their mouth just to be helpful."
+    },
+    {
+      "subject": "Golden Retriever",
+      "predicate": "has_behaviors",
+      "object": "wanderer, curious, communal, playful, diurnal"
+    },
+    {
+      "subject": "Golden Retriever",
+      "predicate": "inhabits",
+      "object": "village, path, meadow"
+    },
+    {
+      "subject": "Golden Retriever",
+      "predicate": "lives_in_groups_of",
+      "object": "1-3"
+    },
+    {
+      "subject": "Golden Retriever",
+      "predicate": "breeding",
+      "object": "breeds in spring, autumn, 63-day gestation, 4-8 offspring, solitary"
+    },
+    {
+      "subject": "Golden Retriever",
+      "predicate": "courtship_behavior",
+      "object": "brings a stick as a gift and wags tail furiously"
+    },
+    {
+      "subject": "German Shepherd",
+      "predicate": "is_classified_as",
+      "object": "common real creature"
+    },
+    {
+      "subject": "German Shepherd",
+      "predicate": "lore",
+      "object": "Alert and noble, German shepherds patrol the campus perimeter with quiet confidence. They notice everything and trust slowly, but once bonded they are fiercely loyal."
+    },
+    {
+      "subject": "German Shepherd",
+      "predicate": "has_behaviors",
+      "object": "wanderer, curious, diurnal"
+    },
+    {
+      "subject": "German Shepherd",
+      "predicate": "inhabits",
+      "object": "village, path"
+    },
+    {
+      "subject": "German Shepherd",
+      "predicate": "lives_in_groups_of",
+      "object": "1-2"
+    },
+    {
+      "subject": "German Shepherd",
+      "predicate": "breeding",
+      "object": "breeds in spring, 63-day gestation, 4-8 offspring, monogamous"
+    },
+    {
+      "subject": "German Shepherd",
+      "predicate": "courtship_behavior",
+      "object": "stands guard beside their partner"
+    },
+    {
+      "subject": "Husky",
+      "predicate": "is_classified_as",
+      "object": "uncommon real creature"
+    },
+    {
+      "subject": "Husky",
+      "predicate": "lore",
+      "object": "Dramatic, talkative, and full of opinions, huskies howl at the moon, argue with the wind, and zoom across campus at full speed for absolutely no reason."
+    },
+    {
+      "subject": "Husky",
+      "predicate": "has_behaviors",
+      "object": "wanderer, playful, communal, cathemeral"
+    },
+    {
+      "subject": "Husky",
+      "predicate": "inhabits",
+      "object": "village, path, meadow"
+    },
+    {
+      "subject": "Husky",
+      "predicate": "lives_in_groups_of",
+      "object": "1-3"
+    },
+    {
+      "subject": "Husky",
+      "predicate": "breeding",
+      "object": "breeds in winter, 63-day gestation, 4-6 offspring, monogamous"
+    },
+    {
+      "subject": "Husky",
+      "predicate": "courtship_behavior",
+      "object": "synchronized howling duet"
+    },
+    {
+      "subject": "Corgi",
+      "predicate": "is_classified_as",
+      "object": "uncommon real creature"
+    },
+    {
+      "subject": "Corgi",
+      "predicate": "lore",
+      "object": "Short legs, enormous personality. Corgis rule the campus with disproportionate confidence and an unshakeable belief that everyone wants to see their butt wiggle."
+    },
+    {
+      "subject": "Corgi",
+      "predicate": "has_behaviors",
+      "object": "wanderer, curious, playful, diurnal"
+    },
+    {
+      "subject": "Corgi",
+      "predicate": "inhabits",
+      "object": "village, garden, path"
+    },
+    {
+      "subject": "Corgi",
+      "predicate": "lives_in_groups_of",
+      "object": "1-3"
+    },
+    {
+      "subject": "Corgi",
+      "predicate": "breeding",
+      "object": "breeds in spring, autumn, 63-day gestation, 3-5 offspring, solitary"
+    },
+    {
+      "subject": "Corgi",
+      "predicate": "courtship_behavior",
+      "object": "herding circles around their crush"
+    },
+    {
+      "subject": "Shiba Inu",
+      "predicate": "is_classified_as",
+      "object": "uncommon real creature"
+    },
+    {
+      "subject": "Shiba Inu",
+      "predicate": "lore",
+      "object": "Much campus. Very independence. Shiba inus act more like cats than dogs, doing exactly what they want and judging you silently from a distance. Wow."
+    },
+    {
+      "subject": "Shiba Inu",
+      "predicate": "has_behaviors",
+      "object": "wanderer, solitary, curious, diurnal"
+    },
+    {
+      "subject": "Shiba Inu",
+      "predicate": "inhabits",
+      "object": "village, garden"
+    },
+    {
+      "subject": "Shiba Inu",
+      "predicate": "lives_in_groups_of",
+      "object": "1-2"
+    },
+    {
+      "subject": "Shiba Inu",
+      "predicate": "breeding",
+      "object": "breeds in spring, 63-day gestation, 2-4 offspring, solitary"
+    },
+    {
+      "subject": "Shiba Inu",
+      "predicate": "courtship_behavior",
+      "object": "the shiba scream of affection"
+    },
+    {
+      "subject": "Labrador",
+      "predicate": "is_classified_as",
+      "object": "common real creature"
+    },
+    {
+      "subject": "Labrador",
+      "predicate": "lore",
+      "object": "Labs live for two things: food and love, in that order. They follow students around campus hoping for snacks and offer unconditional emotional support in return."
+    },
+    {
+      "subject": "Labrador",
+      "predicate": "has_behaviors",
+      "object": "wanderer, curious, communal, playful, diurnal"
+    },
+    {
+      "subject": "Labrador",
+      "predicate": "inhabits",
+      "object": "village, path, pond"
+    },
+    {
+      "subject": "Labrador",
+      "predicate": "lives_in_groups_of",
+      "object": "1-3"
+    },
+    {
+      "subject": "Labrador",
+      "predicate": "breeding",
+      "object": "breeds in spring, autumn, 63-day gestation, 5-10 offspring, solitary"
+    },
+    {
+      "subject": "Labrador",
+      "predicate": "courtship_behavior",
+      "object": "enthusiastic tail wagging and bringing random objects"
+    },
+    {
+      "subject": "Border Collie",
+      "predicate": "is_classified_as",
+      "object": "uncommon real creature"
+    },
+    {
+      "subject": "Border Collie",
+      "predicate": "lore",
+      "object": "The smartest animal on campus and they know it. Border collies solve puzzles, herd the other animals, and stare at you with unnerving intensity until you throw something."
+    },
+    {
+      "subject": "Border Collie",
+      "predicate": "has_behaviors",
+      "object": "wanderer, curious, playful, diurnal"
+    },
+    {
+      "subject": "Border Collie",
+      "predicate": "inhabits",
+      "object": "village, meadow, path"
+    },
+    {
+      "subject": "Border Collie",
+      "predicate": "lives_in_groups_of",
+      "object": "1-2"
+    },
+    {
+      "subject": "Border Collie",
+      "predicate": "breeding",
+      "object": "breeds in spring, 63-day gestation, 4-8 offspring, monogamous"
+    },
+    {
+      "subject": "Border Collie",
+      "predicate": "courtship_behavior",
+      "object": "herds their partner into a corner and stares"
+    },
+    {
+      "subject": "Poodle",
+      "predicate": "is_classified_as",
+      "object": "uncommon real creature"
+    },
+    {
+      "subject": "Poodle",
+      "predicate": "lore",
+      "object": "Don\\"
+    },
+    {
+      "subject": "Poodle",
+      "predicate": "has_behaviors",
+      "object": "wanderer, curious, communal, diurnal"
+    },
+    {
+      "subject": "Poodle",
+      "predicate": "inhabits",
+      "object": "village, garden"
+    },
+    {
+      "subject": "Poodle",
+      "predicate": "lives_in_groups_of",
+      "object": "1-2"
+    },
+    {
+      "subject": "Poodle",
+      "predicate": "breeding",
+      "object": "breeds in spring, 63-day gestation, 3-6 offspring, solitary"
+    },
+    {
+      "subject": "Poodle",
+      "predicate": "courtship_behavior",
+      "object": "elaborate prancing display"
+    },
+    {
+      "subject": "Serval",
+      "predicate": "is_classified_as",
+      "object": "rare real creature"
+    },
+    {
+      "subject": "Serval",
+      "predicate": "lore",
+      "object": "The serval is an African wildcat built like a supermodel crossed with a satellite dish. Standing on the longest legs relative to body size of any cat, servals use their enormous cupped ears to pinpoin"
+    },
+    {
+      "subject": "Serval",
+      "predicate": "has_behaviors",
+      "object": "wanderer, predator, shy, solitary, territorial, crepuscular"
+    },
+    {
+      "subject": "Serval",
+      "predicate": "inhabits",
+      "object": "meadow, garden"
+    },
+    {
+      "subject": "Serval",
+      "predicate": "lives_in_groups_of",
+      "object": "1-1"
+    },
+    {
+      "subject": "Serval",
+      "predicate": "breeding",
+      "object": "breeds in spring, 73-day gestation, 1-3 offspring, solitary"
+    },
+    {
+      "subject": "Serval",
+      "predicate": "courtship_behavior",
+      "object": "high-pitched chirping and purring calls that carry across the meadow at dusk, sometimes mistaken for a bird"
+    },
+    {
+      "subject": "Bengal Cat",
+      "predicate": "is_classified_as",
+      "object": "uncommon real creature"
+    },
+    {
+      "subject": "Bengal Cat",
+      "predicate": "lore",
+      "object": "Wild-looking domestic cats with leopard rosettes and the energy of a small tornado. Bengals climb everything, splash in water features, and chatter at birds with murderous intent."
+    },
+    {
+      "subject": "Bengal Cat",
+      "predicate": "has_behaviors",
+      "object": "wanderer, curious, playful, cathemeral"
+    },
+    {
+      "subject": "Bengal Cat",
+      "predicate": "inhabits",
+      "object": "village, garden, forest"
+    },
+    {
+      "subject": "Bengal Cat",
+      "predicate": "lives_in_groups_of",
+      "object": "1-2"
+    },
+    {
+      "subject": "Bengal Cat",
+      "predicate": "breeding",
+      "object": "breeds in spring, autumn, 63-day gestation, 2-4 offspring, solitary"
+    },
+    {
+      "subject": "Bengal Cat",
+      "predicate": "courtship_behavior",
+      "object": "intense staring contest followed by aggressive head bonks"
+    },
+    {
+      "subject": "Tiger",
+      "predicate": "is_classified_as",
+      "object": "legendary real creature"
+    },
+    {
+      "subject": "Tiger",
+      "predicate": "lore",
+      "object": "The apex predator of the campus, somehow. Tigers pad through the forest on silent paws, radiating an aura of majestic danger. Students give them a wide berth but can\\"
+    },
+    {
+      "subject": "Tiger",
+      "predicate": "has_behaviors",
+      "object": "wanderer, shy, solitary, cathemeral"
+    },
+    {
+      "subject": "Tiger",
+      "predicate": "inhabits",
+      "object": "forest, meadow"
+    },
+    {
+      "subject": "Tiger",
+      "predicate": "lives_in_groups_of",
+      "object": "1-1"
+    },
+    {
+      "subject": "Tiger",
+      "predicate": "breeding",
+      "object": "breeds in winter, 105-day gestation, 1-3 offspring, solitary"
+    },
+    {
+      "subject": "Tiger",
+      "predicate": "courtship_behavior",
+      "object": "deep resonant roars that shake the leaves"
+    },
+    {
+      "subject": "Will-o\\",
+      "predicate": "is_classified_as",
+      "object": "rare fantastical creature"
+    },
+    {
+      "subject": "Will-o\\",
+      "predicate": "lore",
+      "object": "Faint bobbing lights that appear in the forest after dark. They drift between the trees with hypnotic rhythm, always staying just out of reach."
+    },
+    {
+      "subject": "Will-o\\",
+      "predicate": "has_behaviors",
+      "object": "flyer, shy, solitary, nocturnal"
+    },
+    {
+      "subject": "Will-o\\",
+      "predicate": "inhabits",
+      "object": "forest"
+    },
+    {
+      "subject": "Will-o\\",
+      "predicate": "lives_in_groups_of",
+      "object": "1-3"
+    },
+    {
+      "subject": "Moss Sprite",
+      "predicate": "is_classified_as",
+      "object": "uncommon fantastical creature"
+    },
+    {
+      "subject": "Moss Sprite",
+      "predicate": "lore",
+      "object": "Tiny plant-animal hybrids that look like walking clumps of moss. They tend the forest floor, nudging fallen leaves into tidy piles that no one asked for."
+    },
+    {
+      "subject": "Moss Sprite",
+      "predicate": "has_behaviors",
+      "object": "wanderer, forager, communal, docile, diurnal"
+    },
+    {
+      "subject": "Moss Sprite",
+      "predicate": "inhabits",
+      "object": "forest, garden"
+    },
+    {
+      "subject": "Moss Sprite",
+      "predicate": "lives_in_groups_of",
+      "object": "2-5"
+    },
+    {
+      "subject": "Moss Sprite",
+      "predicate": "breeding",
+      "object": "breeds in spring, 60-day gestation, 1-3 offspring, asexual"
+    },
+    {
+      "subject": "Moss Sprite",
+      "predicate": "courtship_behavior",
+      "object": "buds form on the sprite\\"
+    },
+    {
+      "subject": "Kitsune",
+      "predicate": "is_classified_as",
+      "object": "legendary mythical creature"
+    },
+    {
+      "subject": "Kitsune",
+      "predicate": "lore",
+      "object": "A fox spirit from Japanese folklore. It appears as an ordinary fox with an extra bushy tail, but those who watch carefully notice it moves with uncanny intelligence. Said to bring good fortune to thos"
+    },
+    {
+      "subject": "Kitsune",
+      "predicate": "has_behaviors",
+      "object": "wanderer, curious, solitary, territorial, crepuscular"
+    },
+    {
+      "subject": "Kitsune",
+      "predicate": "inhabits",
+      "object": "forest"
+    },
+    {
+      "subject": "Kitsune",
+      "predicate": "lives_in_groups_of",
+      "object": "1-1"
+    },
+    {
+      "subject": "Kitsune",
+      "predicate": "breeding",
+      "object": "breeds in autumn, 365-day gestation, 1-1 offspring, monogamous"
+    },
+    {
+      "subject": "Kitsune",
+      "predicate": "courtship_behavior",
+      "object": "the pair dances around a circle of foxfire, tails intertwined"
+    },
+    {
+      "subject": "Glimmer Slug",
+      "predicate": "is_classified_as",
+      "object": "rare unknown creature"
+    },
+    {
+      "subject": "Glimmer Slug",
+      "predicate": "lore",
+      "object": "Nobody knows where they came from. They leave faintly luminescent trails that fade by morning. Some students swear the trails spell out words, but no two people read the same message."
+    },
+    {
+      "subject": "Glimmer Slug",
+      "predicate": "has_behaviors",
+      "object": "wanderer, docile, nocturnal"
+    },
+    {
+      "subject": "Glimmer Slug",
+      "predicate": "inhabits",
+      "object": "garden, cave, pond"
+    },
+    {
+      "subject": "Glimmer Slug",
+      "predicate": "lives_in_groups_of",
+      "object": "1-2"
+    },
+    {
+      "subject": "Glimmer Slug",
+      "predicate": "breeding",
+      "object": "breeds in autumn, 45-day gestation, 1-2 offspring, asexual"
+    },
+    {
+      "subject": "Glimmer Slug",
+      "predicate": "courtship_behavior",
+      "object": "the slug splits luminescent fragments from its trail that grow into new slugs"
+    },
+    {
+      "subject": "Crow",
+      "predicate": "is_classified_as",
+      "object": "common real creature"
+    },
+    {
+      "subject": "Crow",
+      "predicate": "lore",
+      "object": "Wickedly intelligent birds that remember faces and hold grudges. They gather in noisy parliaments at dusk, debating crow politics no human will ever understand."
+    },
+    {
+      "subject": "Crow",
+      "predicate": "has_behaviors",
+      "object": "flyer, scavenger, bold, herding, arboreal, diurnal"
+    },
+    {
+      "subject": "Crow",
+      "predicate": "inhabits",
+      "object": "village, forest, garden, meadow, path"
+    },
+    {
+      "subject": "Crow",
+      "predicate": "lives_in_groups_of",
+      "object": "3-8"
+    },
+    {
+      "subject": "Crow",
+      "predicate": "breeding",
+      "object": "breeds in spring, 18-day gestation, 3-6 offspring, monogamous"
+    },
+    {
+      "subject": "Crow",
+      "predicate": "courtship_behavior",
+      "object": "mutual preening and gift-giving of shiny objects"
+    },
+    {
+      "subject": "Firefly",
+      "predicate": "is_classified_as",
+      "object": "common real creature"
+    },
+    {
+      "subject": "Firefly",
+      "predicate": "lore",
+      "object": "Tiny lanterns that paint the summer darkness with morse code love letters. Each flash pattern is unique to the species \u2014 their light is the oldest dating app."
+    },
+    {
+      "subject": "Firefly",
+      "predicate": "has_behaviors",
+      "object": "flyer, docile, nocturnal"
+    },
+    {
+      "subject": "Firefly",
+      "predicate": "inhabits",
+      "object": "meadow, garden, pond"
+    },
+    {
+      "subject": "Firefly",
+      "predicate": "lives_in_groups_of",
+      "object": "3-8"
+    },
+    {
+      "subject": "Firefly",
+      "predicate": "breeding",
+      "object": "breeds in summer, 30-day gestation, 4-10 offspring, solitary"
+    },
+    {
+      "subject": "Firefly",
+      "predicate": "courtship_behavior",
+      "object": "synchronized bioluminescent flash patterns"
+    },
+    {
+      "subject": "Capybara",
+      "predicate": "is_classified_as",
+      "object": "uncommon real creature"
+    },
+    {
+      "subject": "Capybara",
+      "predicate": "lore",
+      "object": "The original campus residents. These serene, chubby rodents lounge near the spa pond, playing leisurely games of tag and soaking in the warm water. Every student eventually befriends one."
+    },
+    {
+      "subject": "Capybara",
+      "predicate": "has_behaviors",
+      "object": "wanderer, grazer, playful, communal, crepuscular, amphibious, docile"
+    },
+    {
+      "subject": "Capybara",
+      "predicate": "inhabits",
+      "object": "pond, garden, meadow"
+    },
+    {
+      "subject": "Capybara",
+      "predicate": "lives_in_groups_of",
+      "object": "2-5"
+    },
+    {
+      "subject": "Capybara",
+      "predicate": "breeding",
+      "object": "breeds in spring, autumn, 150-day gestation, 2-6 offspring, polygamous"
+    },
+    {
+      "subject": "Capybara",
+      "predicate": "courtship_behavior",
+      "object": "males chase and vocalize with clicking sounds near the water"
+    }
+  ]
+}
