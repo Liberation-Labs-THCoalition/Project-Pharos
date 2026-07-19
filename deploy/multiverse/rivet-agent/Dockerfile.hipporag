@@ -1,0 +1,16 @@
+# HippoRAG — Knowledge Graph Service
+# ARM64-compatible for Hetzner cax41
+FROM python:3.12-slim
+
+WORKDIR /app
+
+RUN pip install --no-cache-dir \
+    sentence-transformers>=2.7 \
+    networkx>=3.3 \
+    flask>=3.0 \
+    numpy>=1.26
+
+COPY hipporag_server.py .
+
+EXPOSE 11235
+CMD ["python", "hipporag_server.py"]

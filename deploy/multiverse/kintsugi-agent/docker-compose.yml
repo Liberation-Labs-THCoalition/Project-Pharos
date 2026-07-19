@@ -1,0 +1,132 @@
+# Kintsugi Mutual Aid Agent — Megs's Workmate
+# Deployment: Hetzner cax41 (ARM64)
+# Inference: SEPARATE box at 46.224.162.211:8080 (ll-custom-slerp)
+#
+# Stack: Kintsugi engine + OGPSA persona gate + Mnemosyne (SIRA + HippoRAG)
+#        + Ornith self-scaffolding + Pharos mutual aid packs
+#
+# Usage:
+#   cp config.env .env
+#   docker compose up -d
+
+services:
+
+  # ── Kintsugi Engine (Gateway + Ornith Self-Scaffolding) ────
+  kintsugi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kintsugi-megs
+    restart: unless-stopped
+    platform: linux/arm64
+    ports:
+      - "${GATEWAY_PORT:-8090}:8000"
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://${POSTGRES_USER:-kintsugi}:${POSTGRES_PASSWORD:-changeme}@postgres:5432/${POSTGRES_DB:-kintsugi}
+      - LLM_URL=${LLM_URL:-http://46.224.162.211:8080}
+      - LLM_MODEL=${LLM_MODEL:-ll-custom-slerp}
+      - PHAROS_PACKS_DIR=/app/packs
+      - HIPPORAG_URL=http://hipporag:11235
+      - PERSONA_FILE=/app/persona/megs_persona.md
+      - OGPSA_ENABLED=true
+      - ORNITH_SCAFFOLD=true
+      - GARUDA_ENABLED=true
+      - AGENT_NAME=${AGENT_NAME:-Kintsugi}
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+      - CORS_ORIGINS=${CORS_ORIGINS:-*}
+      - MNEMOSYNE_SIRA_ENABLED=true
+      - MNEMOSYNE_ENRICHMENT_ENABLED=true
+      - CONSOLIDATION_INTERVAL_HOURS=${CONSOLIDATION_INTERVAL:-6}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+    volumes:
+      - ./packs:/app/packs:ro
+      - ./persona:/app/persona:ro
+      - garuda-quarantine:/app/quarantine
+    depends_on:
+      postgres:
+        condition: service_healthy
+      hipporag:
+        condition: service_healthy
+    networks:
+      - kintsugi
+
+  # ── PostgreSQL + pgvector (Mnemosyne persistence) ──────────
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: kintsugi-postgres
+    restart: unless-stopped
+    platform: linux/arm64
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER:-kintsugi}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-changeme}
+      - POSTGRES_DB=${POSTGRES_DB:-kintsugi}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-kintsugi}"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    networks:
+      - kintsugi
+
+  # ── HippoRAG (Knowledge Graph — SIRA + TGS-RAG) ───────────
+  # Graph-backed retrieval: OpenIE triples, PPR traversal,
+  # text-graph-semantic fusion for cross-session case memory.
+  hipporag:
+    build:
+      context: .
+      dockerfile: Dockerfile.hipporag
+    container_name: kintsugi-hipporag
+    restart: unless-stopped
+    platform: linux/arm64
+    volumes:
+      - hipporag-data:/data
+    environment:
+      - HIPPORAG_DB=/data/hipporag.db
+      - EMBEDDING_MODEL=all-MiniLM-L6-v2
+    ports:
+      - "${HIPPORAG_PORT:-11235}:11235"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:11235/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 45s
+    networks:
+      - kintsugi
+
+  # ── Dreamer (H-MEM temporal consolidation) ─────────────────
+  # Significance-aware archival, cross-reference discovery,
+  # knowledge graph enrichment via HippoRAG.
+  dreamer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kintsugi-dreamer
+    restart: unless-stopped
+    platform: linux/arm64
+    entrypoint: ["python", "-m", "app.dreamer"]
+    environment:
+      - GATEWAY_URL=http://kintsugi:8000
+      - HIPPORAG_URL=http://hipporag:11235
+      - CONSOLIDATION_INTERVAL_HOURS=${CONSOLIDATION_INTERVAL:-6}
+    depends_on:
+      kintsugi:
+        condition: service_healthy
+    networks:
+      - kintsugi
+
+volumes:
+  pgdata:
+  hipporag-data:
+  garuda-quarantine:
+
+networks:
+  kintsugi:
+    driver: bridge

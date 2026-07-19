@@ -1,0 +1,130 @@
+# Rivet — Coding/Admin Agent
+# Deployment: Hetzner cax41 (ARM64)
+# Inference: SEPARATE box at 46.224.162.211:8080 (ornith:9b)
+#
+# Stack: Project-Rivet + Kintsugi self-scaffolding + OGPSA persona gate
+#        + Mnemosyne (SIRA + HippoRAG) + Pharos knowledge packs
+#
+# Usage:
+#   cp config.env .env
+#   docker compose up -d
+
+services:
+
+  # ── Rivet Engine (FastAPI + Kintsugi Scaffolding) ──────────
+  rivet:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rivet-agent
+    restart: unless-stopped
+    platform: linux/arm64
+    ports:
+      - "${GATEWAY_PORT:-8092}:8000"
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://${POSTGRES_USER:-rivet}:${POSTGRES_PASSWORD:-changeme}@postgres:5432/${POSTGRES_DB:-rivet}
+      - LLM_URL=${LLM_URL:-http://46.224.162.211:8080}
+      - LLM_MODEL=${LLM_MODEL:-ornith:9b}
+      - PHAROS_PACKS_DIR=/app/packs
+      - HIPPORAG_URL=http://hipporag:11235
+      - OGPSA_ENABLED=true
+      - KINTSUGI_SCAFFOLD=true
+      - GARUDA_ENABLED=true
+      - AGENT_NAME=${AGENT_NAME:-Rivet}
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+      - CORS_ORIGINS=${CORS_ORIGINS:-*}
+      - MNEMOSYNE_SIRA_ENABLED=true
+      - MNEMOSYNE_ENRICHMENT_ENABLED=true
+      - CONSOLIDATION_INTERVAL_HOURS=${CONSOLIDATION_INTERVAL:-6}
+      - CODE_EXECUTION_ENABLED=${CODE_EXECUTION_ENABLED:-true}
+      - SANDBOX_MODE=${SANDBOX_MODE:-docker}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+    volumes:
+      - ./packs:/app/packs:ro
+      - garuda-quarantine:/app/quarantine
+      - workspace:/app/workspace
+    depends_on:
+      postgres:
+        condition: service_healthy
+      hipporag:
+        condition: service_healthy
+    networks:
+      - rivet
+
+  # ── PostgreSQL + pgvector (Mnemosyne persistence) ──────────
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: rivet-postgres
+    restart: unless-stopped
+    platform: linux/arm64
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER:-rivet}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-changeme}
+      - POSTGRES_DB=${POSTGRES_DB:-rivet}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-rivet}"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    networks:
+      - rivet
+
+  # ── HippoRAG (Knowledge Graph — SIRA + TGS-RAG) ───────────
+  hipporag:
+    build:
+      context: .
+      dockerfile: Dockerfile.hipporag
+    container_name: rivet-hipporag
+    restart: unless-stopped
+    platform: linux/arm64
+    volumes:
+      - hipporag-data:/data
+    environment:
+      - HIPPORAG_DB=/data/hipporag.db
+      - EMBEDDING_MODEL=all-MiniLM-L6-v2
+    ports:
+      - "${HIPPORAG_PORT:-11236}:11235"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:11235/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 45s
+    networks:
+      - rivet
+
+  # ── Dreamer (H-MEM temporal consolidation) ─────────────────
+  dreamer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rivet-dreamer
+    restart: unless-stopped
+    platform: linux/arm64
+    entrypoint: ["python", "-m", "app.dreamer"]
+    environment:
+      - GATEWAY_URL=http://rivet:8000
+      - HIPPORAG_URL=http://hipporag:11235
+      - CONSOLIDATION_INTERVAL_HOURS=${CONSOLIDATION_INTERVAL:-6}
+    depends_on:
+      rivet:
+        condition: service_healthy
+    networks:
+      - rivet
+
+volumes:
+  pgdata:
+  hipporag-data:
+  garuda-quarantine:
+  workspace:
+
+networks:
+  rivet:
+    driver: bridge

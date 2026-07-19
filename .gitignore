@@ -1,5 +1,9 @@
 # Internal lab infrastructure — not for public
-deploy/
+deploy/*
+# Exception: Multiverse deployment packages are public
+!deploy/multiverse/
+!deploy/multiverse/kintsugi-agent/
+!deploy/multiverse/rivet-agent/
 experiments/
 METHODS.md
 MANIFOLD_INJECTION_SPEC.md
