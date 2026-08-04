@@ -18,6 +18,7 @@ Usage:
 
 import argparse
 import json
+import logging
 import os
 import re
 import sys
@@ -25,6 +26,8 @@ from collections import defaultdict
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from pathlib import Path
 from typing import Optional
+
+logger = logging.getLogger("pharos")
 
 PACKS_DIR = Path(os.path.expanduser("~/lab/projects/pharos/packs"))
 
@@ -61,15 +64,26 @@ class KnowledgeIndex:
             self.triples = data.get("triples", [])
 
         for i, t in enumerate(self.triples):
-            subj = t.get("subject", "")
-            pred = t.get("predicate", "")
-            obj = t.get("object", "")
+            subj = t.get("subject") or t.get("s") or ""
+            pred = t.get("predicate") or t.get("p") or ""
+            obj = t.get("object") or t.get("o") or ""
+
+            if not subj and not obj:
+                logger.warning(
+                    f"Pack {pack_dir.name}: triple {i} has no subject or object "
+                    f"(keys: {list(t.keys())}). Skipping."
+                )
+                continue
 
             self.by_subject[subj.lower()].append(i)
             self.by_predicate[pred.lower()].append(i)
             self.by_object[obj.lower()].append(i)
             self.all_entities.add(subj.lower())
             self.all_entities.add(obj.lower())
+
+            t["subject"] = subj
+            t["predicate"] = pred
+            t["object"] = obj
 
             text = f"{subj} {pred} {obj}".lower()
             for word in text.split():
@@ -78,6 +92,14 @@ class KnowledgeIndex:
                     if word not in self.search_index:
                         self.search_index[word] = []
                     self.search_index[word].append(i)
+
+        n_triples = len(self.triples)
+        n_entities = len(self.all_entities - {""})
+        if n_triples > 0 and n_entities <= 1:
+            logger.warning(
+                f"Pack {pack_dir.name}: {n_triples} triples but only "
+                f"{n_entities} entity — likely schema mismatch or empty fields"
+            )
 
     def query(self, text: str, max_results: int = 20) -> list:
         """Fuzzy search across all triples."""
