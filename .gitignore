@@ -1,7 +1,9 @@
 # Internal lab infrastructure — not for public
+# Deployment stacks hold credentials: everything under deploy/ is ignored
+# except the public Multiverse packages. Files already tracked stay tracked.
 deploy/*
-# Exception: Multiverse deployment packages are public
 !deploy/multiverse/
+deploy/multiverse/*
 !deploy/multiverse/kintsugi-agent/
 !deploy/multiverse/rivet-agent/
 experiments/
@@ -87,3 +89,8 @@ auto_library.py
 
 # Podcast pipeline (internal)
 podcast/
+
+# Local credentials and proposals: never commit
+packs/.env
+packs/nats-rotation-PROPOSED.env
+packs/nats-conf-snippet-PROPOSED.conf
