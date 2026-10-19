@@ -342,6 +342,12 @@ def main():
     parser.add_argument("--port", type=int, default=8300)
     parser.add_argument("--packs", help="Comma-separated pack names (default: all)")
     parser.add_argument("--packs-dir", default=str(PACKS_DIR))
+    # 2026-09-17: the bind used to be hardcoded "0.0.0.0" (commit 65bf5bc, 2026-07-07)
+    # for a demo, which exposed the server to every network the host is on. Default is
+    # loopback now; --host makes any other bind a deliberate choice rather than a code
+    # edit, so the next person who needs it does not have to change this file.
+    parser.add_argument("--host", default="127.0.0.1",
+                        help="bind address (default: 127.0.0.1 — loopback only)")
     args = parser.parse_args()
 
     filter_packs = args.packs.split(",") if args.packs else None
@@ -355,10 +361,10 @@ def main():
 
     PackHandler.registry = registry
 
-    server = HTTPServer(("0.0.0.0", args.port), PackHandler)
+    server = HTTPServer((args.host, args.port), PackHandler)
     server.socket.setsockopt(__import__('socket').SOL_SOCKET, __import__('socket').SO_REUSEADDR, 1)
     total_triples = sum(len(p.triples) for p in registry.packs.values())
-    print(f"\nPharos Pack Server listening on http://localhost:{args.port}")
+    print(f"\nPharos Pack Server listening on http://{args.host}:{args.port}")
     print(f"  {len(registry.packs)} packs, {total_triples} triples indexed")
 
     try:
