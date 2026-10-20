@@ -1,24 +1,24 @@
 # Project Pharos
 
-**Zero-token knowledge injection for AI agents.**
+**Structured knowledge packs for AI agents.**
 
-Pharos encodes domain knowledge as walk-encoded triples — structured facts that ground AI reasoning without consuming context window tokens. 126 packs covering law, science, crisis resources, security, and more.
+Pharos encodes domain knowledge as triples — structured facts an agent can query and put in front of its model. The library on Hugging Face has 126 packs covering law, science, crisis resources, security, and more; this repository ships 65 (31 of them in both).
 
 ## What It Does
 
-Give any AI agent instant domain expertise:
+Give any AI agent quick access to domain facts:
 
 ```bash
 # Query the pack server
-curl -s localhost:8300/query -d '{"pack": "statistical-pitfalls", "query": "p-hacking"}'
+curl -s localhost:8300/query -d '{"pack": "informed-consent", "query": "informed consent"}'
 
-# Search all 126 packs at once
+# Search all the loaded packs at once
 curl -s localhost:8300/search_all -d '{"query": "informed consent", "max_per_pack": 3}'
 ```
 
 ## The Library
 
-**126 packs • 6,393 triples • Growing weekly**
+**126 packs** in the [Hugging Face library](https://huggingface.co/datasets/LiberationLabs/pharos-knowledge-packs)
 
 | Category | Packs | Examples |
 |----------|-------|---------|
@@ -38,7 +38,7 @@ curl -s localhost:8300/search_all -d '{"query": "informed consent", "max_per_pac
 │   In-memory index • Fuzzy search    │
 │   Entity lookup • Graph traversal   │
 ├─────────────────────────────────────┤
-│    126 Knowledge Packs (triples)    │
+│      Knowledge Packs (triples)      │
 │    Subject → Predicate → Object     │
 └─────────────────────────────────────┘
          ↑ query            ↑ query
@@ -54,8 +54,8 @@ curl -s localhost:8300/search_all -d '{"query": "informed consent", "max_per_pac
 git clone https://github.com/Liberation-Labs-THCoalition/Project-Pharos.git
 cd Project-Pharos
 
-# Start the pack server
-python3 pack_server.py --port 8300
+# Start the pack server on the packs in this clone
+python3 pack_server.py --packs-dir packs --port 8300
 
 # Query
 curl -s localhost:8300/packs | python3 -m json.tool
@@ -81,13 +81,11 @@ Each pack is a `triples.json`:
 
 ## Build Your Own Pack
 
-```bash
-# From an API
-python3 pack_generator/generate.py --source https://api.example.com/data --topic "your domain"
+The pack generator isn't published in this repository yet.
 
-# From a document
-python3 pack_generator/generate.py --document paper.pdf --topic "key findings"
-```
+## What the Research Shows
+
+What the lab's studies of this approach do and don't show, after their October 2026 corrections: see the [README](https://github.com/Liberation-Labs-THCoalition/Project-Pharos#what-the-research-shows).
 
 ## Part of the Coalition Stack
 

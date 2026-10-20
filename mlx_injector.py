@@ -1,23 +1,26 @@
-"""Pharos MLX Pack Injector — Zero-Token Knowledge Injection for Apple Silicon
+"""Pharos MLX Pack Injector — Precomputed Pack Caches for Apple Silicon
 
 Converts Pharos knowledge packs (walk_encoding.txt + triples.json) into
 pre-computed KV cache state compatible with mlx-lm's cache primitives.
 
-The model behaves as if it read the pack content, but zero context tokens
-are consumed at inference time. Works with any mlx-lm compatible model.
+The model answers as if it had just read the pack's text, without processing
+that text again on each request. The cached pack still occupies the model's
+context: its tokens count toward the context length, and the query continues
+after them. What the cache saves is the prefill time. Written for mlx-lm models;
+which models it has been run with isn't recorded here.
 
 Usage:
     # Build a cache from a pack
-    from pharos.mlx_injector import MLXPackBuilder
+    from mlx_injector import MLXPackBuilder
     builder = MLXPackBuilder(model, tokenizer)
-    builder.build_pack_cache("eviction-defense", output_dir="./pack_caches")
+    builder.build_pack_cache("informed-consent", output_dir="./pack_caches")
 
     # Use at inference time
-    from pharos.mlx_injector import generate_with_pack
+    from mlx_injector import generate_with_pack
     response = generate_with_pack(
         model, tokenizer,
-        query="What are my rights as a tenant facing eviction?",
-        pack_cache="./pack_caches/eviction-defense.safetensors"
+        query="What does informed consent require?",
+        pack_cache="./pack_caches/informed-consent.safetensors"
     )
 
 Requires: mlx, mlx-lm >= 0.20.0
@@ -180,7 +183,8 @@ def generate_with_pack(model: nn.Module, tokenizer, query: str,
     """Generate a response with a pre-computed pack cache injected.
 
     The model sees the full knowledge pack content via KV cache
-    but only processes the query tokens — zero-token injection.
+    and only processes the query tokens: the pack's prefill is skipped,
+    but its cached tokens still count toward the context.
 
     Args:
         model: The mlx-lm model.
@@ -213,10 +217,11 @@ def generate_with_pack(model: nn.Module, tokenizer, query: str,
 def generate_with_multi_pack(model: nn.Module, tokenizer, query: str,
                              pack_caches: list[str], max_tokens: int = 512,
                              **kwargs) -> str:
-    """Generate with multiple pack caches composed together.
+    """Generate with multiple pack caches (composition NOT implemented yet).
 
-    Packs are loaded and composed sequentially. RoPE positions
-    continue across pack boundaries.
+    Only the first pack's cache is used: each later one is loaded and
+    discarded, with a warning. Composing them properly needs the second
+    pack re-encoded with the first cache as its prefix.
     """
     from mlx_lm.models.cache import load_prompt_cache, make_prompt_cache
 
@@ -235,8 +240,8 @@ def generate_with_multi_pack(model: nn.Module, tokenizer, query: str,
         # NOTE: This is approximate — proper composition requires
         # re-encoding the second pack with the first cache as context.
         # For production, use build_pack_cache with prefix support.
-        logger.warning("Multi-pack composition is approximate. "
-                       "For precise RoPE, rebuild with prefix.")
+        logger.warning("Multi-pack composition is not implemented: "
+                       "only the first pack's cache is used.")
 
     from mlx_lm import generate
     return generate(
